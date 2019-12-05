@@ -1,0 +1,166 @@
+---
+title: "Austrian Proposals and Bills"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Packages
+
+```{r}
+pacman::p_load(tidyverse, furrr, rvest, ggthemes, lubridate, rio)
+
+plan(multiprocess)
+```
+
+# Getting Index pages for XX - XXV legislative period
+
+```{r}
+# Reading stable URLs
+XXV <- "https://www.parlament.gv.at/PAKT/VHG/index.shtml?VV=&pageNumber=&ZUAS=ALLE&ALT=&feldRnr=5&FR=ALLE&R_MSFRASZU=MIN&LDAP_GRP(PM_ESM)=N&DR=&FBEZ=FP_001&view=&VHG=GESVOR&VHG2=ALLE&jsMode=&VHG3=ALLE&requestId=C536DCDD28&VHG4=ALLE&MISS=&listeId=100&ALTKN=&filterJq=&AUS=ALLE&SUCH=&DEB=&xdocumentUri=%2FPAKT%2FVHG%2Findex.shtml&R_MFRAS=MIN&GP=XXV&STEP=2905&INTRANET=N&LDAP_GRP(PM_HA)=N&ZUFR=ALLE&NAB=&SID=ALLE&ascDesc=DESC&NRBR=NR&ALTPN=&GBEZ=&AS=ALLE&MIN=ALLE&LISTE=&ZUSTIMM=ALLE&LH=ALLE&GESVOR=ALLE&ZEIT="
+
+XXIV <- "https://www.parlament.gv.at/PAKT/VHG/index.shtml?VV=&pageNumber=&ZUAS=ALLE&ALT=&feldRnr=5&FR=ALLE&R_MSFRASZU=MIN&LDAP_GRP(PM_ESM)=N&DR=&FBEZ=FP_001&view=&VHG=GESVOR&VHG2=ALLE&jsMode=&VHG3=ALLE&requestId=C536DCDD28&VHG4=ALLE&MISS=&listeId=100&ALTKN=&filterJq=&AUS=ALLE&SUCH=&DEB=&xdocumentUri=%2FPAKT%2FVHG%2Findex.shtml&R_MFRAS=MIN&GP=XXIV&STEP=2905&INTRANET=N&LDAP_GRP(PM_HA)=N&ZUFR=ALLE&NAB=&SID=ALLE&ascDesc=DESC&NRBR=NR&ALTPN=&GBEZ=&AS=ALLE&MIN=ALLE&LISTE=&ZUSTIMM=ALLE&LH=ALLE&GESVOR=ALLE&ZEIT="
+
+XXIII <- "https://www.parlament.gv.at/PAKT/VHG/index.shtml?VV=&pageNumber=&ZUAS=ALLE&ALT=&feldRnr=5&FR=ALLE&R_MSFRASZU=MIN&LDAP_GRP(PM_ESM)=N&DR=&FBEZ=FP_001&view=&VHG=GESVOR&VHG2=ALLE&jsMode=&VHG3=ALLE&requestId=C536DCDD28&VHG4=ALLE&MISS=&listeId=100&ALTKN=&filterJq=&AUS=ALLE&SUCH=&DEB=&xdocumentUri=%2FPAKT%2FVHG%2Findex.shtml&R_MFRAS=MIN&GP=XXIII&STEP=2905&INTRANET=N&LDAP_GRP(PM_HA)=N&ZUFR=ALLE&NAB=&SID=ALLE&ascDesc=DESC&NRBR=NR&ALTPN=&GBEZ=&AS=ALLE&MIN=ALLE&LISTE=&ZUSTIMM=ALLE&LH=ALLE&GESVOR=ALLE&ZEIT="
+
+XXII <-"https://www.parlament.gv.at/PAKT/VHG/index.shtml?VV=&pageNumber=&ZUAS=ALLE&ALT=&feldRnr=5&FR=ALLE&R_MSFRASZU=MIN&LDAP_GRP(PM_ESM)=N&DR=&FBEZ=FP_001&view=&VHG=GESVOR&VHG2=ALLE&jsMode=&VHG3=ALLE&requestId=C536DCDD28&VHG4=ALLE&MISS=&listeId=100&ALTKN=&filterJq=&AUS=ALLE&SUCH=&DEB=&xdocumentUri=%2FPAKT%2FVHG%2Findex.shtml&R_MFRAS=MIN&GP=XXII&STEP=2905&INTRANET=N&LDAP_GRP(PM_HA)=N&ZUFR=ALLE&NAB=&SID=ALLE&ascDesc=DESC&NRBR=NR&ALTPN=&GBEZ=&AS=ALLE&MIN=ALLE&LISTE=&ZUSTIMM=ALLE&LH=ALLE&GESVOR=ALLE&ZEIT="
+
+XXI <- "https://www.parlament.gv.at/PAKT/VHG/index.shtml?VV=&pageNumber=&ZUAS=ALLE&ALT=&feldRnr=5&FR=ALLE&R_MSFRASZU=MIN&LDAP_GRP(PM_ESM)=N&DR=&FBEZ=FP_001&view=&VHG=GESVOR&VHG2=ALLE&jsMode=&VHG3=ALLE&requestId=C536DCDD28&VHG4=ALLE&MISS=&listeId=100&ALTKN=&filterJq=&AUS=ALLE&SUCH=&DEB=&xdocumentUri=%2FPAKT%2FVHG%2Findex.shtml&R_MFRAS=MIN&GP=XXI&STEP=2905&INTRANET=N&LDAP_GRP(PM_HA)=N&ZUFR=ALLE&NAB=&SID=ALLE&ascDesc=DESC&NRBR=NR&ALTPN=&GBEZ=&AS=ALLE&MIN=ALLE&LISTE=&ZUSTIMM=ALLE&LH=ALLE&GESVOR=ALLE&ZEIT="
+
+XX <- "https://www.parlament.gv.at/PAKT/VHG/index.shtml?VV=&pageNumber=&ZUAS=ALLE&ALT=&feldRnr=5&FR=ALLE&R_MSFRASZU=MIN&LDAP_GRP(PM_ESM)=N&DR=&FBEZ=FP_001&view=&VHG=GESVOR&VHG2=ALLE&jsMode=&VHG3=ALLE&requestId=C536DCDD28&VHG4=ALLE&MISS=&listeId=100&ALTKN=&filterJq=&AUS=ALLE&SUCH=&DEB=&xdocumentUri=%2FPAKT%2FVHG%2Findex.shtml&R_MFRAS=MIN&GP=XX&STEP=2905&INTRANET=N&LDAP_GRP(PM_HA)=N&ZUFR=ALLE&NAB=&SID=ALLE&ascDesc=DESC&NRBR=NR&ALTPN=&GBEZ=&AS=ALLE&MIN=ALLE&LISTE=&ZUSTIMM=ALLE&LH=ALLE&GESVOR=ALLE&ZEIT="
+
+
+```
+
+# Scraping Metadata of indexpages and page URLs
+
+```{r}
+# get proposal pages URLs
+scrape_indexpage <- function(url) { # URL = XXV, XXIV, XXIII, ...
+  
+  indexpage <- read_html(url)
+  proposalpages <- indexpage %>%
+    html_nodes("a.link-indicator") %>%
+    html_attr("href") %>%
+    .[seq(1, length(.), by = 2)] %>%
+    paste0("https://www.parlament.gv.at", .)
+
+  # get dates of proposals (website upload?), type (RV, A, VOLKBG, BRA), descriptive title, 
+  indexpagedata <- indexpage %>%
+    html_nodes(., "span.table-responsive__inner") %>%
+    html_text(., trim = T) %>%  # get table inner text and trim
+    matrix(., ncol = 5, byrow = T) %>%  # put into matrix, then dataframe (tibble)
+    .[, -5] %>%
+    as_tibble(., .name_repair = "minimal") %>%
+    setNames(., c("web_date", "type", "desc_title", "proposal_id"))
+
+  # add proposal pages URLs
+  indexpagedata$proposal_link <- proposalpages
+  
+  # adding legislative period indicator
+  indexpagedata$period <- url %>%
+    str_extract(., "GP=\\w+") %>%
+    str_sub(., start = 4)
+  
+  # add rudimentary status according to status bar (image)
+  indexpagedata$status <- indexpage %>%
+    html_nodes(., "img.status") %>%
+    html_attr("src") %>%
+    .[seq(1, length(.), by = 2)] %>%
+    str_extract(., "[1-9]") %>%
+    str_replace_all(.,c("5" = "beschlossen",
+                        "4" = "nicht beschlossen",
+                        "3" = "nicht beschlossen",
+                        "2" = "nicht beschlossen",
+                        "1" = "nicht beschlossen"))
+    
+    
+
+  # cleaning proposal IDs to be used as filenames
+  indexpagedata$proposal_filename <- indexpagedata$proposal_id %>%
+    gsub("[^A-Za-z0-9]", "" , .) %>%
+    paste(indexpagedata$period, ., sep = "_")
+  
+  #exporting to appropriatly named .csv
+  write.csv(indexpagedata, file = paste0("df_", indexpagedata$period[1], ".csv"))
+  
+}
+
+# scrape_indexpage(XXV)
+# scrape_indexpage(XXIV)
+# scrape_indexpage(XXIII)
+# scrape_indexpage(XXII)
+# scrape_indexpage(XXI)
+# scrape_indexpage(XX)
+
+```
+
+# merging indexdata dataframes for all legislative periods
+
+```{r}
+
+df_XXV <- read.csv(file = 'de_XXV.csv', header = TRUE)
+df_XXIV <- read.csv()
+df_XXIII <- read.csv(XXIII)
+df_XXII <- read.csv(XXII)
+df_XXI <- read.csv(XXI)
+df_XX <- read.csv(XX)
+
+all_indexpagedata <- rbind(df_XXV, df_XXIV, df_XXIII, df_XXII, df_XXI, df_XX)
+
+write.csv(all_indexpagedata, file = "indexpagedata.csv")
+
+```
+# Main
+
+## Scraping from proposal pages
+
+```{r}
+
+#scrape_proposal
+scrape_proposal <- function(url) {
+  
+  # for every page, scrape additional metadata
+  for(i in 1:length(url)) {
+    
+    # read proposalpage
+    proposalpage <- read_html(url[i])
+    
+    # status scrape
+    status[i] <- proposalpage %>%
+      html_node(., "div.floatLeft p") %>%
+      html_text() %>%
+      str_extract(., "Beschlossen im") # aus html_text oder aus Logik (beschlossen = Link BNR da) -> Wahlverhalten NR/BR? 
+    
+    # corresponding bill scrape
+    bill_link[i] <- proposalpage %>%
+      html_nodes(tespage, "div.floatLeft p a") %>%
+      html_attr(., "href") %>% 
+      str_subset(., "BNR") # select link containing BNR
+    # maybe bill link needs to be mutated (forwarding link ahora)
+    
+    # download proposal ### PROPOSALS NUR BEI REGIERUNGSVORLAGEN, NICHT ABGEORDNETEN ##
+    proposalpage %>%
+      html_node(., "ul.fliesstext a")[2] %>%
+      html_attr(., "href")
+    
+    
+  }
+}
+
+
+```
+
+## Scraping from bill pages
+
+```{r}
+
+#scrape_bill
+
+# download 
+html_nodes(billpage, "ul.fliesstext a")[2] %>%
+  html_attr("href")
+
+```
