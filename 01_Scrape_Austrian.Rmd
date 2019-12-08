@@ -10,7 +10,7 @@ knitr::opts_chunk$set(echo = TRUE)
 # Packages
 
 ```{r}
-pacman::p_load(tidyverse, furrr, rvest, ggthemes, lubridate, rio)
+pacman::p_load(tidyverse, furrr, rvest, ggthemes, lubridate, rio, haven)
 
 plan(multiprocess)
 ```
@@ -101,14 +101,14 @@ scrape_indexpage <- function(url) { # URL = XXV, XXIV, XXIII, ...
 
 ```{r}
 
-df_XXV <- read.csv(file = 'de_XXV.csv', header = TRUE)
-df_XXIV <- read.csv()
-df_XXIII <- read.csv(XXIII)
-df_XXII <- read.csv(XXII)
-df_XXI <- read.csv(XXI)
-df_XX <- read.csv(XX)
+df_XXV <- read.csv(file = "df_XXV.csv", header = TRUE)
+df_XXIV <- read.csv(file = "df_XXIV.csv", header = TRUE)
+df_XXIII <- read.csv(file = "df_XXIII.csv", header = TRUE)
+df_XXII <- read.csv(file = "df_XXII.csv", header = TRUE)
+df_XXI <- read.csv(file = "df_XXI.csv", header = TRUE)
+df_XX <- read.csv(file = "df_XX.csv", header = TRUE)
 
-all_indexpagedata <- rbind(df_XXV, df_XXIV, df_XXIII, df_XXII, df_XXI, df_XX)
+all_indexpagedata <- rbind(df_XXV, df_XXIV, df_XXIII, df_XXII, df_XXI, df_XX)[, -1]
 
 write.csv(all_indexpagedata, file = "indexpagedata.csv")
 
