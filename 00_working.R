@@ -44,3 +44,36 @@ bill_id <- proposalpage %>%
   html_node(., "div.floatLeft p") %>%
   html_attr(., "href") %>%
   str_extract(., "regex bill link")
+
+
+## old status scrape 09/12/19 removed
+
+#scrape_proposal
+scrape_proposal <- function(url) {
+  
+  # for every page, scrape additional metadata
+  for(i in 1:length(url)) {
+    
+    # read proposalpage
+    proposalpage <- read_html(url[i])
+    
+    # status scrape
+    status[i] <- proposalpage %>%
+      html_node(., "div.floatLeft p") %>%
+      html_text() %>%
+      str_extract(., "Beschlossen im") # aus html_text oder aus Logik (beschlossen = Link BNR da) -> Wahlverhalten NR/BR? 
+    
+    # corresponding bill scrape
+    bill_link[i] <- proposalpage %>%
+      html_nodes(tespage, "div.floatLeft p a") %>%
+      html_attr(., "href") %>% 
+      str_subset(., "BNR") # select link containing BNR
+    # maybe bill link needs to be mutated (forwarding link ahora)
+    
+    # download proposal ### PROPOSALS NUR BEI REGIERUNGSVORLAGEN, NICHT ABGEORDNETEN ##
+    proposalpage %>%
+      html_node(., "ul.fliesstext a")[2] %>%
+      html_attr(., "href")
+  }
+}
+

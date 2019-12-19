@@ -84,7 +84,7 @@ scrape_indexpage <- function(url) { # URL = XXV, XXIV, XXIII, ...
     paste(indexpagedata$period, ., sep = "_")
   
   #exporting to appropriatly named .csv
-  write.csv(indexpagedata, file = paste0("df_", indexpagedata$period[1], ".csv"))
+  write.csv(indexpagedata, file = paste0("data/df_", indexpagedata$period[1], ".csv"))
   
 }
 
@@ -101,16 +101,16 @@ scrape_indexpage <- function(url) { # URL = XXV, XXIV, XXIII, ...
 
 ```{r}
 
-df_XXV <- read.csv(file = "df_XXV.csv", header = TRUE)
-df_XXIV <- read.csv(file = "df_XXIV.csv", header = TRUE)
-df_XXIII <- read.csv(file = "df_XXIII.csv", header = TRUE)
-df_XXII <- read.csv(file = "df_XXII.csv", header = TRUE)
-df_XXI <- read.csv(file = "df_XXI.csv", header = TRUE)
-df_XX <- read.csv(file = "df_XX.csv", header = TRUE)
+df_XXV <- read.csv(file = "data/df_XXV.csv", header = TRUE)
+df_XXIV <- read.csv(file = "data/df_XXIV.csv", header = TRUE)
+df_XXIII <- read.csv(file = "data/df_XXIII.csv", header = TRUE)
+df_XXII <- read.csv(file = "data/df_XXII.csv", header = TRUE)
+df_XXI <- read.csv(file = "data/df_XXI.csv", header = TRUE)
+df_XX <- read.csv(file = "data/df_XX.csv", header = TRUE)
 
 all_indexpagedata <- rbind(df_XXV, df_XXIV, df_XXIII, df_XXII, df_XXI, df_XX)[, -1]
 
-write.csv(all_indexpagedata, file = "indexpagedata.csv")
+write.csv(all_indexpagedata, file = "data/indexpagedata.csv")
 
 ```
 # Main
@@ -119,36 +119,39 @@ write.csv(all_indexpagedata, file = "indexpagedata.csv")
 
 ```{r}
 
-#scrape_proposal
-scrape_proposal <- function(url) {
+scrape_proposal <- function(url) { # url = proposal_link
   
-  # for every page, scrape additional metadata
-  for(i in 1:length(url)) {
+  # read in proposalpage from url
+  proposalpage <- read_html(url)
+  
+  # if else status BR & NR for different legislative periods and website format (bill_link, resolution_BR)
+  if(period == "XXV" | period == "XXIV" | period == "XXIII" & status == "beschlossen" & type == "A" | type == "RV") {
     
-    # read proposalpage
-    proposalpage <- read_html(url[i])
-    
-    # status scrape
-    status[i] <- proposalpage %>%
+    # scrape bill link (first link in status box)
+    bill_link <- proposalpage %>% # div.floatLeft p scrape
+      html_node(., "div.floatLeft p a") %>%
+      html_attr(., "href") %>%
+      paste0("https://www.parlament.gv.at", .)
+    # scrape resolution Bundesrat (unanonimous, anonimous)
+    resolution_BR <- proposalpage %>%
       html_node(., "div.floatLeft p") %>%
-      html_text() %>%
-      str_extract(., "Beschlossen im") # aus html_text oder aus Logik (beschlossen = Link BNR da) -> Wahlverhalten NR/BR? 
+      html_text(.) %>%
+      str_to_lower(.) %>%
+      str_extract(., "bnr\\w+b") %>%
+      str_sub(., start = 4L, end  = -2L)
+  } else {
     
-    # corresponding bill scrape
-    bill_link[i] <- proposalpage %>%
-      html_nodes(tespage, "div.floatLeft p a") %>%
-      html_attr(., "href") %>% 
-      str_subset(., "BNR") # select link containing BNR
-    # maybe bill link needs to be mutated (forwarding link ahora)
-    
-    # download proposal ### PROPOSALS NUR BEI REGIERUNGSVORLAGEN, NICHT ABGEORDNETEN ##
-    proposalpage %>%
-      html_node(., "ul.fliesstext a")[2] %>%
-      html_attr(., "href")
-    
-    
+    # scrape bill_link (??) für welche LP??? else if oder else??
+    bill_link <- proposalpage %>%
+      html_node(., "div.floatLeft p")
   }
+  
+  # resolution NR (same for all LP) (dafür/dagegen) --> tibble, aber wie ????!?!!!
+  resolution_NR <- proposalpage %>%
+    html_node(., "div.floatLeft p") %>%
+    html_text(.)
 }
+
 
 
 ```
