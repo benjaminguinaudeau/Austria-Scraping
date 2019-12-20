@@ -77,3 +77,39 @@ scrape_proposal <- function(url) {
   }
 }
 
+# tibbling 20/12/19
+
+test <- read_html("https://www.parlament.gv.at/PAKT/VHG/XXIV/I/I_02446/index.shtml")
+
+# Dafür list
+pro <- test %>%
+  html_node(., "div.floatLeft p") %>%
+  html_text(.) %>%
+  str_to_lower(.) %>%
+  str_extract(., "daf.+d") %>%
+  gsub("[^A-Za-z0-9]", "" , .) %>%
+  str_sub(., start = 5L, end = -2L) %>%
+  str_split(., "")
+
+# Dagegen list
+contra <- test %>%
+  html_node(., "div.floatLeft p") %>%
+  html_text(.) %>%
+  str_to_lower(.) %>%
+  str_extract(., "dag.+") %>%
+  gsub("[^A-Za-z0-9]", "" , .) %>%
+  str_sub(., start = 8L, end = -1L) %>%
+  str_split(., "")
+
+#
+# list-column <- c(pro, contra)
+
+# Get Pro Conta (1/0)
+pro-contra <- c(rep(1, lengths(pro)), rep(0, lengths(contra)))
+
+# Join objects and write list-column ()
+# list_final <- join #see cheatsheet
+
+### HOW TO PUT IN LIST_COLUMN??
+
+
