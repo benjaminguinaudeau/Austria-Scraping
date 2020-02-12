@@ -79,7 +79,9 @@ scrape_proposal <- function(url) {
 
 # tibbling 20/12/19
 
+test <- read_html("https://www.parlament.gv.at/PAKT/VHG/XXI/I/I_01286/index.shtml")
 test <- read_html("https://www.parlament.gv.at/PAKT/VHG/XXIV/I/I_02446/index.shtml")
+
 
 # Dafür list
 pro <- test %>%
@@ -100,16 +102,37 @@ contra <- test %>%
   gsub("[^A-Za-z0-9]", "" , .) %>%
   str_sub(., start = 8L, end = -1L) %>%
   str_split(., "")
+  # to change character(0) to NA in list objects 
+  # ifelse(length(.[[1]]) == 0, NA, .)
 
 #
 # list-column <- c(pro, contra)
 
 # Get Pro Conta (1/0)
-pro-contra <- c(rep(1, lengths(pro)), rep(0, lengths(contra)))
+procontra <- c(rep(1, lengths(pro)), rep(0, lengths(contra)))
 
 # Join objects and write list-column ()
+testlist <- list(party = c(pro[[1]], contra[[1]]), pro = procontra)
+
 # list_final <- join #see cheatsheet
 
 ### HOW TO PUT IN LIST_COLUMN??
 
+
+### 27/12/2019
+# how to mutate/remove parts of strings
+mutate(antwort_ministerium = antwort_ministerium %>% 
+         str_remove("Bundesregierung, ") %>%
+         str_remove("\\(federfÃ¼hrend\\)") %>%
+         str_trim %>%
+         str_remove(".+(?=AuswÃ¤rtiges Amt$)"))
+
+
+### 28/12/19
+# was tun bei sonderfällen? (zurückgezogen hat statusbild von beschlossen.....)
+
+
+### Sleep function
+
+Sys.sleep(runif(1, 0.1, 0.5))
 

@@ -31,6 +31,7 @@ XXI <- "https://www.parlament.gv.at/PAKT/VHG/index.shtml?VV=&pageNumber=&ZUAS=AL
 
 XX <- "https://www.parlament.gv.at/PAKT/VHG/index.shtml?VV=&pageNumber=&ZUAS=ALLE&ALT=&feldRnr=5&FR=ALLE&R_MSFRASZU=MIN&LDAP_GRP(PM_ESM)=N&DR=&FBEZ=FP_001&view=&VHG=GESVOR&VHG2=ALLE&jsMode=&VHG3=ALLE&requestId=C536DCDD28&VHG4=ALLE&MISS=&listeId=100&ALTKN=&filterJq=&AUS=ALLE&SUCH=&DEB=&xdocumentUri=%2FPAKT%2FVHG%2Findex.shtml&R_MFRAS=MIN&GP=XX&STEP=2905&INTRANET=N&LDAP_GRP(PM_HA)=N&ZUFR=ALLE&NAB=&SID=ALLE&ascDesc=DESC&NRBR=NR&ALTPN=&GBEZ=&AS=ALLE&MIN=ALLE&LISTE=&ZUSTIMM=ALLE&LH=ALLE&GESVOR=ALLE&ZEIT="
 
+index_urls <- c(XX, XXI, XXII, XXIII, XXIV, XXV)
 
 ```
 
@@ -40,7 +41,9 @@ XX <- "https://www.parlament.gv.at/PAKT/VHG/index.shtml?VV=&pageNumber=&ZUAS=ALL
 # get proposal pages URLs
 scrape_indexpage <- function(url) { # URL = XXV, XXIV, XXIII, ...
   
+  #read in page
   indexpage <- read_html(url)
+  
   proposalpages <- indexpage %>%
     html_nodes("a.link-indicator") %>%
     html_attr("href") %>%
@@ -118,38 +121,60 @@ write.csv(all_indexpagedata, file = "data/indexpagedata.csv")
 ## Scraping from proposal pages
 
 ```{r}
+indexpagedata <- as_tibble(read.csv(file = "data/indexpagedata.csv", header = TRUE))
 
-scrape_proposal <- function(url) { # url = proposal_link
+# download page for every proposal
+proposalpage <- vector(mode = "list", length = length(indexpagedata$proposal_link))
+
+for (i in 4203:length(indexpagedata$proposal_link)) {
+  proposalpage[[i]] <- read_html(indexpagedata$proposal_link[i])
+  t <- runif(1, 1, 1.2)
+  Sys.sleep(t)
+  cat(paste0(i, " - waited for ", round(t, 2), " s. "))
+}
+
+
+
+ scrape_proposal <- function(url) { # url = proposal_link
   
-  # read in proposalpage from url
-  proposalpage <- read_html(url)
-  
-  # if else status BR & NR for different legislative periods and website format (bill_link, resolution_BR)
-  if(period == "XXV" | period == "XXIV" | period == "XXIII" & status == "beschlossen" & type == "A" | type == "RV") {
+  # scrape bill link (first link in status box)
+  bill_link <- proposalpage %>% # div.floatLeft p scrape
+    html_node(., "div.floatLeft p a") %>%
+    html_attr(., "href") %>%
+    paste0("https://www.parlament.gv.at", .)
     
-    # scrape bill link (first link in status box)
-    bill_link <- proposalpage %>% # div.floatLeft p scrape
-      html_node(., "div.floatLeft p a") %>%
-      html_attr(., "href") %>%
-      paste0("https://www.parlament.gv.at", .)
-    # scrape resolution Bundesrat (unanonimous, anonimous)
-    resolution_BR <- proposalpage %>%
-      html_node(., "div.floatLeft p") %>%
-      html_text(.) %>%
-      str_to_lower(.) %>%
-      str_extract(., "bnr\\w+b") %>%
-      str_sub(., start = 4L, end  = -2L)
-  } else {
-    
-    # scrape bill_link (??) für welche LP??? else if oder else??
-    bill_link <- proposalpage %>%
-      html_node(., "div.floatLeft p")
-  }
-  
-  # resolution NR (same for all LP) (dafür/dagegen) --> tibble, aber wie ????!?!!!
-  resolution_NR <- proposalpage %>%
+  # scrape resolution Bundesrat (unanonimous, anonimous)
+  resolution_BR <- proposalpage %>%
     html_node(., "div.floatLeft p") %>%
-    html_text(.)
+    html_text(.) %>%
+    str_to_lower(.) %>%
+    str_extract(., "bnr\\w+b") %>%
+    str_sub(., start = 4L, end  = -2L)
+  
+  # resolution of Nationalrat (pro, contra) in tibble
+  pro <- test %>%
+    html_node(., "div.floatLeft p") %>%
+    html_text(.) %>%
+    str_to_lower(.) %>%
+    str_extract(., "daf.+d") %>%
+    gsub("[^A-Za-z0-9]", "" , .) %>%
+    str_sub(., start = 5L, end = -2L) %>%
+    str_split(., "")
+
+  contra <- test %>%
+    html_node(., "div.floatLeft p") %>%
+    html_text(.) %>%
+    str_to_lower(.) %>%
+    str_extract(., "dag.+") %>%
+    gsub("[^A-Za-z0-9]", "" , .) %>%
+    str_sub(., start = 8L, end = -1L) %>%
+    str_split(., "")
+
+    # join objects and write list-column (resolution_NR)
+    resolution_NR <- list(party = c(pro[[1]], contra[[1]]),
+                          pro = c(rep(1, lengths(pro)), rep(0, lengths(contra)))
+    )
+  
 }
 
 
