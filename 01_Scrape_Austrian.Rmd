@@ -52,32 +52,28 @@ scrape_indexpage <- function(url) { # URL = XXV, XXIV, XXIII, ...
 
   # get dates of proposals (website upload?), type (RV, A, VOLKBG, BRA), descriptive title, 
   indexpagedata <- indexpage %>%
-    html_nodes(., "span.table-responsive__inner") %>%
-    html_text(., trim = T) %>%  # get table inner text and trim
-    matrix(., ncol = 5, byrow = T) %>%  # put into matrix, then dataframe (tibble)
+    html_nodes("span.table-responsive__inner") %>%
+    html_text(trim = T) %>%  # get table inner text and trim
+    matrix(ncol = 5, byrow = T) %>%  # put into matrix, then dataframe (tibble)
     .[, -5] %>%
-    as_tibble(., .name_repair = "minimal") %>%
-    setNames(., c("web_date", "type", "desc_title", "proposal_id"))
+    as_tibble(.name_repair = "minimal") %>%
+    setNames(c("web_date", "type", "desc_title", "proposal_id"))
 
   # add proposal pages URLs
   indexpagedata$proposal_link <- proposalpages
   
   # adding legislative period indicator
   indexpagedata$period <- url %>%
-    str_extract(., "GP=\\w+") %>%
+    str_extract("GP=\\w+") %>%
     str_sub(., start = 4)
   
   # add rudimentary status according to status bar (image)
   indexpagedata$status <- indexpage %>%
-    html_nodes(., "img.status") %>%
+    html_nodes("img.status") %>%
     html_attr("src") %>%
     .[seq(1, length(.), by = 2)] %>%
-    str_extract(., "[1-9]") %>%
-    str_replace_all(.,c("5" = "beschlossen",
-                        "4" = "nicht beschlossen",
-                        "3" = "nicht beschlossen",
-                        "2" = "nicht beschlossen",
-                        "1" = "nicht beschlossen"))
+    str_extract("[1-9]") %>%
+    as.character()
     
     
 
@@ -121,63 +117,188 @@ write.csv(all_indexpagedata, file = "data/indexpagedata.csv")
 ## Scraping from proposal pages
 
 ```{r}
+# reading in indexpagedata and preparing variables (as.character for strings)
 indexpagedata <- as_tibble(read.csv(file = "data/indexpagedata.csv", header = TRUE))
+indexpagedata$proposal_link <- as.character(indexpagedata$proposal_link)
+indexpagedata$proposal_id <- as.character(indexpagedata$proposal_id)
+indexpagedata$proposal_filename <- as.character(indexpagedata$proposal_filename)
+indexpagedata$desc_title <- as.character(indexpagedata$desc_title)
 
-# download page for every proposal
-proposalpage <- vector(mode = "list", length = length(indexpagedata$proposal_link))
 
-for (i in 4203:length(indexpagedata$proposal_link)) {
+#create list for proposalpages
+proposalpage <- vector(mode = "list", length = 4544)
+
+for (i in 1:length(proposalpage)) {
   proposalpage[[i]] <- read_html(indexpagedata$proposal_link[i])
   t <- runif(1, 1, 1.2)
   Sys.sleep(t)
-  cat(paste0(i, " - waited for ", round(t, 2), " s. "))
+  cat(paste0(i, " - waited for ", round(t, 2), "s. "))
 }
 
+# create vectors to be used
+bill_link <- vector(mode = "character", length = length(proposalpage))
+bill_id <- vector(mode = "character", length = length(proposalpage))
+resolution_NR <- vector(mode = "list", length = length(proposalpage))
+proposal_download <- vector(mode = "character", length = length(proposalpage))
+iniator <- vector(mode = "character", length = length(proposalpage))
+parl_verfahren <- vector(mode = "list", length = length(proposalpage))
+X <- vector("numeric", length = length(proposalpage))
 
-
- scrape_proposal <- function(url) { # url = proposal_link
-  
-  # scrape bill link (first link in status box)
-  bill_link <- proposalpage %>% # div.floatLeft p scrape
-    html_node(., "div.floatLeft p a") %>%
-    html_attr(., "href") %>%
-    paste0("https://www.parlament.gv.at", .)
-    
-  # scrape resolution Bundesrat (unanonimous, anonimous)
-  resolution_BR <- proposalpage %>%
-    html_node(., "div.floatLeft p") %>%
-    html_text(.) %>%
-    str_to_lower(.) %>%
-    str_extract(., "bnr\\w+b") %>%
-    str_sub(., start = 4L, end  = -2L)
-  
-  # resolution of Nationalrat (pro, contra) in tibble
-  pro <- test %>%
-    html_node(., "div.floatLeft p") %>%
-    html_text(.) %>%
-    str_to_lower(.) %>%
-    str_extract(., "daf.+d") %>%
-    gsub("[^A-Za-z0-9]", "" , .) %>%
-    str_sub(., start = 5L, end = -2L) %>%
-    str_split(., "")
-
-  contra <- test %>%
-    html_node(., "div.floatLeft p") %>%
-    html_text(.) %>%
-    str_to_lower(.) %>%
-    str_extract(., "dag.+") %>%
-    gsub("[^A-Za-z0-9]", "" , .) %>%
-    str_sub(., start = 8L, end = -1L) %>%
-    str_split(., "")
-
-    # join objects and write list-column (resolution_NR)
-    resolution_NR <- list(party = c(pro[[1]], contra[[1]]),
-                          pro = c(rep(1, lengths(pro)), rep(0, lengths(contra)))
+for (i in 1:length(proposalpage)) {
+  # bill_link bill_id
+  if(is_empty(proposalpage[[i]] %>%
+              html_nodes("div.floatLeft p a") %>%
+              html_attr("href") %>%
+              str_subset("BNR_\\d+")) == 1) {
+    bill_link[i] <- NA
+  } else {
+    bill_link[i] <- proposalpage[[i]] %>%
+      html_nodes("div.floatLeft p a") %>%
+      html_attr("href") %>%
+      str_subset("BNR_\\d+") %>%
+      str_replace("\\/pls.+[=]", "https://www.parlament.gv.at")
+    bill_id[i] <- bill_link[i] %>%
+      str_extract("XX.+BNR_[0-9]*") %>%
+      str_replace("\\/B.+_00", "_BNR")
+  }
+  # resolution_NR
+  if(is.na(proposalpage[[i]] %>%
+           html_node("div.floatLeft p") %>%
+           html_text() %>%
+           str_to_lower() %>%
+           str_extract("daf.+d") %>%
+           gsub("[^A-Za-z0-9]", "" , .) %>%
+           str_sub(start = 5L, end = -2L) %>%
+           str_split("") %>%
+           .[[1]]) == 1) {
+    resolution_NR[[i]] <- list(party = NA,
+                               pro = NA)
+  } else {
+    pro <- proposalpage[[i]] %>%
+      html_node("div.floatLeft p") %>%
+      html_text() %>%
+      str_to_lower() %>%
+      str_extract("daf.+da") %>%
+      gsub("[^A-Za-z0-9]", "" , .) %>%
+      str_sub(start = 5L, end = -3L) %>%
+      str_split("")
+    contra <- proposalpage[[i]] %>%
+      html_node("div.floatLeft p") %>%
+      html_text() %>%
+      str_to_lower() %>%
+      str_extract("dag[A-Za-z:\\s,]+") %>%
+      gsub("[^A-Za-z0-9]", "" , .) %>%
+      str_sub(start = 8L, end = -1L) %>%
+      str_split("")
+    resolution_NR[[i]] <- list(party = c(pro[[1]], contra[[1]]),
+                               pro = c(rep(1, lengths(pro)), rep(0, lengths(contra)))
     )
+  }
+  # proposal_download
+  if(indexpagedata$type[i] == "A") {
+    if(is_empty(proposalpage[[i]] %>%
+                html_nodes("ul.fliesstext li a") %>%
+                html_attr("href") %>%
+                str_subset("\\d.html") %>% .[1]) == 1) {
+      proposal_download[i] <- NA
+    } else {
+      proposal_download[i] <- proposalpage[[i]] %>%
+        html_nodes("ul.fliesstext li a") %>%
+        html_attr("href") %>%
+        str_subset("\\d.html") %>% .[1]
+    }
+  } else if(indexpagedata$type[i] == "RV") {
+    if(is_empty(proposalpage[[i]] %>%
+                html_nodes("ul.fliesstext li a") %>%
+                html_attr("href") %>%
+                str_subset("\\d.html") %>% .[1]) == 1) {
+      proposal_download[i] <- NA
+    } else {
+      proposal_download[i] <- proposalpage[[i]] %>%
+        html_nodes("ul.fliesstext li a") %>%
+        html_attr("href") %>%
+        str_subset("\\d.html") %>% .[1]
+    }
+  } else if(indexpagedata$type[i] == "GABR") {
+    if(is_empty(proposalpage[[i]] %>%
+                html_nodes("ul.fliesstext li a") %>%
+                html_attr("href") %>%
+                str_subset("\\d.html") %>% .[1]) == 1) {
+      proposal_download[i] <- NA
+    } else {
+      proposal_download[i] <- proposalpage[[i]] %>%
+        html_nodes("ul.fliesstext li a") %>%
+        html_attr("href") %>%
+        str_subset("\\d.html") %>% .[1]
+    }
+  } else if(indexpagedata$type[i] == "BUA") {
+    if(is_empty(proposalpage[[i]] %>%
+                html_nodes("ul.fliesstext li a") %>%
+                html_attr("href") %>%
+                str_subset("\\d.html") %>% .[2]) == 1) {
+      proposal_download[i] <- NA
+    } else {
+      proposal_download[i] <- proposalpage[[i]] %>%
+        html_nodes("ul.fliesstext li a") %>%
+        html_attr("href") %>%
+        str_subset("\\d.html") %>% .[2]
+    }
+  }
+  # iniator
+  if(is_empty(proposalpage[[i]] %>%
+              html_nodes("div.c_2 p") %>%
+              html_text() %>%
+              str_remove_all("[^A-Za-z0-9 ÄÖÜäöü:.]") %>% .[2] %>%
+              str_extract(":.+") %>%
+              str_extract("[A-Z].+") %>%
+              str_trim() %>%
+              str_subset("[0-9]{2,}", negate = T) %>%
+              str_subset("\\s{3,}", negate = T)) == 1) {
+    iniator[i] <- NA
+  } else {
+    iniator[i] <- proposalpage[[i]] %>%
+      html_nodes("div.c_2 p") %>%
+      html_text() %>%
+      str_remove_all("[^A-Za-z0-9 ÄÖÜäöü:.]") %>% .[2] %>%
+      str_extract(":.+") %>%
+      str_extract("[A-Z].+") %>%
+      str_trim() %>%
+      str_subset("[0-9]{3}", negate = T) %>%
+      str_subset("\\s{3,}", negate = T)
+  }
+  # add nested df with parl_verfahren
+  dates <- proposalpage[[i]] %>%
+    html_nodes("table.table-nonresponsive") %>%
+    html_nodes("tr.historyShowAlways") %>%
+    html_text(trim = T) %>%
+    str_subset("[0-9]{2}.[0-9]{2}.[0-9]{4}") %>%
+    str_extract("[0-9]{2}.[0-9]{2}.[0-9]{4}")
   
+  processes <- proposalpage[[i]] %>%
+    html_nodes("a.historieOverviewToggle") %>%
+    html_text()
+  
+  parl_verfahren[[i]] <- list(date = dates,
+                              process = processes)
+  # add index (X) for merging purposes
+  X[i] <- indexpagedata$X[i]
 }
 
+proposalpagedata <- tibble(X, bill_link, bill_id, proposal_download, iniator, resolution_NR)
 
+data1 <- left_join(indexpagedata, proposalpagedata, by = "X")
+
+# download loop proposals
+for (i in 1:length(data1$proposal_download)) {
+  if(str_detect(data1$proposal_download[i], "^\\/PAKT") == 1) {
+    data1$proposal_download[i] %>%
+      paste0("www.parlament.gv.at", .) %>%
+      download_html(file = paste0("data/proposal/", data1$proposal_filename[i], ".html"))
+    t <- runif(1, 1, 1.2)
+    Sys.sleep(t)
+    cat(paste0(i, " - waited for ", round(t, 2), "s. "))
+  }
+}
 
 ```
 

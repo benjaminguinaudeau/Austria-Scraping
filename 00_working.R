@@ -136,3 +136,19 @@ mutate(antwort_ministerium = antwort_ministerium %>%
 
 Sys.sleep(runif(1, 0.1, 0.5))
 
+### parl verfahren scrape
+dates <- proposalpage_red[[1]] %>%
+  html_nodes("table.table-nonresponsive") %>%
+  html_nodes("tr.historyShowAlways") %>%
+  html_text(trim = T) %>%
+  str_subset("[0-9]{2}.[0-9]{2}.[0-9]{4}") %>%
+  str_extract("[0-9]{2}.[0-9]{2}.[0-9]{4}")
+
+processes <- proposalpage_red[[1]] %>%
+  html_nodes("a.historieOverviewToggle") %>%
+  html_text()
+
+parl_verfahren[[1]] <- list(date = dates,
+                            process = processes)
+
+parl_verfahren <- vector(mode = "list", length = 1)
