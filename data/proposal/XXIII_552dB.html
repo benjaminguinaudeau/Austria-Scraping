@@ -1,0 +1,3673 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=us-ascii">
+<meta name=Generator content="Microsoft Word 11 (filtered)">
+<title>NORMAL.DOT f&uuml;r NT-Clients, Wd 2000, V. 7.2d</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+h1
+	{margin-top:12.0pt;
+	margin-right:0pt;
+	margin-bottom:3.0pt;
+	margin-left:0pt;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:Arial;
+	font-weight:bold;}
+h2
+	{margin-top:12.0pt;
+	margin-right:0pt;
+	margin-bottom:3.0pt;
+	margin-left:0pt;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:Arial;
+	font-weight:bold;
+	font-style:italic;}
+h3
+	{margin-top:12.0pt;
+	margin-right:0pt;
+	margin-bottom:3.0pt;
+	margin-left:0pt;
+	page-break-after:avoid;
+	font-size:13.0pt;
+	font-family:Arial;
+	font-weight:bold;}
+h4
+	{margin-top:12.0pt;
+	margin-right:0pt;
+	margin-bottom:3.0pt;
+	margin-left:0pt;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Times New Roman";
+	font-weight:bold;}
+h5
+	{margin-top:12.0pt;
+	margin-right:0pt;
+	margin-bottom:3.0pt;
+	margin-left:0pt;
+	font-size:13.0pt;
+	font-family:"Times New Roman";
+	font-weight:bold;
+	font-style:italic;}
+h6
+	{margin-top:12.0pt;
+	margin-right:0pt;
+	margin-bottom:3.0pt;
+	margin-left:0pt;
+	font-size:11.0pt;
+	font-family:"Times New Roman";
+	font-weight:bold;}
+p.MsoHeading7, li.MsoHeading7, div.MsoHeading7
+	{margin-top:12.0pt;
+	margin-right:0pt;
+	margin-bottom:3.0pt;
+	margin-left:0pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+p.MsoHeading8, li.MsoHeading8, div.MsoHeading8
+	{margin-top:12.0pt;
+	margin-right:0pt;
+	margin-bottom:3.0pt;
+	margin-left:0pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	font-style:italic;}
+p.MsoHeading9, li.MsoHeading9, div.MsoHeading9
+	{margin-top:12.0pt;
+	margin-right:0pt;
+	margin-bottom:3.0pt;
+	margin-left:0pt;
+	font-size:11.0pt;
+	font-family:Arial;}
+p.MsoIndex1, li.MsoIndex1, div.MsoIndex1
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:12.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-12.0pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+p.MsoIndex2, li.MsoIndex2, div.MsoIndex2
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:24.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-12.0pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+p.MsoIndex3, li.MsoIndex3, div.MsoIndex3
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-12.0pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+p.MsoIndex4, li.MsoIndex4, div.MsoIndex4
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:48.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-12.0pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+p.MsoIndex5, li.MsoIndex5, div.MsoIndex5
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:60.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-12.0pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+p.MsoIndex6, li.MsoIndex6, div.MsoIndex6
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:72.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-12.0pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+p.MsoIndex7, li.MsoIndex7, div.MsoIndex7
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:84.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-12.0pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+p.MsoIndex8, li.MsoIndex8, div.MsoIndex8
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:96.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-12.0pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+p.MsoIndex9, li.MsoIndex9, div.MsoIndex9
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:108.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-12.0pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+p.MsoToc1, li.MsoToc1, div.MsoToc1
+	{margin:0pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+p.MsoToc2, li.MsoToc2, div.MsoToc2
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:12.0pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+p.MsoToc3, li.MsoToc3, div.MsoToc3
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:24.0pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+p.MsoToc4, li.MsoToc4, div.MsoToc4
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+p.MsoToc5, li.MsoToc5, div.MsoToc5
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:48.0pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+p.MsoToc6, li.MsoToc6, div.MsoToc6
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:60.0pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+p.MsoToc7, li.MsoToc7, div.MsoToc7
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:72.0pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+p.MsoToc8, li.MsoToc8, div.MsoToc8
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:84.0pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+p.MsoToc9, li.MsoToc9, div.MsoToc9
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:96.0pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+p.MsoNormalIndent, li.MsoNormalIndent, div.MsoNormalIndent
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:35.4pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+p.MsoFootnoteText, li.MsoFootnoteText, div.MsoFootnoteText
+	{margin:0pt;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+p.MsoCommentText, li.MsoCommentText, div.MsoCommentText
+	{margin:0pt;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{margin:0pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{margin:0pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+p.MsoIndexHeading, li.MsoIndexHeading, div.MsoIndexHeading
+	{margin:0pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:Arial;
+	font-weight:bold;}
+p.MsoCaption, li.MsoCaption, div.MsoCaption
+	{margin-top:6.0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	font-weight:bold;}
+p.MsoTof, li.MsoTof, div.MsoTof
+	{margin:0pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+p.MsoEnvelopeAddress, li.MsoEnvelopeAddress, div.MsoEnvelopeAddress
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:.05pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:Arial;}
+p.MsoEnvelopeReturn, li.MsoEnvelopeReturn, div.MsoEnvelopeReturn
+	{margin:0pt;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:Arial;}
+span.MsoFootnoteReference
+	{vertical-align:baseline;}
+span.MsoCommentReference
+	{color:red;}
+span.MsoLineNumber
+	{font-family:"Times New Roman";}
+span.MsoPageNumber
+	{font-family:"Times New Roman";}
+span.MsoEndnoteReference
+	{vertical-align:baseline;}
+p.MsoEndnoteText, li.MsoEndnoteText, div.MsoEndnoteText
+	{margin:0pt;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+p.MsoToa, li.MsoToa, div.MsoToa
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:12.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-12.0pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+p.MsoMacroText, li.MsoMacroText, div.MsoMacroText
+	{margin:0pt;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";}
+p.MsoToaHeading, li.MsoToaHeading, div.MsoToaHeading
+	{margin-top:6.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:0pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:Arial;
+	font-weight:bold;}
+p.MsoList, li.MsoList, div.MsoList
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:14.15pt;
+	margin-bottom:.0001pt;
+	text-indent:-14.15pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+p.MsoListBullet, li.MsoListBullet, div.MsoListBullet
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:18.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-18.0pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+p.MsoListNumber, li.MsoListNumber, div.MsoListNumber
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:18.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-18.0pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+p.MsoList2, li.MsoList2, div.MsoList2
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:28.3pt;
+	margin-bottom:.0001pt;
+	text-indent:-14.15pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+p.MsoList3, li.MsoList3, div.MsoList3
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:42.45pt;
+	margin-bottom:.0001pt;
+	text-indent:-14.15pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+p.MsoList4, li.MsoList4, div.MsoList4
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:56.6pt;
+	margin-bottom:.0001pt;
+	text-indent:-14.15pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+p.MsoList5, li.MsoList5, div.MsoList5
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:70.75pt;
+	margin-bottom:.0001pt;
+	text-indent:-14.15pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+p.MsoListBullet2, li.MsoListBullet2, div.MsoListBullet2
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:32.15pt;
+	margin-bottom:.0001pt;
+	text-indent:-18.0pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+p.MsoListBullet3, li.MsoListBullet3, div.MsoListBullet3
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:46.3pt;
+	margin-bottom:.0001pt;
+	text-indent:-18.0pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+p.MsoListBullet4, li.MsoListBullet4, div.MsoListBullet4
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:60.45pt;
+	margin-bottom:.0001pt;
+	text-indent:-18.0pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+p.MsoListBullet5, li.MsoListBullet5, div.MsoListBullet5
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:74.6pt;
+	margin-bottom:.0001pt;
+	text-indent:-18.0pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+p.MsoListNumber2, li.MsoListNumber2, div.MsoListNumber2
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:32.15pt;
+	margin-bottom:.0001pt;
+	text-indent:-18.0pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+p.MsoListNumber3, li.MsoListNumber3, div.MsoListNumber3
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:46.3pt;
+	margin-bottom:.0001pt;
+	text-indent:-18.0pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+p.MsoListNumber4, li.MsoListNumber4, div.MsoListNumber4
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:60.45pt;
+	margin-bottom:.0001pt;
+	text-indent:-18.0pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+p.MsoListNumber5, li.MsoListNumber5, div.MsoListNumber5
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:74.6pt;
+	margin-bottom:.0001pt;
+	text-indent:-18.0pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{margin-top:12.0pt;
+	margin-right:0pt;
+	margin-bottom:3.0pt;
+	margin-left:0pt;
+	text-align:center;
+	font-size:16.0pt;
+	font-family:Arial;
+	font-weight:bold;}
+p.MsoClosing, li.MsoClosing, div.MsoClosing
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:212.6pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+p.MsoSignature, li.MsoSignature, div.MsoSignature
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:212.6pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:0pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:14.15pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+p.MsoListContinue, li.MsoListContinue, div.MsoListContinue
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:14.15pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+p.MsoListContinue2, li.MsoListContinue2, div.MsoListContinue2
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:28.3pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+p.MsoListContinue3, li.MsoListContinue3, div.MsoListContinue3
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:42.45pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+p.MsoListContinue4, li.MsoListContinue4, div.MsoListContinue4
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:56.6pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+p.MsoListContinue5, li.MsoListContinue5, div.MsoListContinue5
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:70.75pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+p.MsoMessageHeader, li.MsoMessageHeader, div.MsoMessageHeader
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:56.7pt;
+	margin-bottom:.0001pt;
+	text-indent:-56.7pt;
+	background:#CCCCCC;
+	border:none;
+	padding:0pt;
+	font-size:12.0pt;
+	font-family:Arial;}
+p.MsoSubtitle, li.MsoSubtitle, div.MsoSubtitle
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:3.0pt;
+	margin-left:0pt;
+	text-align:center;
+	font-size:12.0pt;
+	font-family:Arial;}
+p.MsoSalutation, li.MsoSalutation, div.MsoSalutation
+	{margin:0pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+p.MsoDate, li.MsoDate, div.MsoDate
+	{margin:0pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+p.MsoBodyTextFirstIndent, li.MsoBodyTextFirstIndent, div.MsoBodyTextFirstIndent
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:0pt;
+	text-indent:10.5pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+p.MsoBodyTextFirstIndent2, li.MsoBodyTextFirstIndent2, div.MsoBodyTextFirstIndent2
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:14.15pt;
+	text-indent:10.5pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+p.MsoNoteHeading, li.MsoNoteHeading, div.MsoNoteHeading
+	{margin:0pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+p.MsoBodyText2, li.MsoBodyText2, div.MsoBodyText2
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:0pt;
+	line-height:200%;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+p.MsoBodyText3, li.MsoBodyText3, div.MsoBodyText3
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:0pt;
+	font-size:8.0pt;
+	font-family:"Times New Roman";}
+p.MsoBodyTextIndent2, li.MsoBodyTextIndent2, div.MsoBodyTextIndent2
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:14.15pt;
+	line-height:200%;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+p.MsoBodyTextIndent3, li.MsoBodyTextIndent3, div.MsoBodyTextIndent3
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:14.15pt;
+	font-size:8.0pt;
+	font-family:"Times New Roman";}
+p.MsoBlockText, li.MsoBlockText, div.MsoBlockText
+	{margin-top:0pt;
+	margin-right:72.0pt;
+	margin-bottom:6.0pt;
+	margin-left:72.0pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+a:link, span.MsoHyperlink
+	{font-family:"Times New Roman";
+	color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{font-family:"Times New Roman";
+	color:navy;
+	text-decoration:underline;}
+strong
+	{font-family:"Times New Roman";}
+em
+	{font-family:"Times New Roman";}
+p.MsoDocumentMap, li.MsoDocumentMap, div.MsoDocumentMap
+	{margin:0pt;
+	margin-bottom:.0001pt;
+	background:navy;
+	font-size:10.0pt;
+	font-family:Tahoma;}
+p.MsoPlainText, li.MsoPlainText, div.MsoPlainText
+	{margin:0pt;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";}
+p.MsoAutoSig, li.MsoAutoSig, div.MsoAutoSig
+	{margin:0pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+p
+	{margin:0pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+acronym
+	{font-family:"Times New Roman";}
+address
+	{margin:0pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	font-style:italic;}
+cite
+	{font-family:"Times New Roman";}
+code
+	{font-family:"Courier New";}
+dfn
+	{font-family:"Times New Roman";}
+kbd
+	{font-family:"Courier New";}
+pre
+	{margin:0pt;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";}
+samp
+	{font-family:"Courier New";}
+tt
+	{font-family:"Courier New";}
+var
+	{font-family:"Times New Roman";}
+p.MsoCommentSubject, li.MsoCommentSubject, div.MsoCommentSubject
+	{margin:0pt;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	font-weight:bold;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{margin:0pt;
+	margin-bottom:.0001pt;
+	font-size:8.0pt;
+	font-family:Tahoma;}
+p.00LegStandard, li.00LegStandard, div.00LegStandard
+	{margin:0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	layout-grid-mode:line;}
+p.10Entwurf, li.10Entwurf, div.10Entwurf
+	{margin-top:80.0pt;
+	margin-right:0pt;
+	margin-bottom:64.0pt;
+	margin-left:0pt;
+	text-align:center;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	letter-spacing:1.3pt;
+	layout-grid-mode:line;}
+p.11Titel, li.11Titel, div.11Titel
+	{margin-top:24.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:11.0pt;
+	font-size:11.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	layout-grid-mode:line;
+	font-weight:bold;}
+p.12PromKlEinlSatz, li.12PromKlEinlSatz, div.12PromKlEinlSatz
+	{margin-top:8.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:19.85pt;
+	line-height:11.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	layout-grid-mode:line;}
+p.41UeberschrG1, li.41UeberschrG1, div.41UeberschrG1
+	{margin-top:16.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:0pt;
+	margin-bottom:.0001pt;
+	text-align:center;
+	line-height:11.0pt;
+	page-break-after:avoid;
+	font-size:11.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	layout-grid-mode:line;
+	font-weight:bold;}
+p.43UeberschrG2, li.43UeberschrG2, div.43UeberschrG2
+	{margin-top:4.0pt;
+	margin-right:0pt;
+	margin-bottom:4.0pt;
+	margin-left:0pt;
+	text-align:center;
+	line-height:11.0pt;
+	page-break-after:avoid;
+	font-size:11.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	layout-grid-mode:line;
+	font-weight:bold;}
+p.51Abs, li.51Abs, div.51Abs
+	{margin-top:4.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:19.85pt;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	layout-grid-mode:line;}
+p.22NovAo2, li.22NovAo2, div.22NovAo2
+	{margin-top:8.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	layout-grid-mode:line;
+	font-style:italic;}
+p.21NovAo1, li.21NovAo1, div.21NovAo1
+	{margin-top:8.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:11.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	layout-grid-mode:line;
+	font-style:italic;}
+p.23SatznachNovao, li.23SatznachNovao, div.23SatznachNovao
+	{margin-top:4.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	layout-grid-mode:line;}
+p.42UeberschrG1-, li.42UeberschrG1-, div.42UeberschrG1-
+	{margin-top:8.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:0pt;
+	margin-bottom:.0001pt;
+	text-align:center;
+	line-height:11.0pt;
+	page-break-after:avoid;
+	font-size:11.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	layout-grid-mode:line;
+	font-weight:bold;}
+p.44UeberschrArt, li.44UeberschrArt, div.44UeberschrArt
+	{margin-top:8.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:0pt;
+	margin-bottom:.0001pt;
+	text-align:center;
+	line-height:11.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	layout-grid-mode:line;
+	font-weight:bold;}
+p.45UeberschrPara, li.45UeberschrPara, div.45UeberschrPara
+	{margin-top:4.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:0pt;
+	margin-bottom:.0001pt;
+	text-align:center;
+	line-height:11.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	layout-grid-mode:line;
+	font-weight:bold;}
+p.83ErlText, li.83ErlText, div.83ErlText
+	{margin-top:4.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	layout-grid-mode:line;}
+p.82ErlUeberschrL, li.82ErlUeberschrL, div.82ErlUeberschrL
+	{margin-top:4.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:11.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	layout-grid-mode:line;
+	font-weight:bold;}
+p.61TabText, li.61TabText, div.61TabText
+	{margin:0pt;
+	margin-bottom:.0001pt;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	layout-grid-mode:line;}
+p.85ErlAufzaehlg, li.85ErlAufzaehlg, div.85ErlAufzaehlg
+	{margin-top:4.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:19.85pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-19.85pt;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	layout-grid-mode:line;}
+p.52Ziffere1, li.52Ziffere1, div.52Ziffere1
+	{margin-top:2.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:34.0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-34.0pt;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	layout-grid-mode:line;}
+p.52Ziffere2, li.52Ziffere2, div.52Ziffere2
+	{margin-top:2.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:45.35pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-45.35pt;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	layout-grid-mode:line;}
+p.52Ziffere3, li.52Ziffere3, div.52Ziffere3
+	{margin-top:2.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:62.35pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-62.35pt;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	layout-grid-mode:line;}
+p.53Literae1, li.53Literae1, div.53Literae1
+	{margin-top:2.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:34.0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-34.0pt;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	layout-grid-mode:line;}
+p.53Literae2, li.53Literae2, div.53Literae2
+	{margin-top:2.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:45.35pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-45.35pt;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	layout-grid-mode:line;}
+p.53Literae3, li.53Literae3, div.53Literae3
+	{margin-top:2.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:62.35pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-62.35pt;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	layout-grid-mode:line;}
+p.54Subliterae1, li.54Subliterae1, div.54Subliterae1
+	{margin-top:2.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:34.0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-34.0pt;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	layout-grid-mode:line;}
+p.54Subliterae2, li.54Subliterae2, div.54Subliterae2
+	{margin-top:2.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:45.35pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-45.35pt;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	layout-grid-mode:line;}
+p.54Subliterae3, li.54Subliterae3, div.54Subliterae3
+	{margin-top:2.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:62.35pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-62.35pt;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	layout-grid-mode:line;}
+p.54aStriche1, li.54aStriche1, div.54aStriche1
+	{margin-top:2.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:34.0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-34.0pt;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	layout-grid-mode:line;}
+p.54aStriche2, li.54aStriche2, div.54aStriche2
+	{margin-top:2.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:45.35pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-45.35pt;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	layout-grid-mode:line;}
+p.54aStriche3, li.54aStriche3, div.54aStriche3
+	{margin-top:2.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:62.35pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-62.35pt;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	layout-grid-mode:line;}
+p.54aStriche4, li.54aStriche4, div.54aStriche4
+	{margin-top:2.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:82.2pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-82.2pt;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	layout-grid-mode:line;}
+p.54aStriche5, li.54aStriche5, div.54aStriche5
+	{margin-top:2.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:99.25pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-99.25pt;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	layout-grid-mode:line;}
+p.55SchlussteilAbs, li.55SchlussteilAbs, div.55SchlussteilAbs
+	{margin-top:2.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	layout-grid-mode:line;}
+p.56SchlussteilZiff, li.56SchlussteilZiff, div.56SchlussteilZiff
+	{margin-top:2.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:34.0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	layout-grid-mode:line;}
+p.57SchlussteilLit, li.57SchlussteilLit, div.57SchlussteilLit
+	{margin-top:2.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:45.35pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	layout-grid-mode:line;}
+p.68UnterschrL, li.68UnterschrL, div.68UnterschrL
+	{margin-top:8.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:0pt;
+	margin-bottom:.0001pt;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	layout-grid-mode:line;
+	font-weight:bold;}
+p.69UnterschrM, li.69UnterschrM, div.69UnterschrM
+	{margin-top:8.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:0pt;
+	margin-bottom:.0001pt;
+	text-align:center;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	layout-grid-mode:line;
+	font-weight:bold;}
+p.89TGUEUeberschrSpalte, li.89TGUEUeberschrSpalte, div.89TGUEUeberschrSpalte
+	{margin-top:4.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:0pt;
+	margin-bottom:.0001pt;
+	text-align:center;
+	line-height:11.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	layout-grid-mode:line;
+	font-weight:bold;}
+p.71Anlagenbez, li.71Anlagenbez, div.71Anlagenbez
+	{margin-top:8.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:0pt;
+	margin-bottom:.0001pt;
+	text-align:right;
+	line-height:11.0pt;
+	font-size:11.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	layout-grid-mode:line;
+	font-weight:bold;}
+p.81ErlUeberschrZ, li.81ErlUeberschrZ, div.81ErlUeberschrZ
+	{margin-top:16.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:0pt;
+	margin-bottom:.0001pt;
+	text-align:center;
+	line-height:11.0pt;
+	page-break-after:avoid;
+	font-size:11.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	layout-grid-mode:line;
+	font-weight:bold;}
+span.997Hoch
+	{vertical-align:super;}
+p.65FNText, li.65FNText, div.65FNText
+	{margin:0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:11.0pt;
+	font-size:9.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	layout-grid-mode:line;}
+span.993Fett
+	{font-weight:bold;}
+span.992Normal
+	{text-decoration:none;
+	vertical-align:baseline;}
+p.30InhaltUeberschrift, li.30InhaltUeberschrift, div.30InhaltUeberschrift
+	{margin-top:16.0pt;
+	margin-right:0pt;
+	margin-bottom:8.0pt;
+	margin-left:0pt;
+	text-align:center;
+	line-height:11.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	layout-grid-mode:line;
+	font-weight:bold;}
+p.31InhaltSpalte, li.31InhaltSpalte, div.31InhaltSpalte
+	{margin-top:4.0pt;
+	margin-right:0pt;
+	margin-bottom:4.0pt;
+	margin-left:0pt;
+	line-height:11.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	layout-grid-mode:line;
+	font-weight:bold;}
+p.32InhaltEintrag, li.32InhaltEintrag, div.32InhaltEintrag
+	{margin:0pt;
+	margin-bottom:.0001pt;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	layout-grid-mode:line;}
+span.991GldSymbol
+	{font-weight:bold;}
+span.998Tief
+	{vertical-align:sub;}
+span.994Kursiv
+	{font-style:italic;}
+span.995Unterstrichen
+	{text-decoration:underline;}
+span.999FettundKursiv
+	{font-weight:bold;
+	font-style:italic;}
+span.996Gesperrt
+	{letter-spacing:1.3pt;}
+span.66FNZeichen
+	{vertical-align:super;}
+p.09Abstand, li.09Abstand, div.09Abstand
+	{margin:0pt;
+	margin-bottom:.0001pt;
+	line-height:10.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	layout-grid-mode:line;}
+p.52ZiffermitBetrag, li.52ZiffermitBetrag, div.52ZiffermitBetrag
+	{margin-top:0pt;
+	margin-right:53.2pt;
+	margin-bottom:0pt;
+	margin-left:34.0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-34.0pt;
+	line-height:11.0pt;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	layout-grid-mode:line;}
+p.62Kopfzeile, li.62Kopfzeile, div.62Kopfzeile
+	{margin-top:4.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	layout-grid-mode:line;}
+p.53LiteramitBetrag, li.53LiteramitBetrag, div.53LiteramitBetrag
+	{margin-top:0pt;
+	margin-right:53.3pt;
+	margin-bottom:0pt;
+	margin-left:45.35pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-45.35pt;
+	line-height:11.0pt;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	layout-grid-mode:line;}
+p.54SubliteramitBetrag, li.54SubliteramitBetrag, div.54SubliteramitBetrag
+	{margin-top:0pt;
+	margin-right:53.3pt;
+	margin-bottom:0pt;
+	margin-left:62.35pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-62.35pt;
+	line-height:11.0pt;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	layout-grid-mode:line;}
+p.52aTZiffermitBetragTGUE, li.52aTZiffermitBetragTGUE, div.52aTZiffermitBetragTGUE
+	{margin-top:0pt;
+	margin-right:53.2pt;
+	margin-bottom:0pt;
+	margin-left:34.0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-34.0pt;
+	line-height:11.0pt;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	layout-grid-mode:line;}
+p.53aTLiteramitBetragTGUE, li.53aTLiteramitBetragTGUE, div.53aTLiteramitBetragTGUE
+	{margin-top:0pt;
+	margin-right:53.3pt;
+	margin-bottom:0pt;
+	margin-left:45.35pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-45.35pt;
+	line-height:11.0pt;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	layout-grid-mode:line;}
+p.54aTSubliteramitBetragTGUE, li.54aTSubliteramitBetragTGUE, div.54aTSubliteramitBetragTGUE
+	{margin-top:0pt;
+	margin-right:53.3pt;
+	margin-bottom:0pt;
+	margin-left:62.35pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-62.35pt;
+	line-height:11.0pt;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	layout-grid-mode:line;}
+p.02BDGesBlatt, li.02BDGesBlatt, div.02BDGesBlatt
+	{margin-top:14.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:0pt;
+	margin-bottom:.0001pt;
+	text-align:center;
+	line-height:35.0pt;
+	font-size:35.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	text-transform:uppercase;
+	letter-spacing:1.3pt;
+	layout-grid-mode:line;
+	font-weight:bold;}
+p.03RepOesterr, li.03RepOesterr, div.03RepOesterr
+	{margin-top:6.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:0pt;
+	margin-bottom:.0001pt;
+	text-align:center;
+	line-height:20.0pt;
+	border:none;
+	padding:0pt;
+	font-size:20.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	text-transform:uppercase;
+	letter-spacing:1.0pt;
+	layout-grid-mode:line;
+	font-weight:bold;}
+p.04AusgabeDaten, li.04AusgabeDaten, div.04AusgabeDaten
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:0pt;
+	text-align:justify;
+	line-height:14.0pt;
+	border:none;
+	padding:0pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	layout-grid-mode:line;
+	font-weight:bold;}
+p.05Kurztitel, li.05Kurztitel, div.05Kurztitel
+	{margin-top:2.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:99.25pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-99.25pt;
+	border:none;
+	padding:0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	layout-grid-mode:line;
+	font-weight:bold;}
+p.PDAntragsformel, li.PDAntragsformel, div.PDAntragsformel
+	{margin-top:14.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	layout-grid-mode:line;}
+p.PDAllonge, li.PDAllonge, div.PDAllonge
+	{margin-top:14.0pt;
+	margin-right:0pt;
+	margin-bottom:10.0pt;
+	margin-left:0pt;
+	text-align:center;
+	font-size:14.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	layout-grid-mode:line;}
+p.PDDatum, li.PDDatum, div.PDDatum
+	{margin-top:14.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	layout-grid-mode:line;}
+p.PDEntschliessung, li.PDEntschliessung, div.PDEntschliessung
+	{margin-top:8.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:0pt;
+	margin-bottom:.0001pt;
+	line-height:11.0pt;
+	font-size:11.0pt;
+	font-family:"Times New Roman";
+	layout-grid-mode:line;
+	font-weight:bold;}
+p.PDK1, li.PDK1, div.PDK1
+	{margin:0pt;
+	margin-bottom:.0001pt;
+	text-align:center;
+	border:none;
+	padding:0pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	letter-spacing:-.4pt;
+	font-weight:bold;}
+p.PDK1Ausg, li.PDK1Ausg, div.PDK1Ausg
+	{margin-top:62.9pt;
+	margin-right:0pt;
+	margin-bottom:27.0pt;
+	margin-left:0pt;
+	font-size:11.0pt;
+	font-family:"Times New Roman";
+	font-weight:bold;}
+p.PDK2, li.PDK2, div.PDK2
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:11.35pt;
+	margin-left:0pt;
+	font-size:22.0pt;
+	font-family:"Times New Roman";
+	font-weight:bold;}
+p.PDK3, li.PDK3, div.PDK3
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:20.0pt;
+	margin-left:0pt;
+	font-size:18.0pt;
+	font-family:"Times New Roman";
+	font-weight:bold;}
+p.PDU1, li.PDU1, div.PDU1
+	{margin-top:22.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	layout-grid-mode:line;
+	font-weight:bold;}
+p.PDU2, li.PDU2, div.PDU2
+	{margin-top:5.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:11.0pt;
+	font-size:9.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	layout-grid-mode:line;}
+p.PDVorlage, li.PDVorlage, div.PDVorlage
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:10.0pt;
+	margin-left:0pt;
+	text-align:justify;
+	line-height:11.0pt;
+	font-size:11.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	layout-grid-mode:line;
+	font-weight:bold;}
+p.PDAllongeL, li.PDAllongeL, div.PDAllongeL
+	{margin-top:14.0pt;
+	margin-right:0pt;
+	margin-bottom:10.0pt;
+	margin-left:0pt;
+	font-size:14.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	layout-grid-mode:line;}
+p.PDK1Anlage, li.PDK1Anlage, div.PDK1Anlage
+	{margin:0pt;
+	margin-bottom:.0001pt;
+	text-align:right;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	letter-spacing:-.4pt;
+	font-weight:bold;}
+p.PDK4, li.PDK4, div.PDK4
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:0pt;
+	font-size:13.0pt;
+	font-family:"Times New Roman";
+	font-weight:bold;}
+p.PDAllongeB, li.PDAllongeB, div.PDAllongeB
+	{margin-top:14.0pt;
+	margin-right:0pt;
+	margin-bottom:10.0pt;
+	margin-left:0pt;
+	text-align:justify;
+	font-size:14.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	layout-grid-mode:line;}
+p.54aStriche6, li.54aStriche6, div.54aStriche6
+	{margin-top:2.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:116.25pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-116.25pt;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	layout-grid-mode:line;}
+p.54aStriche7, li.54aStriche7, div.54aStriche7
+	{margin-top:2.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:133.25pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-133.25pt;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	layout-grid-mode:line;}
+p.01Undefiniert, li.01Undefiniert, div.01Undefiniert
+	{margin:0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	layout-grid-mode:line;}
+span.990Fehler
+	{color:red;}
+p.18AbbildungoderObjekt, li.18AbbildungoderObjekt, div.18AbbildungoderObjekt
+	{margin-top:6.0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	layout-grid-mode:line;}
+p.19Beschriftung, li.19Beschriftung, div.19Beschriftung
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:0pt;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	layout-grid-mode:line;}
+p.63Fuzeile, li.63Fuzeile, div.63Fuzeile
+	{margin:0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:11.0pt;
+	font-size:9.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	layout-grid-mode:line;}
+p.61aTabTextRechtsb, li.61aTabTextRechtsb, div.61aTabTextRechtsb
+	{margin:0pt;
+	margin-bottom:.0001pt;
+	text-align:right;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	layout-grid-mode:line;}
+p.61bTabTextZentriert, li.61bTabTextZentriert, div.61bTabTextZentriert
+	{margin:0pt;
+	margin-bottom:.0001pt;
+	text-align:center;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	layout-grid-mode:line;}
+p.61cTabTextBlock, li.61cTabTextBlock, div.61cTabTextBlock
+	{margin:0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	layout-grid-mode:line;}
+p.PDU3, li.PDU3, div.PDU3
+	{margin-top:5.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:0pt;
+	margin-bottom:.0001pt;
+	text-align:center;
+	line-height:11.0pt;
+	font-size:9.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	layout-grid-mode:line;}
+p.PDBrief, li.PDBrief, div.PDBrief
+	{margin-top:4.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:11.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	layout-grid-mode:line;}
+span.992bNormalundFett
+	{font-weight:bold;
+	text-decoration:none;
+	vertical-align:baseline;}
+p.53Literae4, li.53Literae4, div.53Literae4
+	{margin-top:2.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:82.2pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-82.2pt;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	layout-grid-mode:line;}
+p.06UrheberZitat, li.06UrheberZitat, div.06UrheberZitat
+	{margin-top:6.0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:0pt;
+	text-align:center;
+	line-height:9.0pt;
+	font-size:8.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	layout-grid-mode:line;}
+p.54Subliterae4, li.54Subliterae4, div.54Subliterae4
+	{margin-top:2.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:82.2pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-82.2pt;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	layout-grid-mode:line;}
+p.53Literae5, li.53Literae5, div.53Literae5
+	{margin-top:2.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:99.25pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-99.25pt;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	layout-grid-mode:line;}
+p.54Subliterae5, li.54Subliterae5, div.54Subliterae5
+	{margin-top:2.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:99.25pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-99.25pt;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	layout-grid-mode:line;}
+p.52Ziffere4, li.52Ziffere4, div.52Ziffere4
+	{margin-top:2.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:82.2pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-82.2pt;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	layout-grid-mode:line;}
+p.52Ziffere5, li.52Ziffere5, div.52Ziffere5
+	{margin-top:2.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:99.25pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-99.25pt;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	layout-grid-mode:line;}
+p.PDKopfzeile, li.PDKopfzeile, div.PDKopfzeile
+	{margin-top:4.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	layout-grid-mode:line;}
+p.64FNLinie, li.64FNLinie, div.64FNLinie
+	{margin-top:0pt;
+	margin-right:368.55pt;
+	margin-bottom:13.0pt;
+	margin-left:0pt;
+	text-align:justify;
+	line-height:11.0pt;
+	border:none;
+	padding:0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	layout-grid-mode:line;}
+ /* Page Definitions */
+ @page Section1
+	{size:595.3pt 841.9pt;
+	margin:85.05pt 85.05pt 85.05pt 85.05pt;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0pt;}
+ul
+	{margin-bottom:0pt;}
+-->
+</style>
+
+</head>
+
+<body lang=DE-AT link=blue vlink=navy>
+
+<div class=Section1>
+
+<div style='border:none;border-bottom:solid windowtext 1.5pt;padding:0pt 0pt 1.0pt 0pt'>
+
+<p class=PDK1><span style='color:black'>552 der Beilagen zu den
+Stenographischen Protokollen des Nationalrates XXIII. GP</span></p>
+
+</div>
+
+<p class=PDK1Ausg><span style='color:black'>&nbsp;</span></p>
+
+<p class=PDK2><span style='color:black'>Regierungsvorlage</span></p>
+
+<p class=11Titel>Bundesgesetz &uuml;ber die berufsm&auml;&szlig;ige
+Aus&uuml;bung der Musiktherapie (Musiktherapiegesetz &#8211; MuthG)</p>
+
+<p class=12PromKlEinlSatz>Der Nationalrat hat beschlossen:</p>
+
+<p class=30InhaltUeberschrift>Inhaltsverzeichnis</p>
+
+<p class=31InhaltSpalte>1. Abschnitt</p>
+
+<p class=31InhaltSpalte>Allgemeine Bestimmungen</p>
+
+<p class=32InhaltEintrag><span class=992Normal>&sect;&nbsp;1</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Regelungsgegenstand</p>
+
+<p class=32InhaltEintrag>&sect;&nbsp;2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Geltungsbereich</p>
+
+<p class=32InhaltEintrag>&sect;&nbsp;3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Umsetzung
+von Gemeinschaftsrecht</p>
+
+<p class=32InhaltEintrag>&sect;&nbsp;4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sprachliche
+Gleichbehandlung</p>
+
+<p class=32InhaltEintrag>&sect;&nbsp;5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Begriffsbestimmungen
+und Verweisungen</p>
+
+<p class=31InhaltSpalte>2. Abschnitt</p>
+
+<p class=31InhaltSpalte>Berufsumschreibung und Formen der Berufsaus&uuml;bung</p>
+
+<p class=32InhaltEintrag>&sect;&nbsp;6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Berufsumschreibung</p>
+
+<p class=32InhaltEintrag>&sect;&nbsp;7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Eigenverantwortliche
+Berufsaus&uuml;bung der Musiktherapie</p>
+
+<p class=32InhaltEintrag>&sect;&nbsp;8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Mitverantwortliche
+Berufsaus&uuml;bung der Musiktherapie</p>
+
+<p class=31InhaltSpalte>3. Abschnitt</p>
+
+<p class=31InhaltSpalte>Musiktherapeutische Ausbildung</p>
+
+<p class=32InhaltEintrag>&sect;&nbsp;9&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ausbildung
+f&uuml;r die mitverantwortliche Berufsaus&uuml;bung der Musiktherapie</p>
+
+<p class=32InhaltEintrag>&sect;&nbsp;10&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ausbildung
+f&uuml;r die eigenverantwortliche Berufsaus&uuml;bung der Musiktherapie</p>
+
+<p class=32InhaltEintrag>&sect;&nbsp;11&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ausbildungsverordnung</p>
+
+<p class=31InhaltSpalte>4. Abschnitt</p>
+
+<p class=31InhaltSpalte>Berufsberechtigung</p>
+
+<p class=32InhaltEintrag>&sect;&nbsp;12&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Voraussetzungen
+f&uuml;r die eigenverantwortliche Berufsaus&uuml;bung der Musiktherapie</p>
+
+<p class=32InhaltEintrag>&sect;&nbsp;13&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Voraussetzungen
+f&uuml;r die mitverantwortliche Berufsaus&uuml;bung der Musiktherapie</p>
+
+<p class=32InhaltEintrag>&sect;&nbsp;14&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Musiktherapeutische
+Qualifikationsnachweise aus dem EWR</p>
+
+<p class=32InhaltEintrag>&sect;&nbsp;15&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Freier
+Dienstleistungsverkehr</p>
+
+<p class=32InhaltEintrag>&sect;&nbsp;16&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; EWR-Musiktherapie-Verordnung</p>
+
+<p class=32InhaltEintrag>&sect;&nbsp;17&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Erl&ouml;schen
+der Berufsberechtigung</p>
+
+<p class=32InhaltEintrag>&sect;&nbsp;18&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Informationspflichten</p>
+
+<p class=31InhaltSpalte>5. Abschnitt</p>
+
+<p class=31InhaltSpalte>Musiktherapeutenliste</p>
+
+<p class=32InhaltEintrag>&sect;&nbsp;19&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; F&uuml;hrung
+der Musiktherapeutenliste</p>
+
+<p class=32InhaltEintrag>&sect;&nbsp;20&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Anmeldung
+zur Eintragung in die Musiktherapeutenliste</p>
+
+<p class=32InhaltEintrag>&sect;&nbsp;21&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Aufnahme
+fakultativer Daten in die Musiktherapeutenliste</p>
+
+<p class=32InhaltEintrag>&sect;&nbsp;22&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Verfahren
+zur Eintragung in die Musiktherapeutenliste</p>
+
+<p class=32InhaltEintrag>&sect;&nbsp;23&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Versagung
+der Eintragung</p>
+
+<p class=32InhaltEintrag>&sect;&nbsp;24&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Meldepflichten</p>
+
+<p class=32InhaltEintrag>&sect;&nbsp;25&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Verwaltungszusammenarbeit</p>
+
+<p class=31InhaltSpalte>6. Abschnitt</p>
+
+<p class=31InhaltSpalte>Berufspflichten</p>
+
+<p class=32InhaltEintrag>&sect;&nbsp;26&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; F&uuml;hrung
+von Berufsbezeichnungen</p>
+
+<p class=32InhaltEintrag>&sect;&nbsp;27&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Berufsaus&uuml;bung
+nach bestem Wissen und Gewissen</p>
+
+<p class=32InhaltEintrag>&sect;&nbsp;28&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Fortbildungspflicht</p>
+
+<p class=32InhaltEintrag>&sect;&nbsp;29&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Aufkl&auml;rungspflicht</p>
+
+<p class=32InhaltEintrag>&sect;&nbsp;30&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dokumentationspflicht</p>
+
+<p class=32InhaltEintrag>&sect;&nbsp;31&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Auskunftspflicht</p>
+
+<p class=32InhaltEintrag>&sect;&nbsp;32&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Verschwiegenheitspflicht</p>
+
+<p class=32InhaltEintrag>&sect;&nbsp;33&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Werbebeschr&auml;nkung
+und Provisionsverbot</p>
+
+<p class=32InhaltEintrag>&sect;&nbsp;34&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Haftpflichtversicherung</p>
+
+<p class=31InhaltSpalte>7. Abschnitt</p>
+
+<p class=31InhaltSpalte>Strafbestimmungen</p>
+
+<p class=32InhaltEintrag>&sect;&nbsp;35&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Strafbestimmungen</p>
+
+<p class=31InhaltSpalte>8. Abschnitt</p>
+
+<p class=31InhaltSpalte>&Uuml;bergangsbestimmungen</p>
+
+<p class=32InhaltEintrag><span class=992Normal>&sect;&nbsp;36&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Berechtigung
+zur eigenverantwortlichen Berufsaus&uuml;bung der Musiktherapie</span></p>
+
+<p class=32InhaltEintrag><span class=992Normal>&sect;&nbsp;37&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Berechtigung
+zur mitverantwortlichen Berufsaus&uuml;bung der Musiktherapie</span></p>
+
+<p class=31InhaltSpalte><span class=993Fett>9. Abschnitt</span></p>
+
+<p class=31InhaltSpalte><span class=993Fett>Schlussbestimmungen</span></p>
+
+<p class=32InhaltEintrag>&sect;&nbsp;38&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Vollziehung</p>
+
+<p class=32InhaltEintrag>&sect;&nbsp;39&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; In-Kraft-Treten</p>
+
+<p class=42UeberschrG1->1. Abschnitt</p>
+
+<p class=43UeberschrG2>Allgemeine Bestimmungen</p>
+
+<p class=45UeberschrPara>Regelungsgegenstand</p>
+
+<p class=51Abs><span class=991GldSymbol>&sect;&nbsp;1.</span> Dieses
+Bundesgesetz regelt die berufsm&auml;&szlig;ige Aus&uuml;bung der Musiktherapie
+unter besonderer Ber&uuml;cksichtigung der</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. musiktherapeutischen
+Ausbildung,</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. Formen
+der Berufsaus&uuml;bung,</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3. Voraussetzungen
+der Berufsaus&uuml;bung,</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4. F&uuml;hrung
+der Musiktherapeutenliste sowie</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5. Berufspflichten.</p>
+
+<p class=45UeberschrPara><span class=993Fett>Geltungsbereich</span></p>
+
+<p class=51Abs><span class=991GldSymbol>&sect;&nbsp;2.</span> (1) Die
+berufsm&auml;&szlig;ige Aus&uuml;bung der Musiktherapie darf nur nach
+Ma&szlig;gabe dieses Bundesgesetzes erfolgen.</p>
+
+<p class=51Abs>(2) Auf die berufsm&auml;&szlig;ige Aus&uuml;bung der
+Musiktherapie findet die Gewerbeordnung&nbsp;1994, BGBl.&nbsp;Nr.&nbsp;194,
+keine Anwendung.</p>
+
+<p class=45UeberschrPara><span class=993Fett>Umsetzung von Gemeinschaftsrecht</span></p>
+
+<p class=51Abs><span class=991GldSymbol>&sect;&nbsp;3.</span> Durch dieses
+Bundesgesetz werden</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. die
+Richtlinie 2005/36/EG vom 07.09.2005 &uuml;ber die Anerkennung von
+Berufsqualifikationen, ABl.&nbsp;Nr.&nbsp;L&nbsp;255 vom 30.09.2005&nbsp;S.&nbsp;22,
+zuletzt ge&auml;ndert durch die Verordnung (EG) Nr.&nbsp;1430/2007, ABl.&nbsp;Nr.&nbsp;L&nbsp;320
+vom 06.12.2007&nbsp;S.&nbsp;3,</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. das
+Abkommen zwischen der Europ&auml;ischen Gemeinschaft und ihren Mitgliedstaaten
+einerseits und der Schweizerischen Eidgenossenschaft andererseits &uuml;ber die
+Freiz&uuml;gigkeit, ABl.&nbsp;Nr.&nbsp;L&nbsp;114 vom 30.04.2002&nbsp;S.&nbsp;6,
+BGBl.&nbsp;III&nbsp;Nr.&nbsp;133/2002, zuletzt ge&auml;ndert durch Beschluss Nr.&nbsp;1/2006
+(2006/652/EG) des Gemischten Ausschusses EU-Schweiz vom 06.07.2006 zur
+&Auml;nderung des Anhangs II (Soziale Sicherheit) des Abkommens zwischen der
+Europ&auml;ischen Gemeinschaft und ihren Mitgliedstaaten einerseits und der
+Schweizerischen Eidgenossenschaft andererseits &uuml;ber die
+Freiz&uuml;gigkeit, ABl.&nbsp;L&nbsp;270 vom 29.09.2006&nbsp;S.&nbsp;67,</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3. die
+Richtlinie 2003/109/EG vom 25.11.2003 betreffend die Rechtsstellung der
+langfristig aufenthaltsberechtigten Drittstaatsangeh&ouml;rigen, ABl.&nbsp;Nr.&nbsp;L&nbsp;16
+vom 23.01.2004&nbsp;S.&nbsp;44 sowie</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4. die
+Richtlinie 2004/38/EG vom 29.04.2004 &uuml;ber das Recht der Unionsb&uuml;rger
+und ihrer Familienangeh&ouml;rigen, sich im Hoheitsgebiet der Mitgliedstaaten
+frei zu bewegen und aufzuhalten, zur &Auml;nderung der Verordnung (EWG) Nr.&nbsp;1612/68
+und zur Aufhebung der Richtlinien 64/221/EWG, 68/360/EWG, 72/194/EWG,
+73/148/EWG, 75/34/EWG, 75/35/EWG, 90/364/EWG und 93/96/EWG, ABl.&nbsp;Nr.&nbsp;L&nbsp;158
+vom 30.04.2004&nbsp;S.&nbsp;77, in der berichtigten Fassung, ABl.&nbsp;Nr.&nbsp;L&nbsp;229
+vom 29.06.2004&nbsp;S.&nbsp;35,</p>
+
+<p class=55SchlussteilAbs><span class=992Normal>in &ouml;sterreichisches Recht
+umgesetzt.</span></p>
+
+<p class=45UeberschrPara>Sprachliche Gleichbehandlung</p>
+
+<p class=51Abs><span class=991GldSymbol>&sect;&nbsp;4.</span> (1) Personenbezogene
+Bezeichnungen werden in diesem Bundesgesetz in weiblicher und m&auml;nnlicher
+oder in geschlechtsneutraler Form verwendet. Sofern personenbezogene Bezeichnungen
+in Ausnahmef&auml;llen zum Zweck der Erhaltung der gebotenen Lesbarkeit in
+geschlechtsspezifischer Form verwendet werden, beziehen sich diese auf Frauen
+und M&auml;nner in gleicher Weise.</p>
+
+<p class=51Abs>(2) Bei der Vollziehung dieses Bundesgesetzes ist bez&uuml;glich
+einer bestimmten Person die jeweils geschlechtsspezifische Anrede oder
+Bezeichnung zu verwenden.</p>
+
+<p class=45UeberschrPara>Begriffsbestimmungen und Verweisungen</p>
+
+<p class=51Abs><span class=991GldSymbol>&sect;&nbsp;5.</span><span
+class=992Normal> (1) Im Geltungsbereich dieses Bundesgesetzes sind folgende
+Begriffsbestimmungen ma&szlig;gebend: Soweit in den einzelnen Vorschriften
+dieses Bundesgesetzes nicht anderes bestimmt ist, beziehen sich die
+Bezeichnungen</span></p>
+
+<p class=52Ziffere1><span class=992Normal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. ,,Musiktherapeut&#8220;
+(&#8222;Musiktherapeutin&#8220;),</span></p>
+
+<p class=52Ziffere1><span class=992Normal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. &#8222;Musiktherapie&#8220;
+sowie</span></p>
+
+<p class=52Ziffere1><span class=992Normal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3. ,,musiktherapeutisch''</span></p>
+
+<p class=55SchlussteilAbs><span class=992Normal>auf Personen, die zur
+eigenverantwortlichen oder mitverantwortlichen Berufsaus&uuml;bung der
+Musiktherapie berechtigt sind.</span></p>
+
+<p class=51Abs><span class=992Normal>(2) Soweit in diesem Bundesgesetz auf
+Bestimmungen anderer Bundesgesetze verwiesen wird, sind diese in ihrer jeweils
+geltenden Fassung anzuwenden.</span></p>
+
+<p class=42UeberschrG1->2. Abschnitt</p>
+
+<p class=43UeberschrG2>Berufsumschreibung und Formen der Berufsaus&uuml;bung</p>
+
+<p class=45UeberschrPara>Berufsumschreibung</p>
+
+<p class=51Abs><span class=991GldSymbol>&sect;&nbsp;6.</span><span
+class=992Normal> (1) Die Musiktherapie ist eine eigenst&auml;ndige,
+wissenschaftlich-k&uuml;nstlerisch-kreative und ausdrucksf&ouml;rdernde
+Therapieform. Sie umfasst die bewusste und geplante Behandlung von Menschen,
+insbesondere mit emotional, somatisch, intellektuell oder sozial bedingten
+Verhaltensst&ouml;rungen und Leidenszust&auml;nden, durch den</span> Einsatz
+musikalischer Mittel<span class=992Normal> in einer therapeutischen Beziehung
+zwischen einem (einer) oder mehreren Behandelten und einem (einer) oder
+mehreren Behandelnden mit dem Ziel</span></p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. Symptome<span
+class=992Normal>n</span> vorzubeugen, diese zu mildern oder zu beseitigen oder</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. behandlungsbed&uuml;rftige
+Verhaltensweisen und Einstellungen zu &auml;ndern oder</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3. die
+Entwicklung, Reifung und Gesundheit des (der) Behandelten zu f&ouml;rdern und
+zu erhalten oder wiederherzustellen.</p>
+
+<p class=51Abs>(2) Die Aus&uuml;bung des musiktherapeutischen Berufes besteht
+in der berufsm&auml;&szlig;igen Ausf&uuml;hrung der im Abs.&nbsp;1
+umschriebenen T&auml;tigkeiten, insbesondere zum Zweck der</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. Pr&auml;vention
+einschlie&szlig;lich Gesundheitsf&ouml;rderung,</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. <span
+class=992Normal>Behandlung von akuten und chronischen Erkrankungen,</span></p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3. Rehabilitation,</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4. <span
+class=992Normal>F&ouml;rderung von sozialen Kompetenzen einschlie&szlig;lich
+Supervision sowie</span></p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5. Lehre
+und Forschung.</p>
+
+<p class=51Abs>(3) Die berufsm&auml;&szlig;ige Aus&uuml;bung der Musiktherapie
+ist den Musiktherapeuten (Musiktherapeutinnen) vorbehalten. <span
+class=992Normal>Anderen Personen als Musiktherapeuten (Musiktherapeutinnen) ist
+die berufsm&auml;&szlig;ige Aus&uuml;bung der Musiktherapie verboten.
+Berufsm&auml;&szlig;ige Aus&uuml;bung (Berufsaus&uuml;bung) der Musiktherapie
+liegt vor, wenn Musiktherapie regelm&auml;&szlig;ig und in der Absicht
+betrieben wird, einen Ertrag oder sonstigen wirtschaftlichen Vorteil zur
+Schaffung und Erhaltung einer Lebensgrundlage einschlie&szlig;lich einer
+nebenberuflichen Einkommensquelle zu erzielen.</span></p>
+
+<p class=51Abs><span class=992Normal>(4) Die berufsm&auml;&szlig;ige
+Aus&uuml;bung der Musiktherapie ist im Rahmen eines Arbeitsverh&auml;ltnisses
+nur zu einem Tr&auml;ger einer Krankenanstalt, einem Pflegeheim, einer
+Behinderteneinrichtung oder einer vergleichbaren Einrichtung zul&auml;ssig.</span></p>
+
+<p class=45UeberschrPara>Eigenverantwortliche Berufsaus&uuml;bung der
+Musiktherapie</p>
+
+<p class=51Abs><span class=991GldSymbol>&sect;&nbsp;7.</span><span
+class=993Fett> </span><span class=992Normal>(1) </span>Die<span
+class=992Normal> eigenverantwortliche B</span>erufsaus&uuml;bung der
+Musiktherapie besteht in der eigenverantwortlichen Ausf&uuml;hrung der im &sect;&nbsp;6
+umschriebenen T&auml;tigkeiten, unabh&auml;ngig davon, ob diese T&auml;tigkeiten
+freiberuflich oder im Rahmen eines Arbeitsverh&auml;ltnisses ausge&uuml;bt werden.</p>
+
+<p class=51Abs><span class=992Normal>(2) Sofern die Berufsaus&uuml;bung der
+Musiktherapie zum Zweck der Behandlung von akuten und chronischen Erkrankungen
+oder der Rehabilitation erfolgt, hat nachweislich vor oder nach der ersten,
+jedenfalls vor der zweiten musiktherapeutischen Behandlung eine Zuweisung durch</span></p>
+
+<p class=52Ziffere1><span class=992Normal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. einen
+Arzt (eine &Auml;rztin) oder</span></p>
+
+<p class=52Ziffere1><span class=992Normal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. einen
+klinischen Psychologen (eine klinische Psychologin) oder</span></p>
+
+<p class=52Ziffere1><span class=992Normal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3. einen
+Psychotherapeuten (eine Psychotherapeutin) oder</span></p>
+
+<p class=52Ziffere1><span class=992Normal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4. einen
+Zahnarzt (eine Zahn&auml;rztin)</span></p>
+
+<p class=55SchlussteilAbs><span class=992Normal>statt zu finden.</span></p>
+
+<p class=45UeberschrPara>Mitverantwortliche Berufsaus&uuml;bung der
+Musiktherapie</p>
+
+<p class=51Abs><span class=991GldSymbol>&sect;&nbsp;8.</span><span
+class=993Fett> </span>Die <span class=992Normal>mitverantwortliche</span>
+Berufsaus&uuml;bung der Musiktherapie besteht in der Ausf&uuml;hrung der im &sect;&nbsp;6
+umschriebenen T&auml;tigkeiten im Rahmen eines Arbeitsverh&auml;ltnisses nach
+Anordnung durch</p>
+
+<p class=52Ziffere1><span class=992Normal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. einen
+Arzt (eine &Auml;rztin) oder</span></p>
+
+<p class=52Ziffere1><span class=992Normal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. einen
+klinischen Psychologen (eine klinische Psychologin) oder</span></p>
+
+<p class=52Ziffere1><span class=992Normal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3. einen
+</span>eigenverantwortlich berufsberechtigten <span class=992Normal>Musiktherapeuten
+(</span>eine eigenverantwortlich berufsberechtigte <span class=992Normal>Musiktherapeutin)
+oder</span></p>
+
+<p class=52Ziffere1><span class=992Normal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4. einen
+Psychotherapeuten (eine Psychotherapeutin) oder</span></p>
+
+<p class=52Ziffere1><span class=992Normal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5. einen
+Zahnarzt (eine Zahn&auml;rztin) und</span></p>
+
+<p class=55SchlussteilAbs>unter regelm&auml;&szlig;iger Supervision durch einen
+eigenverantwortlich berufsberechtigten <span class=992Normal>Musiktherapeuten (</span>eine
+eigenverantwortlich berufsberechtigte <span class=992Normal>Musiktherapeutin) </span>im
+fachlich erforderlichen Ausma&szlig;.</p>
+
+<p class=42UeberschrG1->3. Abschnitt</p>
+
+<p class=43UeberschrG2>Musiktherapeutische Ausbildung</p>
+
+<p class=45UeberschrPara><span class=992bNormalundFett>Ausbildung f&uuml;r die
+mitverantwortliche Berufsaus&uuml;bung der Musiktherapie</span></p>
+
+<p class=51Abs><span class=991GldSymbol>&sect;&nbsp;9.</span><span
+class=992Normal> (1) Wer </span>die mitverantwortliche Berufsaus&uuml;bung der
+Musiktherapie beabsichtigt, hat nach Erlangung der Universit&auml;tsreife als
+Ausbildung</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. ein
+Bachelorstudium der Musiktherapie an einer &ouml;sterreichischen
+Universit&auml;t oder</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. einen
+Fachhochschul-Bachelorstudiengang der Musiktherapie an einer
+&ouml;sterreichischen Fachhochschule</p>
+
+<p class=55SchlussteilAbs><span class=992Normal>erfolgreich zu absolvieren.</span></p>
+
+<p class=51Abs><span class=992Normal>(2) Die Ausbildung hat die f&uuml;r eine
+mitverantwortliche Berufsaus&uuml;bung der Musiktherapie nach bestem Wissen und
+Gewissen erforderlichen theoretischen und praktischen Ausbildungsinhalte
+einschlie&szlig;lich des Erwerbs von klinischer Krankenbehandlungserfahrung
+unter besonderer Ber&uuml;cksichtigung der klinisch-psychologischen,
+medizinischen und psychotherapeutischen wissenschaftlichen Grundlagen zu
+umfassen.</span></p>
+
+<span class=992Normal><span style='font-size:10.0pt;font-family:"Times New Roman";
+color:black;layout-grid-mode:line'><br clear=all style='page-break-before:always'>
+</span></span>
+
+<p class=51Abs><span class=992Normal>(3) Im Rahmen der Ausbildung sind
+jedenfalls</span></p>
+
+<p class=52Ziffere1><span class=992Normal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. Selbsterfahrung
+im Umfang von zumindest 200 Einheiten,</span></p>
+
+<p class=52Ziffere1><span class=992Normal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. Rahmenbedingungen
+f&uuml;r die Berufsaus&uuml;bung der Musiktherapie, insbesondere eine
+Einf&uuml;hrung in die institutionellen, gesundheitsrechtlichen und
+psychosozialen Rahmenbedingungen, von zumindest 30 Einheiten sowie</span></p>
+
+<p class=52Ziffere1><span class=992Normal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3. Fragen
+der Ethik im Umfang von zumindest 30 Einheiten</span></p>
+
+<p class=55SchlussteilAbs><span class=992Normal>vorzusehen.</span></p>
+
+<p class=45UeberschrPara><span class=992bNormalundFett>Ausbildung f&uuml;r die
+eigenverantwortliche Berufsaus&uuml;bung der Musiktherapie</span></p>
+
+<p class=51Abs><span class=991GldSymbol>&sect;&nbsp;10.</span>&nbsp;<span
+class=992Normal>(1) Wer </span>die eigenverantwortliche Berufsaus&uuml;bung der
+Musiktherapie beabsichtigt, hat nach Erlangung der Universit&auml;tsreife als
+Ausbildung</p>
+
+<p class=52Ziffere1><span class=992Normal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. ein
+Diplomstudium der Musiktherapie an einer &ouml;sterreichischen Universit&auml;t
+oder</span></p>
+
+<p class=52Ziffere1><span class=992Normal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. einen
+Fachhochschul-Diplomstudiengang der Musiktherapie an einer
+&ouml;sterreichischen Fachhochschule oder</span></p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3. nach
+Erf&uuml;llung der Ausbildungsvoraussetzungen f&uuml;r die mitverantwortliche
+Berufsaus&uuml;bung der Musiktherapie ein Masterstudium der Musiktherapie an
+einer &ouml;sterreichischen Universit&auml;t oder</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4. nach
+Erf&uuml;llung der Ausbildungsvoraussetzungen f&uuml;r die mitverantwortliche
+Berufsaus&uuml;bung der Musiktherapie einen Fachhochschul-Masterstudiengang der
+Musiktherapie an einer &ouml;sterreichischen Fachhochschule</p>
+
+<p class=55SchlussteilAbs><span class=992Normal>erfolgreich zu absolvieren.</span></p>
+
+<p class=51Abs><span class=992Normal>(2) Die Ausbildung hat die f&uuml;r eine
+eigenverantwortliche Berufsaus&uuml;bung der Musiktherapie nach bestem Wissen
+und Gewissen erforderlichen theoretischen und praktischen Ausbildungsinhalte
+einschlie&szlig;lich des Erwerbs von klinischer Krankenbehandlungserfahrung
+unter besonderer Ber&uuml;cksichtigung der klinisch-psychologischen,
+medizinischen und psychotherapeutischen wissenschaftlichen Grundlagen zu
+umfassen.</span></p>
+
+<p class=51Abs>(3) Im Rahmen der Ausbildung gem&auml;&szlig; Abs.&nbsp;1 Z&nbsp;1
+und 2 sind jedenfalls</p>
+
+<p class=52Ziffere1><span class=992Normal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. Selbsterfahrung
+im Umfang von zumindest 200 Einheiten,</span></p>
+
+<p class=52Ziffere1><span class=992Normal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. Rahmenbedingungen
+f&uuml;r die Berufsaus&uuml;bung der Musiktherapie, insbesondere eine Einf&uuml;hrung
+in die institutionellen, gesundheitsrechtlichen und psychosozialen
+Rahmenbedingungen, von zumindest 60 Einheiten sowie</span></p>
+
+<p class=52Ziffere1><span class=992Normal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3. Fragen
+der Ethik im Umfang von zumindest 60 Einheiten</span></p>
+
+<p class=55SchlussteilAbs><span class=992Normal>vorzusehen.</span></p>
+
+<p class=51Abs>(4) Im Rahmen der Ausbildung gem&auml;&szlig; Abs.&nbsp;1 Z&nbsp;3
+und 4 sind jedenfalls</p>
+
+<p class=52Ziffere1><span class=992Normal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. Rahmenbedingungen
+f&uuml;r die Berufsaus&uuml;bung der Musiktherapie, insbesondere eine
+Einf&uuml;hrung in die institutionellen, gesundheitsrechtlichen und
+psychosozialen Rahmenbedingungen, von zumindest 30 Einheiten und</span></p>
+
+<p class=52Ziffere1><span class=992Normal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. Fragen
+der Ethik im Umfang von zumindest 30 Einheiten</span></p>
+
+<p class=55SchlussteilAbs><span class=992Normal>vorzusehen.</span></p>
+
+<p class=45UeberschrPara>Ausbildungsverordnung</p>
+
+<p class=51Abs><span class=991GldSymbol>&sect;&nbsp;11.</span><span
+class=992Normal> Der Bundesminister (Die Bundesministerin) f&uuml;r Gesundheit,
+Familie und Jugend hat erforderlichenfalls n&auml;here Bestimmungen &uuml;ber
+die Kompetenzen, die im Rahmen der Ausbildung f&uuml;r die mitverantwortliche
+und eigenverantwortliche Berufsaus&uuml;bung der Musiktherapie erworben werden
+m&uuml;ssen, einschlie&szlig;lich der Mindestanforderungen an die Ausbildungen,
+durch Verordnung festzulegen.</span></p>
+
+<p class=41UeberschrG1>4. Abschnitt</p>
+
+<p class=43UeberschrG2>Berufsberechtigung</p>
+
+<p class=45UeberschrPara><span class=993Fett>Voraussetzungen f&uuml;r die
+eigenverantwortliche Berufsaus&uuml;bung der Musiktherapie</span></p>
+
+<p class=51Abs><span class=991GldSymbol>&sect;&nbsp;12.</span><span
+class=992Normal> (1) Zur eigenverantwortlichen Berufsaus&uuml;bung der
+Musiktherapie bedarf es des Nachweises der Erf&uuml;llung der nachfolgend
+angef&uuml;hrten allgemeinen und besonderen Voraussetzungen sowie der
+Eintragung in die Musiktherapeutenliste, erforderlichenfalls nach Anh&ouml;rung
+von Sachverst&auml;ndigen.</span></p>
+
+<p class=51Abs><span class=992Normal>(2) Allgemeine Voraussetzungen im Sinne
+des Abs.&nbsp;1 sind</span></p>
+
+<p class=52Ziffere1><span class=992Normal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. die
+Eigenberechtigung,</span></p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. die
+zur Erf&uuml;llung der Berufspflichten erforderliche gesundheitliche Eignung
+sowie</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3. die
+zur Erf&uuml;llung der Berufspflichten erforderliche Vertrauensw&uuml;rdigkeit.</p>
+
+<p class=51Abs><span class=992Normal>(3) Besondere Voraussetzungen im Sinne des
+Abs.&nbsp;1 sind</span></p>
+
+<p class=52Ziffere1><span class=992Normal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. die
+erfolgreiche Absolvierung der Ausbildung f&uuml;r die eigenverantwortliche
+Berufsaus&uuml;bung der Musiktherapie und die Ausstellung der diesbez&uuml;glichen
+Urkunde &uuml;ber die Verleihung des akademischen Grades (die
+diesbez&uuml;glichen Urkunden &uuml;ber die Verleihung der akademischen Grade)
+oder</span></p>
+
+<p class=52Ziffere1><span class=992Normal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. der
+Erwerb eines der Z&nbsp;1 gleichzuhaltenden Ausbildungsnachweises:</span></p>
+
+<p class=53Literae2><span class=992Normal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) ein
+aufgrund von &sect;&nbsp;14&nbsp;Abs.&nbsp;1, gegebenenfalls unter
+Ber&uuml;cksichtigung von &sect;&nbsp;14&nbsp;Abs.&nbsp;2, in einem
+EWR-Vertragsstaat oder in der Schweizerischen Eidgenossenschaft erworbener
+musiktherapeutischer Qualifikationsnachweis oder</span></p>
+
+<p class=53Literae2><span class=992Normal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) ein
+im Ausland erworbener und an einer &ouml;sterreichischen Universit&auml;t oder &ouml;sterreichischen
+Fachhochschule, die eine Ausbildung f&uuml;r die eigenverantwortliche
+Berufsaus&uuml;bung der Musiktherapie anbietet, nostrifizierter
+Studienabschluss oder</span></p>
+
+<p class=53Literae2><span class=992Normal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) ein
+Diplom &uuml;ber eine absolvierte musiktherapeutische Ausbildung an einer in-
+oder ausl&auml;ndischen postsekund&auml;ren Bildungseinrichtung, sofern diese
+von einer &ouml;sterreichischen Universit&auml;t oder &ouml;sterreichischen
+Fachhochschule, die eine Ausbildung f&uuml;r die eigenverantwortliche
+Berufsaus&uuml;bung der Musiktherapie anbietet, als dieser gleichwertig anerkannt
+wurde.</span></p>
+
+<p class=45UeberschrPara><span class=993Fett>Voraussetzungen f&uuml;r die
+mitverantwortliche Berufsaus&uuml;bung der Musiktherapie</span></p>
+
+<p class=51Abs><span class=991GldSymbol>&sect;&nbsp;13.</span><span
+class=992Normal> (1) Zur mitverantwortlichen Berufsaus&uuml;bung der
+Musiktherapie bedarf es des Nachweises der Erf&uuml;llung der nachfolgend
+angef&uuml;hrten allgemeinen und besonderen Voraussetzungen sowie der
+Eintragung in die Musiktherapeutenliste, erforderlichenfalls nach Anh&ouml;rung
+von Sachverst&auml;ndigen.</span></p>
+
+<p class=51Abs><span class=992Normal>(2) Allgemeine Voraussetzungen im Sinne
+des Abs.&nbsp;1 sind:</span></p>
+
+<p class=52Ziffere1><span class=992Normal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. die
+Eigenberechtigung,</span></p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. die
+zur Erf&uuml;llung der Berufspflichten erforderliche gesundheitliche Eignung
+sowie</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3. die
+zur Erf&uuml;llung der Berufspflichten erforderliche Vertrauensw&uuml;rdigkeit.</p>
+
+<p class=51Abs><span class=992Normal>(3) Besondere Voraussetzungen im Sinne des
+Abs.&nbsp;1 sind</span></p>
+
+<p class=52Ziffere1><span class=992Normal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.&nbsp; die
+erfolgreiche Absolvierung der Ausbildung f&uuml;r die mitverantwortliche
+Berufsaus&uuml;bung der Musiktherapie und die Ausstellung der
+diesbez&uuml;glichen Urkunde &uuml;ber die Verleihung des akademischen Grades
+oder</span></p>
+
+<p class=52Ziffere1><span class=992Normal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. der
+Erwerb eines der Z&nbsp;1 gleichzuhaltenden Ausbildungsnachweises:</span></p>
+
+<p class=53Literae2><span class=992Normal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) ein
+aufgrund von &sect;&nbsp;14&nbsp;Abs.&nbsp;1, gegebenenfalls unter
+Ber&uuml;cksichtigung von &sect;&nbsp;14&nbsp;Abs.&nbsp;2, in einem
+EWR-Vertragsstaat oder in der Schweizerischen Eidgenossenschaft erworbener
+musiktherapeutischer Qualifikationsnachweis oder</span></p>
+
+<p class=53Literae2><span class=992Normal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) ein
+im Ausland erworbener und an einer &ouml;sterreichischen Universit&auml;t oder
+&ouml;sterreichischen Fachhochschule, die eine Ausbildung f&uuml;r die mitverantwortliche
+Berufsaus&uuml;bung der Musiktherapie anbietet, nostrifizierter
+Studienabschluss oder</span></p>
+
+<p class=53Literae2><span class=992Normal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) ein
+Diplom &uuml;ber eine absolvierte musiktherapeutische Ausbildung an einer in-
+oder ausl&auml;ndischen postsekund&auml;ren Bildungseinrichtung, sofern diese
+von einer &ouml;sterreichischen Universit&auml;t oder &ouml;sterreichischen
+Fachhochschule, die eine Ausbildung f&uuml;r die mitverantwortliche
+Berufsaus&uuml;bung der Musiktherapie anbietet, als dieser gleichwertig
+anerkannt wurde.</span></p>
+
+<p class=45UeberschrPara>Musiktherapeutische Qualifikationsnachweise aus dem
+EWR</p>
+
+<p class=51Abs><span class=991GldSymbol>&sect;&nbsp;14.</span> (1) Der
+Bundesminister (Die Bundesministerin) hat Qualifikationsnachweise f&uuml;r den
+reglementierten Beruf des Musiktherapeuten (der Musiktherapeutin) in Form der</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. eigenverantwortlichen
+Berufsaus&uuml;bung der Musiktherapie oder</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. mitverantwortlichen
+Berufsaus&uuml;bung der Musiktherapie,</p>
+
+<p class=55SchlussteilAbs>die einem (einer) Staatsangeh&ouml;rigen eines
+EWR-Vertragsstaats oder der Schweizerischen Eidgenossenschaft von den
+zust&auml;ndigen Beh&ouml;rden eines EWR-Vertragsstaats oder der
+Schweizerischen Eidgenossenschaft ausgestellt wurden, nach den Bestimmungen der
+Richtlinie 2005/36/EG auf Gleichwertigkeit der fachlichen Qualifikation,
+erforderlichenfalls unter Einholung eines Sachverst&auml;ndigengutachtens, zu
+pr&uuml;fen. Die Erlangung der Berufsberechtigung ist an die Bedingung der
+erfolgreichen Absolvierung einer Ausgleichsma&szlig;nahme zu kn&uuml;pfen, wenn
+sich die absolvierte Ausbildung unter Ber&uuml;cksichtigung der im Rahmen der
+Berufserfahrung erworbenen Kenntnisse und Erfahrungen wesentlich von der
+entsprechenden &ouml;sterreichischen Ausbildung unterscheidet.</p>
+
+<p class=51Abs>(2) Personen, die nicht Staatsangeh&ouml;rige eines
+EWR-Vertragsstaats oder der Schweizerischen Eidgenossenschaft sind und</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. &uuml;ber
+einen Aufenthaltstitel mit unbefristetem Recht auf Niederlassung gem&auml;&szlig;
+&sect;&nbsp;45 oder &sect;&nbsp;49 Niederlassungs- und Aufenthaltsgesetz (NAG),
+BGBl.&nbsp;I Nr.&nbsp;100/2005, verf&uuml;gen oder</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. als
+Angeh&ouml;rige von freiz&uuml;gigkeitsberechtigten Staatsangeh&ouml;rigen
+eines EWR-Vertragsstaats oder der Schweizerischen Eidgenossenschaft oder von &ouml;sterreichischen
+Staatsb&uuml;rgern (Staatsb&uuml;rgerinnen) zum Aufenthalt berechtigt sind und
+&uuml;ber eine Daueraufenthaltskarte gem&auml;&szlig; &sect;&nbsp;54&nbsp;NAG
+verf&uuml;gen,</p>
+
+<p class=55SchlussteilAbs>sind Staatsangeh&ouml;rigen eines EWR-Vertragsstaats
+in Bezug auf die Anwendung der Richtlinie 2005/36/EG gleichgestellt.</p>
+
+<p class=51Abs>(3) Der Bundesminister (Die Bundesministerin) f&uuml;r
+Gesundheit, Familie und Jugend hat Staatsangeh&ouml;rigen eines
+EWR-Vertragsstaats oder der Schweizerischen Eidgenossenschaft, die die
+Musiktherapie berufsm&auml;&szlig;ig in &Ouml;sterreich aus&uuml;ben, zum Zweck
+der Dienstleistungserbringung in einem anderen EWR-Vertragsstaat oder der
+Schweizerischen Eidgenossenschaft auf Antrag eine Bescheinigung dar&uuml;ber
+auszustellen, dass der (die) Betreffende</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. die
+Musiktherapie berufsm&auml;&szlig;ig in &Ouml;sterreich rechtm&auml;&szlig;ig
+aus&uuml;bt und</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. den
+f&uuml;r die Berufsaus&uuml;bung erforderlichen Qualifikationsnachweis besitzt.</p>
+
+<p class=55SchlussteilAbs>Erlischt die Berufsberechtigung des Betreffenden, so hat
+der Bundesminister (die Bundesministerin) f&uuml;r Gesundheit, Familie und
+Jugend das Erl&ouml;schen der Berufsberechtigung erforderlichenfalls
+bescheidm&auml;&szlig;ig festzustellen und die ausgestellte Bescheinigung
+erforderlichenfalls unter Anwendung des Verwaltungsvollstreckungsgesetzes&nbsp;1991
+(VVG), BGBl. Nr.&nbsp;53/1991, einzuziehen.</p>
+
+<p class=45UeberschrPara>Freier Dienstleistungsverkehr</p>
+
+<p class=51Abs><span class=991GldSymbol>&sect;&nbsp;15.</span> (1) Staatsangeh&ouml;rige
+eines EWR-Vertragsstaats oder der Schweizerischen Eidgenossenschaft, die die
+Musiktherapie berufsm&auml;&szlig;ig in einem der &uuml;brigen
+EWR-Vertragsstaaten oder der Schweizerischen Eidgenossenschaft
+rechtm&auml;&szlig;ig aus&uuml;ben, d&uuml;rfen von ihrem ausl&auml;ndischen Arbeitsort
+aus im Rahmen des Dienstleistungsverkehrs die Musiktherapie
+berufsm&auml;&szlig;ig vor&uuml;bergehend in &Ouml;sterreich ohne Eintragung in
+die Musiktherapeutenliste aus&uuml;ben.</p>
+
+<p class=51Abs>(2) Vor Aus&uuml;bung einer T&auml;tigkeit im Sinne des Abs.&nbsp;1,
+die einen vor&uuml;bergehenden Aufenthalt im Bundesgebiet erfordert, hat der
+Dienstleistungserbringer (die Dienstleistungserbringerin) dem Bundesminister
+(der Bundesministerin) f&uuml;r Gesundheit, Familie und Jugend</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. mittels
+eines vom Bundesministerium f&uuml;r Gesundheit, Familie und Jugend
+aufzulegenden Formblatts zumindest den Zeitpunkt, die Dauer, die Art und den
+Ort der T&auml;tigkeit schriftlich mitzuteilen und</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. eine
+Bescheinigung der zust&auml;ndigen Beh&ouml;rde des Heimat- oder
+Herkunftsstaats vorzulegen, die bei Vorlage nicht &auml;lter als zw&ouml;lf
+Monate sein darf, aus der hervorgeht, dass der Dienstleistungserbringer (die Dienstleistungserbringerin)
+die f&uuml;r die Berufsaus&uuml;bung der Musiktherapie erforderlichen Diplome,
+Pr&uuml;fungszeugnisse oder sonstigen Bef&auml;higungsnachweise besitzt und die
+Musiktherapie berufsm&auml;&szlig;ig im Herkunftsstaat rechtm&auml;&szlig;ig
+aus&uuml;bt.</p>
+
+<p class=55SchlussteilAbs>Sofern eine vorherige Anzeige aus Gr&uuml;nden der
+Dringlichkeit, insbesondere im Fall der drohenden Lebensgefahr oder schweren
+Gesundheitssch&auml;digung f&uuml;r den Patienten (die Patientin) oder Dritte nicht
+m&ouml;glich ist, hat die Verst&auml;ndigung unverz&uuml;glich nach Erbringung
+der Dienstleistung zu erfolgen.</p>
+
+<p class=51Abs>(3) Die Meldung gem&auml;&szlig; Abs.&nbsp;2 ist</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. einmal
+j&auml;hrlich zu erneuern, wenn der Dienstleistungserbringer (die Dienstleistungserbringerin)
+beabsichtigt, w&auml;hrend des betreffenden Jahres T&auml;tigkeiten im Sinne
+des Abs.&nbsp;1 auszu&uuml;ben und unabh&auml;ngig davon</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. im
+Fall einer wesentlichen &Auml;nderung der T&auml;tigkeit unverz&uuml;glich zu
+erstatten.</p>
+
+<p class=51Abs>(4) Legt ein Dienstleistungserbringer (eine Dienstleistungserbringerin)
+bei der Meldung gem&auml;&szlig; Abs.&nbsp;2</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. einen
+in einem EWR-Vertragsstaat oder der Schweizerischen Eidgenossenschaft
+erworbenen musiktherapeutischen Ausbildungsnachweis, der nicht alle
+Anforderungen an die Ausbildung gem&auml;&szlig; Artikel&nbsp;34 der Richtlinie
+2005/36/EG erf&uuml;llt, oder</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. einen
+au&szlig;erhalb des Europ&auml;ischen Wirtschaftsraums oder der Schweizerischen
+Eidgenossenschaft ausgestellten musiktherapeutischen Ausbildungsnachweis
+einschlie&szlig;lich einer Bescheinigung &uuml;ber eine dreij&auml;hrige musiktherapeutische
+Berufserfahrung im Hoheitsgebiet jenes EWR-Vertragsstaats oder der
+Schweizerischen Eidgenossenschaft, der (die) diesen Ausbildungsnachweis
+anerkannt hat (Artikel&nbsp;10 lit.&nbsp;g in Verbindung mit Artikel&nbsp;3
+Abs.&nbsp;3 der Richtlinie 2005/36/EG),</p>
+
+<p class=55SchlussteilAbs>vor, so kann der Bundesminister (die
+Bundesministerin) f&uuml;r Gesundheit, Familie und Jugend vor Aufnahme der
+T&auml;tigkeit im Sinne des Abs.&nbsp;1 die musiktherapeutische Qualifikation
+des Dienstleistungserbringers (der Dienstleistungserbringerin) nachpr&uuml;fen,
+um eine schwerwiegende Beeintr&auml;chtigung der Gesundheit des
+Dienstleistungsempf&auml;ngers (der Dienstleistungsempf&auml;ngerin) auf Grund
+dessen (deren) mangelnder Berufsqualifikation zu verhindern.</p>
+
+<p class=51Abs>(5) &Uuml;ber die Entscheidung betreffend die Nachpr&uuml;fung
+der Berufsqualifikation gem&auml;&szlig; Abs.&nbsp;4 bzw. deren Ergebnis hat der
+Bundesminister (die Bundesministerin) f&uuml;r Gesundheit, Familie und Jugend
+den Dienstleistungserbringer (die Dienstleistungserbringerin) innerhalb eines
+Monats nach vollst&auml;ndiger Meldung gem&auml;&szlig; Abs.&nbsp;2 zu
+unterrichten. Treten Schwierigkeiten auf, die zu einer Verz&ouml;gerung der
+Entscheidung f&uuml;hren k&ouml;nnten, ist der Dienstleistungserbringer (die Dienstleistungserbringerin)
+innerhalb eines Monats &uuml;ber die Gr&uuml;nde der Verz&ouml;gerung sowie
+&uuml;ber den Zeitplan der Entscheidung zu unterrichten. Die Entscheidung
+betreffend die Nachpr&uuml;fung hat sp&auml;testens innerhalb von zwei Monaten
+nach Vorlage der vollst&auml;ndigen Unterlagen zu erfolgen.</p>
+
+<p class=51Abs>(6) Ergibt die Nachpr&uuml;fung der Berufsqualifikation gem&auml;&szlig;
+Abs.&nbsp;4, dass ein wesentlicher Unterschied zwischen der Qualifikation des
+Dienstleistungserbringers (der Dienstleistungserbringerin) und den
+entsprechenden Ausbildungsnachweisen gem&auml;&szlig; &sect;&nbsp;9 oder &sect;&nbsp;10
+besteht, der die Gesundheit des Dienstleistungsempf&auml;ngers (der Dienstleistungsempf&auml;ngerin)
+gef&auml;hrden k&ouml;nnte, hat der Bundesminister (die Bundesministerin)
+f&uuml;r Gesundheit, Familie und Jugend dem Dienstleistungserbringer (der Dienstleistungserbringerin)
+innerhalb eines Monats ab Zustellung der Entscheidung die M&ouml;glichkeit zu
+geben, im Rahmen einer Eignungspr&uuml;fung die fehlenden Kenntnisse und Erfahrungen
+nachzuweisen. Kann der Dienstleistungserbringer (die Dienstleistungserbringerin)
+die fehlenden Kenntnisse und Erfahrungen im Rahmen der Eignungspr&uuml;fung
+nicht nachweisen, hat der Bundesminister (die Bundesministerin) f&uuml;r
+Gesundheit, Familie und Jugend diesem (dieser) die Aus&uuml;bung von
+T&auml;tigkeiten gem&auml;&szlig; Abs.&nbsp;1 zu untersagen.</p>
+
+<p class=51Abs>(7) Personen gem&auml;&szlig; Abs.&nbsp;1 unterliegen bei
+Erbringung der Dienstleistung den f&uuml;r Musiktherapeuten
+(Musiktherapeutinnen) geltenden Berufspflichten. Verst&ouml;&szlig;t der
+Dienstleistungserbringer (die Dienstleistungserbringerin) gegen diese
+Pflichten, so hat der Bundesminister (die Bundesministerin) f&uuml;r
+Gesundheit, Familie und Jugend dies unverz&uuml;glich bei der zust&auml;ndigen
+Beh&ouml;rde seines Herkunftsstaats anzuzeigen.</p>
+
+<p class=45UeberschrPara><span class=993Fett>EWR-Musiktherapie-Verordnung</span></p>
+
+<p class=51Abs><span class=991GldSymbol>&sect;&nbsp;16.</span> Der
+Bundesminister (Die Bundesministerin) f&uuml;r Gesundheit, Familie und Jugend
+hat N&auml;heres &uuml;ber die musiktherapeutischen Qualifikationsnachweise aus
+dem EWR und der Schweizerischen Eidgenossenschaft, insbesondere &uuml;ber die
+Durchf&uuml;hrung der Pr&uuml;fung der Gleichwertigkeit der fachlichen Qualifikation
+und die Festlegung von Ausgleichsma&szlig;nahmen, durch Verordnung festzulegen.</p>
+
+<p class=45UeberschrPara>Erl&ouml;schen der Berufsberechtigung</p>
+
+<p class=51Abs><span class=991GldSymbol>&sect;&nbsp;17.</span> (1) Die
+Berechtigung zur Berufsaus&uuml;bung der Musiktherapie erlischt</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. durch
+den Wegfall einer f&uuml;r die Berufsaus&uuml;bung der Musiktherapie
+erforderlichen Voraussetzung, oder</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. wenn
+hervorkommt, dass eine f&uuml;r die Berufsaus&uuml;bung der Musiktherapie erforderliche
+Voraussetzung schon urspr&uuml;nglich nicht bestanden hat, oder</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3. auf
+Grund einer l&auml;nger als f&uuml;nf Jahre dauernden Unterbrechung der Berufsaus&uuml;bung
+der Musiktherapie oder</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4. auf
+Grund von Verzicht auf die Berufsaus&uuml;bung der Musiktherapie.</p>
+
+<p class=51Abs>(2) Der Bundesminister (Die Bundesministerin) f&uuml;r
+Gesundheit, Familie und Jugend hat, erforderlichenfalls <span class=992Normal>nach
+Einholung eines Gutachtens von Sachverst&auml;ndigen, in den F&auml;llen des
+Abs.&nbsp;1 sowie im Fall des Todes des Musiktherapeuten (der Musiktherapeutin)
+</span>die Streichung aus der Musiktherapeutenliste vorzunehmen und in den
+F&auml;llen des Abs.&nbsp;1 mit Bescheid festzustellen, dass die Berechtigung
+zur Berufsaus&uuml;bung der Musiktherapie und zur F&uuml;hrung der
+entsprechenden Berufs- und Zusatzbezeichnung nicht besteht. In diesem
+Zusammenhang ist auch festzustellen, zu welchem Zeitpunkt die Berufsberechtigun<span
+class=992Normal>g erloschen ist oder, falls dieser nicht festgestellt werden
+kann, zu welchem Zeitpunkt die Berufsberechtigung als erloschen angenommen
+wird. Im Fall der Streichung ist der bisherige Eintrag in Evidenz zu halten.
+Eine allf&auml;llige Wiedereintragung ist bei Erf&uuml;llung der entsprechenden
+allgemeinen und besonderen Voraussetzungen m&ouml;glich.</span></p>
+
+<p class=51Abs>(3) Die Vertrauensw&uuml;rdigkeit f&auml;llt insbesondere dann
+weg, wenn</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. der
+Musiktherapeut (die Musiktherapeutin) seine (ihre) Berufspflichten
+gr&ouml;blich verletzt oder trotz Mahnung wiederholt gegen seine (ihre)
+Berufspflichten versto&szlig;en hat und,</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. sofern
+die Vertrauensw&uuml;rdigkeit durch ein Verhalten gem&auml;&szlig; Z&nbsp;1
+nicht g&auml;nzlich beseitigt ist, keine geeigneten Ma&szlig;nahmen getroffen
+hat, die f&uuml;r die Zukunft eine verl&auml;ssliche Berufsaus&uuml;bung
+erwarten lassen.</p>
+
+<p class=51Abs>(4) Geeignete Ma&szlig;nahmen gem&auml;&szlig; Abs.&nbsp;3&nbsp;Z&nbsp;2
+sind insbesondere die</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. f&ouml;rmliche
+Entschuldigung,</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. Mitwirkung
+bei einer geeigneten und anerkannten Form von alternativer Streitbeilegung,</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3. Absolvierung
+musiktherapeutischer Selbsterfahrung,</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4. Absolvierung
+musiktherapeutischer Supervision,</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5. Wiederholung
+von Ausbildungsteilen der musiktherapeutischen Ausbildung,</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6. R&uuml;ckzahlung
+der durch die musiktherapeutische Behandlung verursachten und vom (von der)
+Behandelten zu tragenden Kosten,</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 7. Kostentragung
+f&uuml;r die notwendige Folgebehandlung des (der) Behandelten,</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 8. Unterziehung
+einer Krankenbehandlung sowie</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9. Unterbrechung
+der Berufsaus&uuml;bung der Musiktherapie f&uuml;r die Dauer des Verfahrens.</p>
+
+<p class=51Abs>(5) Der Bundesminister (Die Bundesministerin) f&uuml;r
+Gesundheit, Familie und Jugend hat, sofern der Musiktherapeut (die
+Musiktherapeutin) die zu treffende Ma&szlig;nahme oder die zu treffenden
+Ma&szlig;nahmen gem&auml;&szlig; Abs.&nbsp;3&nbsp;Z&nbsp;2 nicht bereits auf
+Grund einer formlosen Aufforderung trifft, diese mit Bescheid festzustellen. Bei
+der Feststellung der vom Musiktherapeuten (von der Musiktherapeutin) zu
+treffenden Ma&szlig;nahmen hat der Bundesminister (die Bundesministerin) die
+Interessen von Gesch&auml;digten, das &ouml;ffentliche Wohl und das Vorliegen
+von Gefahr im Verzug angemessen zu ber&uuml;cksichtigen.</p>
+
+<p class=51Abs>(6) Die Beweislast f&uuml;r die <span class=992Normal>Glaubhaftmachung</span>
+des Bestehens der Vertrauensw&uuml;rdigkeit tr&auml;gt der Musiktherapeut (die
+Musiktherapeutin).</p>
+
+<p class=44UeberschrArt>Informationspflichten</p>
+
+<p class=51Abs><span class=991GldSymbol>&sect;&nbsp;18.</span> (1) Die in den
+Abs.&nbsp;2 bis 5 geregelten Informationspflichten gelten f&uuml;r jene
+F&auml;lle, in denen &nbsp;Musiktherapeuten (Musiktherapeutinnen) von einer
+Sachwalterschaft (potenziell) betroffene Personen, Beschuldigte oder Angeklagte
+sind.</p>
+
+<p class=51Abs>(2) Die Gerichte sind verpflichtet, den Bundesminister (die
+Bundesministerin) f&uuml;r Gesundheit, Familie und Jugend &uuml;ber die Bestellung
+eines Sachwalters (einer Sachwalterin), unverz&uuml;glich zu verst&auml;ndigen.</p>
+
+<p class=51Abs>(3)&nbsp;Die Staatsanwaltschaften sind verpflichtet, den
+Bundesminister (die Bundesministerin) f&uuml;r Gesundheit, Familie und Jugend</p>
+
+<p class=52Ziffere1><span class=992Normal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. von
+der Einleitung und Beendigung eines Ermittlungsverfahrens, soweit ein
+Zusammenhang mit der Berufsaus&uuml;bung der Musiktherapie besteht, und</span></p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. von
+der Verh&auml;ngung und Aufhebung der Untersuchungshaft</p>
+
+<p class=55SchlussteilAbs>unverz&uuml;glich zu verst&auml;ndigen.</p>
+
+<p class=51Abs>(4) Die Strafgerichte sind verpflichtet, den Bundesminister (die
+Bundesministerin) f&uuml;r Gesundheit, Familie und Jugend von der Beendigung
+des Hauptverfahrens gem&auml;&szlig; der Strafprozessordnung&nbsp;1975 (StPO),
+BGBl.&nbsp;Nr.&nbsp;631/1975, unverz&uuml;glich zu verst&auml;ndigen.</p>
+
+<p class=51Abs>(5) Die Verwaltungsbeh&ouml;rden sind verpflichtet, soweit es
+sich um Verwaltungs&uuml;bertretungen im Zusammenhang mit der Berufsaus&uuml;bung
+der Musiktherapie handelt, den Bundesminister (die Bundesministerin) f&uuml;r
+Gesundheit, Familie und Jugend von der Einleitung und Beendigung eines
+Strafverfahrens unverz&uuml;glich zu verst&auml;ndigen und ihm (ihr) eine
+Ausfertigung des rechtskr&auml;ftigen Straferkenntnisses zu &uuml;bersenden.
+Die Verwaltungsbeh&ouml;rden sind verpflichtet, diese Anzeigen auch der
+vorgesetzten Dienststelle des Musiktherapeuten (der Musiktherapeutin) zu
+erstatten, sofern dieser (diese) die Musiktherapie im Rahmen eines
+Dienstverh&auml;ltnisses bei einer Gebietsk&ouml;rperschaft oder einer anderen
+K&ouml;rperschaft &ouml;ffentlichen Rechts aus&uuml;bt.</p>
+
+<p class=51Abs>(6) Die Beh&ouml;rden, gesetzlichen beruflichen Vertretungen sowie
+die Tr&auml;ger der Sozialversicherung haben innerhalb ihres Wirkungsbereiches dem
+Bundesminister (der Bundesministerin) f&uuml;r Gesundheit, Familie und Jugend auf
+sein (ihr) Verlangen die zur Erf&uuml;llung seiner (ihrer) Obliegenheiten
+erforderlichen Ausk&uuml;nfte zu erteilen und den Bundesminister (die
+Bundesministerin) f&uuml;r Gesundheit, Familie und Jugend bei der
+Erf&uuml;llung seiner (ihrer) Aufgaben nach diesem Bundesgesetz zu
+unterst&uuml;tzen.</p>
+
+<p class=42UeberschrG1->5. Abschnitt</p>
+
+<p class=43UeberschrG2>Musiktherapeutenliste</p>
+
+<p class=45UeberschrPara>F&uuml;hrung der Musiktherapeutenliste</p>
+
+<p class=51Abs><span class=991GldSymbol>&sect;&nbsp;19.</span> (1) Der
+Bundesminister (Die Bundesministerin) f&uuml;r Gesundheit, Familie und Jugend
+hat zur Wahrung des &ouml;ffentlichen Interesses an einer geordneten Erfassung
+eine elektronische Liste der zur Berufsaus&uuml;bung der Musiktherapie
+berechtigten Personen (Musiktherapeutenliste) zu f&uuml;hren.</p>
+
+<p class=51Abs>(2) Der Bundesminister (Die Bundesministerin) f&uuml;r
+Gesundheit, Familie und Jugend hat folgende obligatorische und fakultative
+Daten der Musiktherapeuten (Musiktherapeutinnen) aufzunehmen:</p>
+
+<p class=52Ziffere1><span class=992Normal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. Eintragungsnummer,</span></p>
+
+<p class=52Ziffere1><span class=992Normal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. Vorname(-n)
+und Zuname, gegebenenfalls Geburtsname,</span></p>
+
+<p class=52Ziffere1><span class=992Normal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3. Berufs-
+und Zusatzbezeichnung samt Hinweis auf den Berechtigungsumfang gem&auml;&szlig;
+&sect;&nbsp;7 oder &sect;&nbsp;8,</span></p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4. akademische
+Grade, Amtstitel, verliehene Titel sowie ausl&auml;ndische Titel und
+W&uuml;rden,</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5. Geburtsdatum
+und Geburtsort,</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6. Staatsangeh&ouml;rigkeit,</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 7. Hauptwohnsitz
+bzw. gew&ouml;hnlicher Aufenthalt,</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 8. Zustelladresse,</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9. Arbeitsort
+(Arbeitsorte):</p>
+
+<p class=53Literae2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) Bezeichnung,</p>
+
+<p class=53Literae2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) Postadresse,</p>
+
+<p class=53Literae2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) Telefonnummer,</p>
+
+<p class=53Literae2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) Web-Adresse
+(fakultativ),</p>
+
+<p class=53Literae2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; e) E-Mail-Adresse
+(fakultativ),</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10. Hinweise
+auf Arbeitsschwerpunkte und zielgruppenorientierte Spezialisierungen
+(fakultativ),</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 11. Hinweise
+auf die Bef&auml;higung zur Berufsaus&uuml;bung der Musiktherapie in
+Fremdsprachen (fakultativ),</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 12. Beginn
+der Berufsaus&uuml;bung der Musiktherapie,</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 13. Hinweise
+auf eine Unterbrechung und eine Wiederaufnahme sowie auf das Erl&ouml;schen der
+Berufsaus&uuml;bung der Musiktherapie sowie</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 14. Name
+des Musiktherapeuten (der Musiktherapeutin), der (die) im Fall des Todes die
+Pflicht zur Aufbewahrung der Dokumentation &uuml;bernimmt (fakultativ).</p>
+
+<p class=51Abs>(3) Die gem&auml;&szlig;
+Abs.&nbsp;2&nbsp;Z&nbsp;1&nbsp;bis&nbsp;4 und 9&nbsp;bis&nbsp;13 angef&uuml;hrten
+Daten sind &ouml;ffentlich und in geeigneter Weise im Internet allgemein
+zug&auml;nglich kundzumachen.</p>
+
+<p class=45UeberschrPara>Anmeldung zur Eintragung in die Musiktherapeutenliste</p>
+
+<p class=51Abs><span class=991GldSymbol>&sect;&nbsp;20.</span> (1) Personen,
+die die eigenverantwortliche oder mitverantwortliche Berufsaus&uuml;bung der
+Musiktherapie in &Ouml;sterreich beabsichtigen, haben sich vor Aufnahme der
+Berufsaus&uuml;bung beim Bundesministerium f&uuml;r Gesundheit, <span
+class=992Normal>Familie und Jugend mittels eines von diesem hief&uuml;r
+aufzulegenden Formblatts und unter eigenh&auml;ndiger Unterschriftsleistung
+oder mittels qualifizierter elektronischer Signatur anzumelden und die zum
+Nachweis der entsprechenden allgemeinen und besonderen Voraussetzungen
+erforderlichen Urkunden vorzulegen.</span></p>
+
+<p class=51Abs>(2) Eintragungswerber (Eintragungswerberinnen) gem&auml;&szlig;
+Abs.&nbsp;1, die die Berufsaus&uuml;bung der Musiktherapie im Rahmen eines
+Dienstverh&auml;ltnisses anstreben und unter die Bestimmungen des Ausl&auml;nderbesch&auml;ftigungsgesetzes,
+BGBl.&nbsp;Nr.&nbsp;218/1975, fallen, haben bei der Anmeldung gem&auml;&szlig; Abs.&nbsp;1
+zus&auml;tzlich die Erf&uuml;llung der
+ausl&auml;nderbesch&auml;ftigungsrechtlichen Voraussetzungen f&uuml;r eine
+Besch&auml;ftigung in &Ouml;sterreich nachzuweisen.</p>
+
+<p class=51Abs>(3) Der Nachweis der gesundheitlichen Eignung ist vom
+Eintragungswerber (von der Eintragungswerberin) durch ein &auml;rztliches
+Zeugnis zu erbringen, aus dem hervorgeht, dass er (sie) an keinen gesundheitlichen
+Beeintr&auml;chtigungen leidet, die eine verl&auml;ssliche Berufsaus&uuml;bung
+nicht erwarten lassen. Das &auml;rztliche Zeugnis darf zum Zeitpunkt der
+Anmeldung zur Eintragung nicht &auml;lter als drei Monate sein.</p>
+
+<p class=51Abs>(4) Der Nachweis der Vertrauensw&uuml;rdigkeit ist vom
+Eintragungswerber (von der Eintragungswerberin) insbesondere durch</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. eine
+Strafregisterbescheinigung oder einen vergleichbaren Nachweis des Heimat- oder
+Herkunftsstaats und</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. sofern
+dies die Rechts- und Verwaltungsvorschriften des Heimat- oder Herkunftsstaats
+vorsehen, durch eine Disziplinarstrafregisterbescheinigung oder einen vergleichbaren
+Nachweis</p>
+
+<p class=55SchlussteilAbs><span class=992Normal>zu erbringen. In der
+Bescheinigung (den Bescheinigungen) darf keine Verurteilung enthalten sein, die
+eine verl&auml;ssliche Berufsaus&uuml;bung nicht erwarten l&auml;sst. Die
+Bescheinigung (Bescheinigungen) darf (d&uuml;rfen) </span>zum Zeitpunkt der
+Anmeldung zur Eintragung nicht &auml;lter als drei Monate sein.</p>
+
+<p class=51Abs>(5) Hat der Bundesminister (die Bundesministerin) f&uuml;r Gesundheit,
+Familie und Jugend von einem Sachverhalt Kenntnis, der au&szlig;erhalb des
+Bundesgebiets eingetreten ist und geeignet sein k&ouml;nnte, Zweifel im
+Hinblick auf die Vertrauensw&uuml;rdigkeit des Eintragungswerbers (der
+Eintragungswerberin) zu begr&uuml;nden, so kann er (sie) die zust&auml;ndige
+Stelle des betreffenden Staates davon unterrichten und diese ersuchen, den
+Sachverhalt zu pr&uuml;fen und ihm (ihr) innerhalb von drei Monaten
+mitzuteilen, ob wegen dieses Sachverhalts gegen die betreffende Person</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. in
+diesem Staat ermittelt wird, oder</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. ein
+disziplinarrechtliches, verwaltungsstrafrechtliches oder strafrechtliches
+Verfahren anh&auml;ngig ist oder</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3. eine
+disziplinarrechtliche, verwaltungsstrafrechtliche oder strafrechtliche
+Ma&szlig;nahme verh&auml;ngt wurde.</p>
+
+<p class=51Abs>(6) Der Eintragungswerber (die Eintragungswerberin) hat in der
+Anmeldung zur Eintragung den in Aussicht genommenen Arbeitsort oder die in Aussicht
+genommenen Arbeitsorte anzuf&uuml;hren.</p>
+
+<p class=51Abs>(7) Nachweise, die nicht in deutscher Sprache ausgestellt sind,
+sind, sofern dies vom Bundesminister (von der Bundesministerin) f&uuml;r
+Gesundheit, Familie und Jugend verlangt wird, auch in beglaubigter
+&Uuml;bersetzung vorzulegen.</p>
+
+<p class=45UeberschrPara>Aufnahme fakultativer Daten in die
+Musiktherapeutenliste</p>
+
+<p class=51Abs><span class=991GldSymbol>&sect;&nbsp;21.</span> (1) Die
+F&uuml;hrung folgender fakultativer Daten von Musiktherapeuten
+(Musiktherapeutinnen) in der Musiktherapeutenliste durch den Bundesminister
+(die Bundesministerin) f&uuml;r Gesundheit, Familie und Jugend ist unter den
+Voraussetzungen der Abs.&nbsp;2 und 3 zul&auml;ssig:</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. Web-Adressen
+des Arbeitsortes (der Arbeitsorte),</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. E-Mail-Adressen
+des Arbeitsortes (der Arbeitsorte),</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3. Hinweise
+auf Arbeitsschwerpunkte und zielgruppenorientierte Spezialisierungen sowie</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4. Hinweise
+auf die Bef&auml;higung zur Berufsaus&uuml;bung der Musiktherapie in
+Fremdsprachen.</p>
+
+<p class=51Abs>(2) Einen Antrag auf F&uuml;hrung fakultativer Daten
+gem&auml;&szlig; Abs.&nbsp;1 k&ouml;nnen sowohl Musiktherapeuten
+(Musiktherapeutinnen) als auch Eintragungswerber (Eintragungswerberinnen)
+stellen. Im letztgenannten Fall setzt die Eintragung der fakultativen Daten die
+Erlangung der Berufsberechtigung voraus.</p>
+
+<p class=51Abs>(3) Der Bundesminister (Die Bundesministerin) f&uuml;r Gesundheit,
+Familie und Jugend hat die beantragten fakultativen Daten in die
+Musiktherapeutenliste aufzunehmen, sofern eine solche Aufnahme</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. im
+&ouml;ffentlichen Interesse ist,</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. im
+Einklang mit der Verpflichtung zur Werbebeschr&auml;nkung steht und</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3. f&uuml;r
+eine geordnete Erfassung nicht hinderlich ist.</p>
+
+<p class=45UeberschrPara>Verfahren zur Eintragung in die Musiktherapeutenliste</p>
+
+<p class=51Abs><span class=991GldSymbol>&sect;&nbsp;22.</span> (1) Der Bundesminister
+(Die Bundesministerin) f&uuml;r Gesundheit, Familie und Jugend hat jede
+Anmeldung ohne unn&ouml;tigen Aufschub, sp&auml;testens jedoch binnen vier
+Monaten nach Einlangen der vollst&auml;ndigen Unterlagen, zu erledigen. Diese
+Frist wird im Fall eines Ersuchens gem&auml;&szlig; &sect;&nbsp;20 Abs.&nbsp;5
+bis zu jenem Zeitpunkt gehemmt, in dem die Ausk&uuml;nfte der ersuchten
+ausl&auml;ndischen Stelle einlangen. In diesem Fall hat der Bundesminister (die
+Bundesministerin) f&uuml;r Gesundheit, Familie und Jugend das Verfahren
+unverz&uuml;glich nach Einlangen der Ausk&uuml;nfte oder, sofern die
+Ausk&uuml;nfte nicht innerhalb von drei Monaten nach &Uuml;bermittlung des
+Ersuchens einlangen, unverz&uuml;glich nach Ablauf dieser drei Monate
+fortzusetzen.</p>
+
+<p class=51Abs>(2) Wer die allgemeinen und besonderen Voraussetzungen f&uuml;r
+die eigenverantwortliche Berufsaus&uuml;bung der Musiktherapie erf&uuml;llt,
+ist vom Bundesminister (von der Bundesministerin) f&uuml;r Gesundheit, Familie
+und Jugend, erforderlichen<span class=992Normal>falls nach Einholung eines
+Sachverst&auml;ndigengutachtens, als &#8222;Musiktherapeut&#8220;
+(&#8222;Musiktherapeutin&#8220;) mit der auf die Berechtigung zur
+eigenverantwortlichen Berufsaus&uuml;bung der Musiktherapie hinweisenden
+Zusatzbezeichnung einzutragen.</span></p>
+
+<p class=51Abs><span class=992Normal>(3) Wer die allgemeinen und besonderen
+Voraussetzungen f&uuml;r die mitverantwortliche Berufsaus&uuml;bung der
+Musiktherapie erf&uuml;llt, ist vom Bundesminister (von der Bundesministerin)
+f&uuml;r Gesundheit, Familie und Jugend, </span>erforderlichen<span
+class=992Normal>falls nach Einholung eines Sachverst&auml;ndigengutachtens, als
+&#8222;Musiktherapeut&#8220; (&#8222;Musiktherapeutin&#8220;) mit der auf die
+Berechtigung zur mitverantwortlichen Berufsaus&uuml;bung der Musiktherapie
+hinweisenden Zusatzbezeichnung einzutragen.</span></p>
+
+<p class=51Abs>(4) Die Berufsaus&uuml;bung der Musiktherapie darf erst nach
+Eintragung in die Musiktherapeutenliste aufgenommen werden.</p>
+
+<p class=45UeberschrPara>Versagung der Eintragung</p>
+
+<p class=51Abs><span class=991GldSymbol>&sect;&nbsp;23.</span> Erf&uuml;llt ein
+Eintragungswerber (eine Eintragungswerberin) die allgemeinen oder besonderen
+Voraussetzungen f&uuml;r die Berufsaus&uuml;bung der Musiktherapie nicht, so
+hat der Bundesminister (die Bundesministerin) f&uuml;r Gesundheit, Familie und
+Jugend die Eintragung in die Musiktherapeutenliste mit Bescheid zu versagen,
+sofern die Antragsunterlagen vollst&auml;ndig eingelangt sind, sp&auml;testens
+binnen vier Monaten nach deren Einlangen.</p>
+
+<p class=45UeberschrPara>Meldepflichten</p>
+
+<p class=51Abs><span class=991GldSymbol>&sect;&nbsp;24.</span> (1) Musiktherapeuten
+(Musiktherapeutinnen) haben dem Bundesministerium f&uuml;r Gesundheit, Familie
+und Jugend &uuml;ber folgende Sachverhalte schriftliche Meldungen,
+erforderlichenfalls samt den entsprechenden Nachweisen, binnen einem Monat zu
+erstatten:</p>
+
+<p class=52Ziffere1><span class=992Normal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. Namens&auml;nderung,</span></p>
+
+<p class=52Ziffere1><span class=992Normal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. &Auml;nderung
+oder Erwerb von akademischen Graden,</span></p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3. &Auml;nderung
+der Staatsangeh&ouml;rigkeit,</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4. &Auml;nderung
+des Hauptwohnsitzes oder des gew&ouml;hnlichen Aufenthalts,</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5. &Auml;nderung
+der Zustelladresse,</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6. &Auml;nderung
+von Arbeitsorten (Bezeichnung, Postadresse, Telefonnummer, und, sofern in die
+Musiktherapeutenliste eingetragen, auch die Web-Adresse und E-Mail-Adresse),</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 7. &Auml;nderung
+von in die Musiktherapeutenliste eingetragenen Arbeitsschwerpunkten und zielgruppenorientierten
+Spezialisierungen,</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 8. &Auml;nderung
+von in die Musiktherapeutenliste eingetragenen Bef&auml;higungen zur
+Berufsaus&uuml;bung der Musiktherapie in Fremdsprachen,</p>
+
+<p class=52Ziffere1><span class=992Normal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9. Unterbrechung
+der Berufsaus&uuml;bung, wenn sie voraussichtlich mehr als drei Monate
+&uuml;bersteigen wird, sowie</span></p>
+
+<p class=52Ziffere1><span class=992Normal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10. Verzicht
+auf die Berufsaus&uuml;bung.</span></p>
+
+<p class=51Abs>(2) Der Bundesminister (Die Bundesministerin) f&uuml;r
+Gesundheit, Familie und Jugend hat die erforderlichen &Auml;nderungen und
+Erg&auml;nzungen in der Musiktherapeutenliste unverz&uuml;glich vorzunehmen.</p>
+
+<p class=45UeberschrPara>Verwaltungszusammenarbeit</p>
+
+<p class=51Abs><span class=991GldSymbol>&sect;&nbsp;25.</span> Der
+Bundesminister (Die Bundesministerin) f&uuml;r Gesundheit, Familie und Jugend
+hat innerhalb seines (ihres) Wirkungsbereichs den zust&auml;ndigen
+Beh&ouml;rden der anderen EWR-Vertragsstaaten und der Schweizerischen
+Eidgenossenschaft die zur Anwendung der Richtlinie 2005/36/EG erforderlichen
+Ausk&uuml;nfte zu erteilen, insbesondere</p>
+
+<p class=52Ziffere1><span class=992Normal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. &uuml;ber
+das Vorliegen von strafrechtlichen, verwaltungsstrafrechtlichen, zur
+Wiederherstellung der Vertrauensw&uuml;rdigkeit bestimmten Ma&szlig;nahmen
+betreffend Musiktherapeuten (Musiktherapeutinnen) sowie &uuml;ber sonstige
+diese Personen betreffende schwerwiegende genau bestimmte Sachverhalte, die
+sich auf deren Berufsaus&uuml;bung auswirken k&ouml;nnten, und</span></p>
+
+<p class=52Ziffere1><span class=992Normal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. sofern
+nicht Z&nbsp;1 zur Anwendung kommt, hinsichtlich von in &Ouml;sterreich
+niedergelassenen Musiktherapeuten (Musiktherapeutinnen), die in einem anderen
+EWR-Vertragsstaat oder der Schweizerischen Eidgenossenschaft vor&uuml;bergehend
+musiktherapeutische Dienstleistungen erbringen wollen, &uuml;ber die
+Rechtm&auml;&szlig;igkeit deren Niederlassung und guter F&uuml;hrung
+(Vertrauensw&uuml;rdigkeit) in &Ouml;sterreich sowie &uuml;ber die Tatsache,
+dass gegen sie keine berufsbezogenen Ma&szlig;nahmen gem&auml;&szlig; Z&nbsp;1
+vorliegen.</span></p>
+
+<p class=42UeberschrG1->6. Abschnitt</p>
+
+<p class=43UeberschrG2>Berufspflichten</p>
+
+<p class=45UeberschrPara>F&uuml;hrung von Berufsbezeichnungen</p>
+
+<p class=51Abs><span class=991GldSymbol>&sect;&nbsp;26.</span><span
+class=992Normal> (1) Wer zur eigenverantwortlichen Berufsaus&uuml;bung der
+Musiktherapie berechtigt ist, hat im Zusammenhang mit der Berufsaus&uuml;bung</span></p>
+
+<p class=52Ziffere1><span class=992Normal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. die
+Berufsbezeichnung &#8222;Musiktherapeut&#8220; oder
+&#8222;Musiktherapeutin&#8220; und</span></p>
+
+<p class=52Ziffere1><span class=992Normal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. als
+Zusatzbezeichnung jenen akademischer Grad in abgek&uuml;rzter Form, der
+aufgrund der Absolvierung der Ausbildung f&uuml;r die eigenverantwortliche
+Berufsaus&uuml;bung der Musiktherapie erworben wurde,</span></p>
+
+<p class=55SchlussteilAbs><span class=992Normal>zu f&uuml;hren.</span></p>
+
+<p class=51Abs><span class=992Normal>(2) Wer zur mitverantwortlichen
+Berufsaus&uuml;bung der Musiktherapie berechtigt ist, hat im Zusammenhang mit
+der Berufsaus&uuml;bung</span></p>
+
+<p class=52Ziffere1><span class=992Normal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. die
+Berufsbezeichnung &#8222;Musiktherapeut&#8220; oder
+&#8222;Musiktherapeutin&#8220; und</span></p>
+
+<p class=52Ziffere1><span class=992Normal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. als
+Zusatzbezeichnung jenen akademischer Grad in abgek&uuml;rzter Form, der
+aufgrund der Absolvierung der Ausbildung f&uuml;r die mitverantwortliche
+Berufsaus&uuml;bung der Musiktherapie erworben wurde,</span></p>
+
+<p class=55SchlussteilAbs><span class=992Normal>zu f&uuml;hren.</span></p>
+
+<p class=51Abs><span class=992Normal>(3) Die F&uuml;hrung der Berufs- und
+Zusatzbezeichnungen gem&auml;&szlig; den Abs.&nbsp;1 und 2 ist im Zusammenhang
+mit der Berufsaus&uuml;bung der Musiktherapie den im Abs.&nbsp;1 und 2
+genannten Personen vorbehalten.</span></p>
+
+<p class=51Abs>(4) Jede Bezeichnung, die geeignet ist, die Berechtigung zur eigenverantwortlichen
+oder mitverantwortlichen Berufsaus&uuml;bung der Musiktherapie
+vorzut&auml;uschen, ist untersagt.</p>
+
+<p class=45UeberschrPara><span class=993Fett>Berufsaus&uuml;bung nach bestem
+Wissen und Gewissen</span></p>
+
+<p class=51Abs><span class=991GldSymbol>&sect;&nbsp;27.</span> (1) Musiktherapeuten
+(Musiktherapeutinnen) haben ihren Beruf mit musiktherapeutisch-wissenschaftlichen
+Methoden nach bestem Wissen und Gewissen und unter Beachtung der Entwicklung
+der Erkenntnisse der Wissenschaft auszu&uuml;ben. Sie haben das Wohl der
+Kranken und den Schutz der Gesunden unter Einhaltung der bestehenden Vorschriften
+zu wahren.</p>
+
+<p class=51Abs>(2) Musiktherapeuten (Musiktherapeutinnen) haben ihren Beruf
+pers&ouml;nlich und unmittelbar, allenfalls in Zusammenarbeit mit Vertretern
+(Vertreterinnen) ihrer oder einer anderen Wissenschaft oder Berufes, auszu&uuml;ben.
+Sie k&ouml;nnen sich jedoch Hilfspersonen, insbesondere Studierender der
+Musiktherapie, bedienen, wenn diese nach ihren genauen Anordnungen und unter
+ihrer Aufsicht handeln.</p>
+
+<p class=51Abs>(3) Musiktherapeuten (Musiktherapeutinnen) haben sich bei der Berufsaus&uuml;bung
+auf jene musiktherapeutischen Arbeitsgebiete und Behandlungsmethoden zu
+beschr&auml;nken, auf (in) denen sie nachweislich ausreichende Kenntnisse und
+Erfahrungen erworben haben.</p>
+
+<p class=51Abs>(4) Musiktherapeuten (Musiktherapeutinnen) d&uuml;rfen eine
+Person nur mit deren Einwilligung oder erforderlichenfalls mit Einwilligung
+(Zustimmung) deren gesetzlichen Vertreters (Vertreterin) oder deren Vorsorgebevollm&auml;chtigten
+behandeln.</p>
+
+<p class=51Abs>(5) Musiktherapeuten (Musiktherapeutinnen), die von der musiktherapeutischen
+Behandlung zur&uuml;cktreten wollen, haben diese Absicht der behandelten Person
+oder erforderlichenfalls deren gesetzlichen Vertreter (Vertreterin) oder deren
+Vorsorgebevollm&auml;chtigten so rechtzeitig mitzuteilen, dass die weitere
+musiktherapeutische Versorgung sichergestellt werden kann.</p>
+
+<p class=45UeberschrPara><span class=993Fett>Fortbildungspflicht</span></p>
+
+<p class=51Abs><span class=991GldSymbol>&sect;&nbsp;28.</span> Der
+Berufspflicht zur Berufsaus&uuml;bung nach bestem Wissen und Gewissen haben
+Musiktherapeuten (Musiktherapeutinnen) insbesondere <span class=992Normal>durch
+den regelm&auml;&szlig;igen Besuch von in- oder ausl&auml;ndischen
+Fortbildungsveranstaltungen </span>&uuml;ber aktuelle Entwicklungen und
+Erkenntnisse der musiktherapeutischen und anderer berufsrelevanter
+Wissenschaften sowie durch die Inanspruchnahme von Supervision, insgesamt
+zumindest im Ausma&szlig; von 90 Einheiten innerhalb eines Zeitraumes von drei
+Jahren, zu entsprechen.</p>
+
+<p class=45UeberschrPara><span class=993Fett>Aufkl&auml;rungspflicht</span></p>
+
+<p class=51Abs><span class=991GldSymbol>&sect;&nbsp;29.</span> Musiktherapeuten
+(Musiktherapeutinnen) haben insbesondere &uuml;ber</p>
+
+<p class=52Ziffere1><span class=992Normal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. den
+geplanten Behandlungsablauf,</span></p>
+
+<p class=52Ziffere1><span class=992Normal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. die
+Risiken der Behandlung,</span></p>
+
+<p class=52Ziffere1><span class=992Normal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3. die
+Alternativen der bzw. zur musiktherapeutischen Behandlung sowie</span></p>
+
+<p class=52Ziffere1><span class=992Normal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4. die
+Kosten der Behandlung</span></p>
+
+<p class=55SchlussteilAbs><span class=992Normal>aufzukl&auml;ren.</span></p>
+
+<p class=45UeberschrPara><span class=993Fett>Dokumentationspflicht</span></p>
+
+<p class=51Abs><span class=991GldSymbol>&sect;&nbsp;30.</span> (1) <span
+class=992Normal>Musiktherapeuten (Musiktherapeutinnen) haben zum Zweck der
+Berufsaus&uuml;bung nach bestem Wissen und Gewissen unter besonderer
+Bedachtnahme auf die therapeutische Beziehung Aufzeichnungen &uuml;ber jede
+musiktherapeutische Behandlung von Personen zu f&uuml;hren. Die Dokumentation
+hat insbesondere folgende Inhalte, sofern sie Gegenstand der
+musiktherapeutischen Behandlung oder f&uuml;r diese bedeutsam geworden sind, zu
+umfassen:</span></p>
+
+<p class=52Ziffere1><span class=992Normal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. Musiktherapeutisch
+relevanter Zustand der Person bei &Uuml;bernahme der Behandlung, insbesondere
+allenfalls Vorgeschichte der Problematik, Diagnose, Erkrankungen sowie
+bisheriger Krankheitsverlauf,</span></p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. Art
+und Umfang der musiktherapeutischen Leistungen (zur Anwendung kommende
+musiktherapeutische Methoden und Interventionsformen),</p>
+
+<p class=52Ziffere1><span class=992Normal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3. Beginn,
+Verlauf und Beendigung der musiktherapeutischen Leistungen,</span></p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4. erfolgte
+Aufkl&auml;rungsschritte,</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5. vereinbartes
+Honorar und sonstige weitere Vereinbarungen im Rahmen des Behandlungsvertrags,
+insbesondere mit einem allf&auml;lligen gesetzlichen Vertreter (einer
+allf&auml;lligen gesetzlichen Vertreterin) oder einem (einer) allf&auml;lligen
+Vorsorgebevollm&auml;chtigten,</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6. Konsultationen
+von Berufskollegen (Berufskolleginnen) sowie von Angeh&ouml;rigen anderer
+Gesundheitsberufe oder sonstiger relevanter Berufe,</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 7. allf&auml;llige
+Empfehlungen zur erg&auml;nzenden Abkl&auml;rung, insbesondere durch &Auml;rzte
+(&Auml;rztinnen), klinische Psychologen (Psychologinnen), Psychotherapeuten
+(Psychotherapeutinnen) und <span class=992Normal>Zahn&auml;rzte
+(Zahn&auml;rztinnen),</span></p>
+
+<p class=52Ziffere1><span class=992Normal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 8. besondere
+Vorkommnisse w&auml;hrend der Behandlung,</span></p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9. erfolgte
+Einsichtnahmen in die Dokumentation sowie</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10. Begr&uuml;ndung
+allf&auml;lliger Verweigerungen der Einsichtnahme in die Dokumentation.</p>
+
+<p class=51Abs>(2) Der behandelten Person oder erforderlichenfalls ihrem
+gesetzlichen Vertreter (ihrer gesetzlichen Vertreterin) oder ihrem (ihrer)
+Vorsorgebevollm&auml;chtigten sowie Personen, die von der behandelten Person
+als einsichtsberechtigt benannt wurden, ist auf Verlangen Einsicht in die
+Dokumentation zu gew&auml;hren und gegen Kostenersatz die Herstellung von
+Kopien zu erm&ouml;glichen.</p>
+
+<p class=51Abs>(3) Musiktherapeuten (Musiktherapeutinnen) sind zur Ermittlung
+und Verarbeitung personenbezogener Daten gem&auml;&szlig; Abs.&nbsp;1, insbesondere
+auch automationsunterst&uuml;tzt, sowie zur &Uuml;bermittlung dieser Daten an
+Dritte unter der Voraussetzung der Einwilligung der behandelten Peson oder
+erforderlichenfalls ihres gesetzlichen Vertreters (ihrer gesetzlichen
+Vertreterin) oder ihres (ihrer) Vorsorgebevollm&auml;chtigten berechtigt. Erfolgt
+die Ermittlung, Verarbeitung und &Uuml;bermittlung der Daten
+automationsunterst&uuml;tzt, so bedarf es <span class=992Normal>dazu</span> der
+schriftlichen Einwilligung.</p>
+
+<p class=51Abs>(4) Musiktherapeuten (Musiktherapeutinnen) haben die Dokumentation
+gem&auml;&szlig; Abs.&nbsp;1 mindestens zehn Jahre aufzubewahren.</p>
+
+<p class=51Abs>(5) Im Fall des Todes eines (einer) au&szlig;erhalb einer
+Einrichtung t&auml;tigen Musiktherapeuten (Musiktherapeutin), ist der Erbe (die
+Erbin) oder der sonstige Rechtsnachfolger (die sonstige Rechtsnachfolgerin) unter
+Wahrung des Datenschutzes verpflichtet, dessen (deren) diesbez&uuml;gliche Dokumentation
+&uuml;ber Behandlungen au&szlig;erhalb von Einrichtungen f&uuml;r die der
+Aufbewahrungspflicht entsprechende Dauer gegen Kostenersatz</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. einem
+(einer) vom verstorbenen Musiktherapeuten (von der verstorbenen
+Musiktherapeutin) rechtzeitig dem Bundesministerium f&uuml;r Gesundheit,
+Familie und Jugend schriftlich benannten Musiktherapeuten (Musiktherapeutin),
+der (die) den Beruf au&szlig;erhalb einer Einrichtung aus&uuml;bt und in diese
+Benennung und Pflichten&uuml;bernahme schriftlich eingewilligt hat, oder</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. sofern
+die Erfordernisse gem&auml;&szlig; Z&nbsp;1 nicht vorliegen, einem (einer) vom
+Bundesminister (von der Bundesministerin) f&uuml;r Gesundheit, Familie und
+Jugend zu bestimmenden Dritten</p>
+
+<p class=55SchlussteilAbs>zu &uuml;bermitteln.</p>
+
+<p class=51Abs>(6) Personen gem&auml;&szlig; Abs.&nbsp;5 Z&nbsp;1 und 2 treten
+in die Pflicht zur Aufbewahrung der Dokumentation ein und unterliegen der
+musiktherapeutischen Verschwiegenheitspflicht. Sie haben auf Verlangen der
+behandelten Person oder erforderlichenfalls ihres gesetzlichen Vertreters
+(ihrer gesetzlichen Vertreterin) oder ihres (ihrer)
+Vorsorgebevollm&auml;chtigten sowie einer Person, die von der behandelten
+Person erm&auml;chtigt wurde, diesem (dieser) die betreffende Dokumentation
+auszuh&auml;ndigen. Die Erf&uuml;llung der Aufbewahrungspflicht in geeigneter automationsunterst&uuml;tzter
+Form ist zul&auml;ssig. Nach Ablauf der Dauer der Aufbewahrungspflicht ist die
+Dokumentation unwiederbringlich zu vernichten.</p>
+
+<p class=45UeberschrPara>Auskunftspflicht</p>
+
+<p class=51Abs><span class=991GldSymbol>&sect;&nbsp;31.</span> (1)
+Musiktherapeuten (Musiktherapeutinnen) haben der behandelten Person alle
+Ausk&uuml;nfte &uuml;ber die Behandlung zu erteilen.</p>
+
+<p class=51Abs>(2) Musiktherapeuten (Musiktherapeutinnen) haben</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. dem
+gesetzlichen Vertreter (der gesetzlichen Vertreterin) oder dem (der)
+Vorsorgebevollm&auml;chtigten der behandelten Person sowie</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. Personen,
+die von der behandelten Person als auskunftsberechtigt benannt wurden,</p>
+
+<p class=55SchlussteilAbs>insofern Ausk&uuml;nfte &uuml;ber die Behandlung zu
+erteilen, als diese das Vertrauensverh&auml;ltnis zur behandelten Person nicht
+gef&auml;hrden.</p>
+
+<p class=45UeberschrPara>Verschwiegenheitspflicht</p>
+
+<p class=51Abs><span class=991GldSymbol>&sect;&nbsp;32.</span> (1) Musiktherapeuten
+(Musiktherapeutinnen) sowie ihre Hilfspersonen einschlie&szlig;lich Studierende
+der Musiktherapie sind zur Verschwiegenheit &uuml;ber alle ihnen in
+Aus&uuml;bung ihres Berufes oder ihrer praktischen musiktherapeutischen
+Ausbildung anvertrauten oder bekannt gewordenen Geheimnisse verpflichtet.</p>
+
+<p class=51Abs>(2) Eine Entbindung von der Verschwiegenheitspflicht zum Zweck
+einer Zeugenaussage vor einem Gericht oder einer Verwaltungsbeh&ouml;rde ist
+als h&ouml;chstpers&ouml;nliches Recht nur durch die einsichts- und
+urteilsf&auml;hige behandelte Person zul&auml;ssig.</p>
+
+<p class=45UeberschrPara>Werbebeschr&auml;nkung und Provisionsverbot</p>
+
+<p class=51Abs><span class=991GldSymbol>&sect;&nbsp;33.</span> (1) Musiktherapeuten
+(Musiktherapeutinnen) haben sich jeder unsachlichen oder unwahren Information
+im Zusammenhang mit ihrer Berufsaus&uuml;bung zu enthalten.</p>
+
+<p class=51Abs>(2) Musiktherapeuten (Musiktherapeutinnen) d&uuml;rfen keine
+Verg&uuml;tungen f&uuml;r die Zuweisung oder Empfehlung von Personen zur
+Musiktherapie geben, nehmen oder sich zusichern lassen. Rechtsgesch&auml;fte,
+die gegen dieses Verbot versto&szlig;en, sind nichtig. Leistungen aus solchen
+Rechtsgesch&auml;ften k&ouml;nnen zur&uuml;ckgefordert werden.</p>
+
+<p class=51Abs>(3) Die Vornahme der gem&auml;&szlig; Abs.&nbsp;1 und 2
+verbotenen T&auml;tigkeiten ist auch sonstigen physischen und juristischen
+Personen untersagt.</p>
+
+<p class=45UeberschrPara>Haftpflichtversicherung</p>
+
+<p class=51Abs><span class=991GldSymbol>&sect;&nbsp;34.</span> (1) Die
+eigenverantwortlich berufsberechtigten Musiktherapeuten (Musiktherapeutinnen) haben
+zur Deckung der aus der Berufsaus&uuml;bung entstehenden Schadenersatzanspr&uuml;che
+eine Haftpflichtversicherung bei einem zum Gesch&auml;ftsbetrieb in
+&Ouml;sterreich berechtigten Versicherer abzuschlie&szlig;en und diese
+w&auml;hrend der Dauer ihrer Berufsberechtigung aufrecht zu erhalten.</p>
+
+<p class=51Abs>(2) F&uuml;r den Versicherungsvertrag muss Folgendes gelten:</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. Die
+Mindestversicherungssumme hat 400&nbsp;000&nbsp;Euro f&uuml;r jeden
+Versicherungsfall zu betragen.</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. Der
+Ausschluss oder eine zeitliche Begrenzung der Nachhaftung des Versicherers ist
+unzul&auml;ssig.</p>
+
+<p class=51Abs>(3) Die Versicherer sind verpflichtet, dem Bundesminister (der
+Bundesministerin) f&uuml;r Gesundheit, Familie und Jugend unaufgefordert und
+umgehend jeden Umstand zu melden, der eine Beendigung oder Einschr&auml;nkung
+des Versicherungsschutzes oder eine Abweichung von der urspr&uuml;nglichen
+Versicherungsbest&auml;tigung bedeutet oder bedeuten kann, und auf Verlangen
+des Bundesministers (der Bundesministerin) f&uuml;r Gesundheit, Familie und
+Jugend &uuml;ber solche Umst&auml;nde Auskunft zu erteilen.</p>
+
+<p class=51Abs>(4) Die eigenverantwortlich berufsberechtigten Musiktherapeuten
+(Musiktherapeutinnen) haben dem Bundesminister (der Bundesministerin) f&uuml;r
+Gesundheit, Familie und Jugend den Bestand der Haftpflichtversicherung auf
+dessen (deren) Verlangen jederzeit nachzuweisen.</p>
+
+<p class=42UeberschrG1->7. Abschnitt</p>
+
+<p class=43UeberschrG2>Strafbestimmungen</p>
+
+<p class=45UeberschrPara><span class=993Fett>Strafbestimmungen</span></p>
+
+<p class=51Abs><span class=991GldSymbol>&sect;&nbsp;35.</span> (1) Wer</p>
+
+<p class=52Ziffere1><span class=992Normal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. die
+Musiktherapie berufsm&auml;&szlig;ig aus&uuml;bt, ohne hiezu nach diesem
+Bundesgesetz berechtigt zu sein, oder</span></p>
+
+<p class=52Ziffere1><span class=992Normal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. jemanden,
+der hiezu durch dieses Bundesgesetz nicht berechtigt ist, zur
+berufsm&auml;&szlig;igen Aus&uuml;bung der Musiktherapie heranzieht,</span></p>
+
+<p class=55SchlussteilAbs>begeht, sofern die Tat nicht den Tatbestand einer in
+die Zust&auml;ndigkeit der Gerichte fallenden strafbaren Handlung bildet, eine
+Verwaltungs&uuml;bertretung und ist mit einer Geldstrafe bis zu 4&nbsp;000&nbsp;Euro
+zu bestrafen.</p>
+
+<p class=51Abs>(2) Sofern</p>
+
+<p class=52Ziffere1><span class=992Normal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. aus
+der Tat gem&auml;&szlig; Abs.&nbsp;1 eine schwerwiegende Gefahr f&uuml;r Leib,
+Leben oder Gesundheit einer Person entstanden ist oder</span></p>
+
+<p class=52Ziffere1><span class=992Normal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. der
+T&auml;ter (die T&auml;terin) bereits zweimal wegen unbefugter
+berufsm&auml;&szlig;iger Aus&uuml;bung der Musiktherapie oder unbefugter
+Heranziehung zur berufsm&auml;&szlig;igen Aus&uuml;bung der Musiktherapie
+bestraft worden ist,</span></p>
+
+<p class=55SchlussteilAbs>ist der T&auml;ter (die T&auml;terin) mit einer
+Geldstrafe bis zu 25&nbsp;000&nbsp;Euro zu bestrafen.</p>
+
+<p class=51Abs>(3) Wer den</p>
+
+<p class=52Ziffere1><span class=992Normal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. in
+den &sect;&sect;&nbsp;15 Abs.&nbsp;2 und 3, 20 Abs.&nbsp;2, 22 Abs.&nbsp;4, 24
+Abs.&nbsp;1, 26 Abs.&nbsp;1, 2 und 4, 27, 28, 29, 30, 31, 32&nbsp;Abs.&nbsp;1,
+33, 34, 36&nbsp;Abs.&nbsp;4&nbsp;und&nbsp;5 sowie 37&nbsp;Abs.&nbsp;4&nbsp;und&nbsp;5
+enthaltenen Anordnungen oder Verboten oder</span></p>
+
+<p class=52Ziffere1><span class=992Normal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. in
+den auf Grund dieses Bundesgesetzes erlassenen Verordnungen enthaltenen
+Anordnungen oder Verboten</span></p>
+
+<p class=55SchlussteilAbs>zuwiderhandelt, begeht, sofern die Tat nicht den
+Tatbestand einer in die Zust&auml;ndigkeit der Gerichte fallenden strafbaren
+Handlung bildet, eine Verwaltungs&uuml;bertretung und ist mit einer Geldstrafe
+bis zu 2&nbsp;500&nbsp;Euro zu bestrafen.</p>
+
+<p class=51Abs>(4) Auch der Versuch ist strafbar.</p>
+
+<p class=51Abs>(5) Die Verj&auml;hrungsfrist betr&auml;gt abweichend von &sect;&nbsp;31&nbsp;Abs.&nbsp;1
+Verwaltungsstrafgesetz&nbsp;1991 (VStG), BGBl.&nbsp;Nr.&nbsp;52/1991, ein Jahr.</p>
+
+<p class=42UeberschrG1->8. Abschnitt</p>
+
+<p class=43UeberschrG2>&Uuml;bergangsbestimmungen</p>
+
+<p class=45UeberschrPara>Berechtigung zur eigenverantwortlichen Berufsaus&uuml;bung
+der Musiktherapie</p>
+
+<p class=51Abs><span class=991GldSymbol>&sect;&nbsp;36.</span><span
+class=992Normal> (1) Der Bundesminister (Die Bundesministerin) f&uuml;r
+Gesundheit, Familie und Jugend hat, erforderlichenfalls nach Einholung eines
+Sachverst&auml;ndigengutachtens und allenfalls einer pers&ouml;nlichen
+Anh&ouml;rung, auch jene Personen in die Musiktherapeutenliste einzutragen, die
+</span>die Eintragung in die Musiktherapeutenliste bis l&auml;ngstens zwei
+Jahren nach In-Kraft-Treten dieses Bundesgesetzes beim Bundesminister (bei der
+Bundesministerin) f&uuml;r Gesundheit, Familie und Jugend beantragt haben und
+folgende Voraussetzungen erf&uuml;llen:</p>
+
+<p class=52Ziffere1><span class=992Normal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. Nachweis
+der Universit&auml;tsreife,</span></p>
+
+<p class=52Ziffere1><span class=992Normal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. Glaubhaftmachung
+einer zumindest insgesamt dreij&auml;hrigen musiktherapeutischen T&auml;tigkeit
+im Ausma&szlig; von zumindest zehn Therapieeinheiten pro Woche in den letzten
+zehn Jahren&nbsp;vor In-Kraft-Treten dieses Bundesgesetzes,</span></p>
+
+<p class=52Ziffere1><span class=992Normal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3. Eigenberechtigung,</span></p>
+
+<p class=52Ziffere1><span class=992Normal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4. Nachweis
+der zur Erf&uuml;llung der Berufspflichten erforderlichen gesundheitliche Eignung,</span></p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5.&nbsp; Nachweis
+der zur Erf&uuml;llung der Berufspflichten erforderlichen
+Vertrauensw&uuml;rdigkeit sowie</p>
+
+<p class=52Ziffere1><span class=992Normal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6. </span>entweder
+<span class=992Normal>Nachweis der erfolgreichen Absolvierung einer der
+nachfolgenden Ausbildungen:</span></p>
+
+<p class=53Literae2><span class=992Normal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) Sonderlehrgang
+f&uuml;r Musikheilkunde an der Akademie f&uuml;r Musik und darstellende Kunst
+Wien,</span></p>
+
+<p class=53Literae2><span class=992Normal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) Lehrgang
+f&uuml;r Musiktherapie an der Hochschule f&uuml;r Musik und darstellende Kunst
+Wien,</span></p>
+
+<p class=53Literae2><span class=992Normal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) Kurzstudium
+Musiktherapie an der Hochschule f&uuml;r Musik und darstellende Kunst Wien
+(Universit&auml;t f&uuml;r Musik und darstellende Kunst Wien) oder eine
+gleichwertige ausl&auml;ndische Ausbildung,</span></p>
+
+<p class=53Literae2><span class=992Normal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d) Lehrgang
+Altorientalische Musiktherapie am Institut f&uuml;r Ethnomusiktherapie, sofern
+dieser nach dem 1.1.1997 begonnen wurde,</span></p>
+
+<p class=52Ziffere1><span class=992Normal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 7. oder
+Nachweis einer musiktherapeutischen Qualifikation, die zur eigenverantwortlichen
+Berufsaus&uuml;bung der Musiktherapie nach bestem Wissen und Gewissen
+einschlie&szlig;lich klinischer Krankenbehandlung unter besonderer
+Ber&uuml;cksichtigung der klinisch-psychologischen, medizinischen und
+psychotherapeutischen wissenschaftlichen Grundlagen bef&auml;higt und in diesem
+Zusammenhang zumindest 1800 Einheiten musiktherapeutische Aus-, Fort- oder
+Weiterbildung einschlie&szlig;lich</span></p>
+
+<p class=53Literae2><span class=992Normal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) Selbsterfahrung
+im Umfang von zumindest 200 Einheiten,</span></p>
+
+<p class=53Literae2><span class=992Normal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) Rahmenbedingungen
+f&uuml;r die Berufsaus&uuml;bung der Musiktherapie, insbesondere eine
+Einf&uuml;hrung in die institutionellen, gesundheitsrechtlichen und
+psychosozialen Rahmenbedingungen, von zumindest 60 Einheiten sowie</span></p>
+
+<p class=53Literae2><span class=992Normal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) Fragen
+der Ethik im Umfang von zumindest 60 Einheiten</span></p>
+
+<p class=56SchlussteilZiff><span class=992Normal>absolviert wurden.</span></p>
+
+<p class=51Abs>(2) F&uuml;r die Eintragung in die Musiktherapeutenliste sind
+die &sect;&sect;&nbsp;20 bis 23 entsprechend anzuwenden. Der Bundesminister (Die
+Bundesministerin) f&uuml;r Gesundheit, Familie und Jugend hat Personen, die die
+im Abs.&nbsp;1 genannten Voraussetzungen nicht erf&uuml;llen, die Eintragung
+mit Bescheid zu versagen.</p>
+
+<p class=51Abs>(3) Die im Abs.&nbsp;1 genannten Personen sind nach Eintragung
+in die Musiktherapeutenliste zur eigenverantwortlichen Berufsaus&uuml;bung der
+Musiktherapie einschlie&szlig;lich der Anordnung und Supervision
+gem&auml;&szlig; &sect;&nbsp;8 berechtigt.</p>
+
+<p class=51Abs>(4) Die im Abs.&nbsp;1 genannten Personen sind nach Eintragung
+in die Musiktherapeutenliste zur F&uuml;hrung der Berufsbezeichnung
+&#8222;Musiktherapeut&#8220; (&#8222;Musiktherapeutin&#8220;) berechtigt und im
+Zusammenhang mit der Berufsaus&uuml;bung hiezu verpflichtet.</p>
+
+<p class=51Abs><span class=992Normal>(5) Personen mit einer Qualifikation
+gem&auml;&szlig; Abs.&nbsp;1&nbsp;Z&nbsp;7 haben nach Eintragung in die
+Musiktherapeutenliste, abweichend von &sect;&nbsp;28, in- oder
+ausl&auml;ndische Fortbildungsveranstaltungen einschlie&szlig;lich Supervision
+insgesamt im Ausma&szlig; von 180 Einheiten innerhalb eines Zeitraumes von drei
+Jahren ab dem Zeitpunkt der Eintragung in die Musiktherapeutenliste zu
+absolvieren. Die Absolvierung dieser besonderen Fortbildung ist dem
+Bundesminister (der Bundesministerin) f&uuml;r Gesundheit, Familie und Jugend
+unaufgefordert unmittelbar nach Ablauf dieser Frist schriftlich nachzuweisen.
+Die ungerechtfertigte Nichterf&uuml;llung gilt als Wegfall einer f&uuml;r die
+Berufsaus&uuml;bung der Musiktherapie erforderlichen Voraussetzung.</span></p>
+
+<p class=51Abs><span class=992Normal>(6) </span>Im &Uuml;brigen sind die
+Bestimmungen dieses Bundesgesetzes anzuwenden.</p>
+
+<p class=45UeberschrPara><span class=992bNormalundFett>Berechtigung zur
+mitverantwortlichen Berufsaus&uuml;bung der Musiktherapie</span></p>
+
+<p class=51Abs><span class=991GldSymbol>&sect;&nbsp;37.</span><span
+class=992Normal> (1) Der Bundesminister (Die Bundesministerin) f&uuml;r
+Gesundheit, Familie und Jugend hat, erforderlichenfalls nach Einholung eines
+Sachverst&auml;ndigengutachtens und allenfalls einer pers&ouml;nlichen
+Anh&ouml;rung, auch jene Personen in die Musiktherapeutenliste einzutragen, die
+</span>die Eintragung in die Musiktherapeutenliste bis l&auml;ngstens zwei
+Jahren nach In-Kraft-Treten dieses Bundesgesetzes beim Bundesminister (bei der
+Bundesministerin) f&uuml;r Gesundheit, Familie und Jugend beantragt haben und
+folgende Voraussetzungen erf&uuml;llen:</p>
+
+<p class=52Ziffere1><span class=992Normal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. Nachweis
+der Universit&auml;tsreife,</span></p>
+
+<p class=52Ziffere1><span class=992Normal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. Nachweis
+einer musiktherapeutischen Qualifikation, die zur mitverantwortlichen
+Berufsaus&uuml;bung der Musiktherapie nach bestem Wissen und Gewissen
+einschlie&szlig;lich klinischer Krankenbehandlung unter besonderer
+Ber&uuml;cksichtigung der klinisch-psychologischen, medizinischen und
+psychotherapeutischen wissenschaftlichen Grundlagen bef&auml;higt und in diesem
+Zusammenhang zumindest 1200 Einheiten musiktherapeutische Aus-, Fort- oder
+Weiterbildung einschlie&szlig;lich</span></p>
+
+<p class=53Literae2><span class=992Normal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) Selbsterfahrung
+im Umfang von zumindest 200 Einheiten,</span></p>
+
+<p class=53Literae2><span class=992Normal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) Rahmenbedingungen
+f&uuml;r die Berufsaus&uuml;bung der Musiktherapie, insbesondere eine
+Einf&uuml;hrung in die institutionellen, gesundheitsrechtlichen und
+psychosozialen Rahmenbedingungen, von zumindest 30 Einheiten sowie</span></p>
+
+<p class=53Literae2><span class=992Normal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) Fragen
+der Ethik im Umfang von zumindest 30 Einheiten</span></p>
+
+<p class=56SchlussteilZiff><span class=992Normal>absolviert wurden,</span></p>
+
+<p class=52Ziffere1><span class=992Normal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3. Glaubhaftmachung
+einer zumindest insgesamt dreij&auml;hrigen musiktherapeutischen T&auml;tigkeit
+im Ausma&szlig; von zumindest zehn Therapieeinheiten pro Woche in den letzten zehn
+Jahren&nbsp;vor In-Kraft-Treten dieses Bundesgesetzes,</span></p>
+
+<p class=52Ziffere1><span class=992Normal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4. Eigenberechtigung,</span></p>
+
+<p class=52Ziffere1><span class=992Normal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5. Nachweis
+der zur Erf&uuml;llung der Berufspflichten erforderlichen gesundheitliche
+Eignung sowie</span></p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6.&nbsp; Nachweis
+der zur Erf&uuml;llung der Berufspflichten erforderlichen Vertrauensw&uuml;rdigkeit.</p>
+
+<p class=51Abs><span class=992Normal>(2) </span>F&uuml;r die Eintragung in die
+Musiktherapeutenliste sind die &sect;&sect;&nbsp;20 bis 23 entsprechend
+anzuwenden. Der Bundesminister (Die Bundesministerin) f&uuml;r Gesundheit,
+Familie und Jugend hat Personen, die die im Abs.&nbsp;1 genannten
+Voraussetzungen nicht erf&uuml;llen, die Eintragung mit Bescheid zu versagen.</p>
+
+<p class=51Abs><span class=992Normal>(3) Die im Abs.&nbsp;1 genannten Personen
+sind nach Eintragung in die Musiktherapeutenliste zur mitverantwortlichen
+Berufsaus&uuml;bung der Musiktherapie berechtigt.</span></p>
+
+<p class=51Abs>(4) Die im Abs.&nbsp;1 genannten Personen sind nach Eintragung in
+die Musiktherapeutenliste zur F&uuml;hrung der Berufsbezeichnung
+&#8222;Musiktherapeut&#8220; (&#8222;Musiktherapeutin&#8220;) berechtigt und im
+Zusammenhang mit der Berufsaus&uuml;bung hiezu verpflichtet. Sie haben im
+Zusammenhang mit der Berufsaus&uuml;bung auf den Umfang der Berechtigung zur
+mitverantwortlichen Berufsaus&uuml;bung gem&auml;&szlig; &sect;&nbsp;8
+hinzuweisen.</p>
+
+<p class=51Abs><span class=992Normal>(5) Die im Abs.&nbsp;1 genannten Personen
+haben nach Eintragung in die Musiktherapeutenliste, abweichend von &sect;&nbsp;28,
+in- oder ausl&auml;ndische Fortbildungsveranstaltungen einschlie&szlig;lich
+Supervision insgesamt im Ausma&szlig; von 180 Einheiten innerhalb eines
+Zeitraumes von drei Jahren ab dem Zeitpunkt der Eintragung in die
+Musiktherapeutenliste zu absolvieren. Die Absolvierung dieser besonderen
+Fortbildung ist dem Bundesminister (der Bundesministerin) f&uuml;r Gesundheit,
+Familie und Jugend unaufgefordert unmittelbar nach Ablauf dieser Frist
+schriftlich nachzuweisen. Die ungerechtfertigte Nichterf&uuml;llung gilt als
+Wegfall einer f&uuml;r die Berufsaus&uuml;bung der Musiktherapie erforderlichen
+Voraussetzung.</span></p>
+
+<p class=51Abs><span class=992Normal>(6) </span>Im &Uuml;brigen sind die Bestimmungen
+dieses Bundesgesetzes anzuwenden.</p>
+
+<p class=41UeberschrG1><span class=993Fett>9. Abschnitt</span></p>
+
+<p class=43UeberschrG2><span class=993Fett>Schlussbestimmungen</span></p>
+
+<p class=45UeberschrPara>Vollziehung</p>
+
+<p class=51Abs><span class=991GldSymbol>&sect;&nbsp;38.</span> Mit der
+Vollziehung dieses Bundesgesetzes ist der Bundesminister (die Bundesministerin)
+f&uuml;r Gesundheit, Familie und Jugend betraut.</p>
+
+<p class=45UeberschrPara>In-Kraft-Treten</p>
+
+<p class=51Abs><span class=991GldSymbol>&sect;&nbsp;39.</span> (1) Dieses
+Bundesgesetz tritt mit 1.&nbsp;Juli 2009 in Kraft.</p>
+
+<p class=51Abs>(2) Verordnungen auf Grund dieses Bundesgesetzes k&ouml;nnen
+bereits ab dem auf seine Kundmachung folgenden Tag erlassen werden; sie d&uuml;rfen
+jedoch fr&uuml;hestens mit 1.&nbsp;Juli 2009 in Kraft gesetzt werden.</p>
+
+</div>
+
+</body>
+
+</html>

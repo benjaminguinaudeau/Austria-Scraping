@@ -1,0 +1,2351 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=us-ascii">
+<meta name=Generator content="Microsoft Word 14 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;}
+@font-face
+	{font-family:Times;
+	panose-1:2 2 6 3 5 4 5 2 3 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+h1
+	{mso-style-link:"\00DCberschrift 1 Zchn";
+	margin-top:12.0pt;
+	margin-right:0pt;
+	margin-bottom:3.0pt;
+	margin-left:0pt;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Arial","sans-serif";}
+h2
+	{mso-style-link:"\00DCberschrift 2 Zchn";
+	margin-top:12.0pt;
+	margin-right:0pt;
+	margin-bottom:3.0pt;
+	margin-left:0pt;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Arial","sans-serif";
+	font-style:italic;}
+p.MsoFootnoteText, li.MsoFootnoteText, div.MsoFootnoteText
+	{mso-style-link:"Fu\00DFnotentext Zchn";
+	margin:0pt;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoCommentText, li.MsoCommentText, div.MsoCommentText
+	{mso-style-link:"Kommentartext Zchn";
+	margin:0pt;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-link:"Kopfzeile Zchn";
+	margin:0pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-link:"Fu\00DFzeile Zchn";
+	margin:0pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoCaption, li.MsoCaption, div.MsoCaption
+	{margin-top:6.0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	font-weight:bold;}
+span.MsoFootnoteReference
+	{vertical-align:baseline;}
+span.MsoCommentReference
+	{color:red;}
+span.MsoEndnoteReference
+	{vertical-align:baseline;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+code
+	{font-family:Consolas;}
+kbd
+	{font-family:Consolas;}
+samp
+	{font-family:Consolas;}
+tt
+	{font-family:Consolas;}
+p.MsoCommentSubject, li.MsoCommentSubject, div.MsoCommentSubject
+	{mso-style-link:"Kommentarthema Zchn";
+	margin:0pt;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	font-weight:bold;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-link:"Sprechblasentext Zchn";
+	margin:0pt;
+	margin-bottom:.0001pt;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";}
+span.MsoPlaceholderText
+	{color:gray;}
+p.MsoRMPane, li.MsoRMPane, div.MsoRMPane
+	{margin:0pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	layout-grid-mode:line;}
+span.MsoSubtleEmphasis
+	{color:gray;
+	font-style:italic;}
+span.MsoIntenseEmphasis
+	{color:#4F81BD;
+	font-weight:bold;
+	font-style:italic;}
+span.MsoSubtleReference
+	{font-variant:small-caps;
+	color:#C0504D;
+	text-decoration:underline;}
+span.MsoIntenseReference
+	{font-variant:small-caps;
+	color:#C0504D;
+	letter-spacing:.25pt;
+	font-weight:bold;
+	text-decoration:underline;}
+span.MsoBookTitle
+	{font-variant:small-caps;
+	letter-spacing:.25pt;
+	font-weight:bold;}
+p.00LegStandard, li.00LegStandard, div.00LegStandard
+	{mso-style-name:00_LegStandard;
+	margin:0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	layout-grid-mode:line;}
+p.01Undefiniert, li.01Undefiniert, div.01Undefiniert
+	{mso-style-name:01_Undefiniert;
+	margin:0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	layout-grid-mode:line;}
+p.02BDGesBlatt, li.02BDGesBlatt, div.02BDGesBlatt
+	{mso-style-name:02_BDGesBlatt;
+	margin-top:14.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:0pt;
+	margin-bottom:.0001pt;
+	text-align:center;
+	line-height:35.0pt;
+	font-size:35.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	text-transform:uppercase;
+	letter-spacing:1.3pt;
+	layout-grid-mode:line;
+	font-weight:bold;}
+p.03RepOesterr, li.03RepOesterr, div.03RepOesterr
+	{mso-style-name:03_RepOesterr;
+	margin-top:6.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:0pt;
+	margin-bottom:.0001pt;
+	text-align:center;
+	line-height:20.0pt;
+	border:none;
+	padding:0pt;
+	font-size:20.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	text-transform:uppercase;
+	letter-spacing:1.0pt;
+	layout-grid-mode:line;
+	font-weight:bold;}
+p.04AusgabeDaten, li.04AusgabeDaten, div.04AusgabeDaten
+	{mso-style-name:04_AusgabeDaten;
+	margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:0pt;
+	text-align:justify;
+	line-height:14.0pt;
+	border:none;
+	padding:0pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	layout-grid-mode:line;
+	font-weight:bold;}
+p.11Titel, li.11Titel, div.11Titel
+	{mso-style-name:11_Titel;
+	margin-top:24.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:11.0pt;
+	font-size:11.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	layout-grid-mode:line;
+	font-weight:bold;}
+p.05Kurztitel, li.05Kurztitel, div.05Kurztitel
+	{mso-style-name:05_Kurztitel;
+	margin-top:2.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:99.25pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-99.25pt;
+	border:none;
+	padding:0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	layout-grid-mode:line;
+	font-weight:bold;}
+p.09Abstand, li.09Abstand, div.09Abstand
+	{mso-style-name:09_Abstand;
+	margin:0pt;
+	margin-bottom:.0001pt;
+	line-height:10.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	layout-grid-mode:line;}
+p.10Entwurf, li.10Entwurf, div.10Entwurf
+	{mso-style-name:10_Entwurf;
+	margin-top:80.0pt;
+	margin-right:0pt;
+	margin-bottom:64.0pt;
+	margin-left:0pt;
+	text-align:center;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	letter-spacing:1.3pt;
+	layout-grid-mode:line;}
+p.12PromKlEinlSatz, li.12PromKlEinlSatz, div.12PromKlEinlSatz
+	{mso-style-name:12_PromKl_EinlSatz;
+	margin-top:8.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:19.85pt;
+	line-height:11.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	layout-grid-mode:line;}
+p.18AbbildungoderObjekt, li.18AbbildungoderObjekt, div.18AbbildungoderObjekt
+	{mso-style-name:18_Abbildung_oder_Objekt;
+	margin-top:6.0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	layout-grid-mode:line;}
+p.19Beschriftung, li.19Beschriftung, div.19Beschriftung
+	{mso-style-name:19_Beschriftung;
+	margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:0pt;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	layout-grid-mode:line;}
+p.21NovAo1, li.21NovAo1, div.21NovAo1
+	{mso-style-name:21_NovAo1;
+	margin-top:8.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:11.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	layout-grid-mode:line;
+	font-style:italic;}
+p.22NovAo2, li.22NovAo2, div.22NovAo2
+	{mso-style-name:22_NovAo2;
+	margin-top:8.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	layout-grid-mode:line;
+	font-style:italic;}
+p.23SatznachNovao, li.23SatznachNovao, div.23SatznachNovao
+	{mso-style-name:"23_Satz_\(nach_Novao\)";
+	margin-top:4.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	layout-grid-mode:line;}
+p.30InhaltUeberschrift, li.30InhaltUeberschrift, div.30InhaltUeberschrift
+	{mso-style-name:30_InhaltUeberschrift;
+	margin-top:16.0pt;
+	margin-right:0pt;
+	margin-bottom:8.0pt;
+	margin-left:0pt;
+	text-align:center;
+	line-height:11.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	layout-grid-mode:line;
+	font-weight:bold;}
+p.31InhaltSpalte, li.31InhaltSpalte, div.31InhaltSpalte
+	{mso-style-name:31_InhaltSpalte;
+	margin-top:4.0pt;
+	margin-right:0pt;
+	margin-bottom:4.0pt;
+	margin-left:0pt;
+	text-align:center;
+	line-height:11.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	font-weight:bold;}
+p.32InhaltEintrag, li.32InhaltEintrag, div.32InhaltEintrag
+	{mso-style-name:32_InhaltEintrag;
+	margin:0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;}
+p.41UeberschrG1, li.41UeberschrG1, div.41UeberschrG1
+	{mso-style-name:41_UeberschrG1;
+	margin-top:16.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:0pt;
+	margin-bottom:.0001pt;
+	text-align:center;
+	line-height:11.0pt;
+	page-break-after:avoid;
+	font-size:11.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	layout-grid-mode:line;
+	font-weight:bold;}
+p.42UeberschrG1-, li.42UeberschrG1-, div.42UeberschrG1-
+	{mso-style-name:42_UeberschrG1-;
+	margin-top:8.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:0pt;
+	margin-bottom:.0001pt;
+	text-align:center;
+	line-height:11.0pt;
+	page-break-after:avoid;
+	font-size:11.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	layout-grid-mode:line;
+	font-weight:bold;}
+p.43UeberschrG2, li.43UeberschrG2, div.43UeberschrG2
+	{mso-style-name:43_UeberschrG2;
+	margin-top:4.0pt;
+	margin-right:0pt;
+	margin-bottom:4.0pt;
+	margin-left:0pt;
+	text-align:center;
+	line-height:11.0pt;
+	page-break-after:avoid;
+	font-size:11.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	layout-grid-mode:line;
+	font-weight:bold;}
+p.44UeberschrArt, li.44UeberschrArt, div.44UeberschrArt
+	{mso-style-name:44_UeberschrArt+;
+	margin-top:8.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:0pt;
+	margin-bottom:.0001pt;
+	text-align:center;
+	line-height:11.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	layout-grid-mode:line;
+	font-weight:bold;}
+p.45UeberschrPara, li.45UeberschrPara, div.45UeberschrPara
+	{mso-style-name:45_UeberschrPara;
+	margin-top:4.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:0pt;
+	margin-bottom:.0001pt;
+	text-align:center;
+	line-height:11.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	layout-grid-mode:line;
+	font-weight:bold;}
+p.51Abs, li.51Abs, div.51Abs
+	{mso-style-name:51_Abs;
+	mso-style-link:"51_Abs Char";
+	margin-top:4.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:19.85pt;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	layout-grid-mode:line;}
+p.52Ziffere1, li.52Ziffere1, div.52Ziffere1
+	{mso-style-name:52_Ziffer_e1;
+	margin-top:2.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:34.0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-34.0pt;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	layout-grid-mode:line;}
+p.52Ziffere2, li.52Ziffere2, div.52Ziffere2
+	{mso-style-name:52_Ziffer_e2;
+	margin-top:2.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:45.35pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-45.35pt;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	layout-grid-mode:line;}
+p.52Ziffere3, li.52Ziffere3, div.52Ziffere3
+	{mso-style-name:52_Ziffer_e3;
+	margin-top:2.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:62.35pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-62.35pt;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	layout-grid-mode:line;}
+p.52Ziffere4, li.52Ziffere4, div.52Ziffere4
+	{mso-style-name:52_Ziffer_e4;
+	margin-top:2.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:82.2pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-82.2pt;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	layout-grid-mode:line;}
+p.52Ziffere5, li.52Ziffere5, div.52Ziffere5
+	{mso-style-name:52_Ziffer_e5;
+	margin-top:2.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:99.25pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-99.25pt;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	layout-grid-mode:line;}
+p.52ZiffermitBetrag, li.52ZiffermitBetrag, div.52ZiffermitBetrag
+	{mso-style-name:52_Ziffer_mit_Betrag;
+	margin-top:0pt;
+	margin-right:53.2pt;
+	margin-bottom:0pt;
+	margin-left:34.0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-34.0pt;
+	line-height:11.0pt;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	layout-grid-mode:line;}
+p.52aTZiffermitBetragTGUE, li.52aTZiffermitBetragTGUE, div.52aTZiffermitBetragTGUE
+	{mso-style-name:52aT_Ziffer_mit_Betrag_TGUE;
+	margin-top:0pt;
+	margin-right:53.2pt;
+	margin-bottom:0pt;
+	margin-left:34.0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-34.0pt;
+	line-height:11.0pt;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	layout-grid-mode:line;}
+p.53Literae1, li.53Literae1, div.53Literae1
+	{mso-style-name:53_Litera_e1;
+	margin-top:2.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:34.0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-34.0pt;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	layout-grid-mode:line;}
+p.53Literae2, li.53Literae2, div.53Literae2
+	{mso-style-name:53_Litera_e2;
+	margin-top:2.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:45.35pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-45.35pt;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	layout-grid-mode:line;}
+p.53Literae3, li.53Literae3, div.53Literae3
+	{mso-style-name:53_Litera_e3;
+	margin-top:2.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:62.35pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-62.35pt;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	layout-grid-mode:line;}
+p.53Literae4, li.53Literae4, div.53Literae4
+	{mso-style-name:53_Litera_e4;
+	margin-top:2.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:82.2pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-82.2pt;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	layout-grid-mode:line;}
+p.53Literae5, li.53Literae5, div.53Literae5
+	{mso-style-name:53_Litera_e5;
+	margin-top:2.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:99.25pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-99.25pt;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	layout-grid-mode:line;}
+p.53LiteramitBetrag, li.53LiteramitBetrag, div.53LiteramitBetrag
+	{mso-style-name:53_Litera_mit_Betrag;
+	margin-top:0pt;
+	margin-right:53.3pt;
+	margin-bottom:0pt;
+	margin-left:45.35pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-45.35pt;
+	line-height:11.0pt;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	layout-grid-mode:line;}
+p.53aTLiteramitBetragTGUE, li.53aTLiteramitBetragTGUE, div.53aTLiteramitBetragTGUE
+	{mso-style-name:53aT_Litera_mit_Betrag_TGUE;
+	margin-top:0pt;
+	margin-right:53.3pt;
+	margin-bottom:0pt;
+	margin-left:45.35pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-45.35pt;
+	line-height:11.0pt;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	layout-grid-mode:line;}
+p.54Subliterae1, li.54Subliterae1, div.54Subliterae1
+	{mso-style-name:54_Sublitera_e1;
+	margin-top:2.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:34.0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-34.0pt;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	layout-grid-mode:line;}
+p.54Subliterae2, li.54Subliterae2, div.54Subliterae2
+	{mso-style-name:54_Sublitera_e2;
+	margin-top:2.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:45.35pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-45.35pt;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	layout-grid-mode:line;}
+p.54Subliterae3, li.54Subliterae3, div.54Subliterae3
+	{mso-style-name:54_Sublitera_e3;
+	margin-top:2.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:62.35pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-62.35pt;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	layout-grid-mode:line;}
+p.54Subliterae4, li.54Subliterae4, div.54Subliterae4
+	{mso-style-name:54_Sublitera_e4;
+	margin-top:2.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:82.2pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-82.2pt;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	layout-grid-mode:line;}
+p.54Subliterae5, li.54Subliterae5, div.54Subliterae5
+	{mso-style-name:54_Sublitera_e5;
+	margin-top:2.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:99.25pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-99.25pt;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	layout-grid-mode:line;}
+p.54SubliteramitBetrag, li.54SubliteramitBetrag, div.54SubliteramitBetrag
+	{mso-style-name:54_Sublitera_mit_Betrag;
+	margin-top:0pt;
+	margin-right:53.3pt;
+	margin-bottom:0pt;
+	margin-left:62.35pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-62.35pt;
+	line-height:11.0pt;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	layout-grid-mode:line;}
+p.54aStriche1, li.54aStriche1, div.54aStriche1
+	{mso-style-name:54a_Strich_e1;
+	margin-top:2.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:34.0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-34.0pt;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	layout-grid-mode:line;}
+p.54aStriche2, li.54aStriche2, div.54aStriche2
+	{mso-style-name:54a_Strich_e2;
+	margin-top:2.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:45.35pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-45.35pt;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	layout-grid-mode:line;}
+p.54aStriche3, li.54aStriche3, div.54aStriche3
+	{mso-style-name:54a_Strich_e3;
+	margin-top:2.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:62.35pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-62.35pt;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	layout-grid-mode:line;}
+p.54aStriche4, li.54aStriche4, div.54aStriche4
+	{mso-style-name:54a_Strich_e4;
+	margin-top:2.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:82.2pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-82.2pt;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	layout-grid-mode:line;}
+p.54aStriche5, li.54aStriche5, div.54aStriche5
+	{mso-style-name:54a_Strich_e5;
+	margin-top:2.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:99.25pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-99.25pt;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	layout-grid-mode:line;}
+p.54aStriche6, li.54aStriche6, div.54aStriche6
+	{mso-style-name:54a_Strich_e6;
+	margin-top:2.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:116.25pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-116.25pt;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	layout-grid-mode:line;}
+p.54aStriche7, li.54aStriche7, div.54aStriche7
+	{mso-style-name:54a_Strich_e7;
+	margin-top:2.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:133.25pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-133.25pt;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	layout-grid-mode:line;}
+p.54aTSubliteramitBetragTGUE, li.54aTSubliteramitBetragTGUE, div.54aTSubliteramitBetragTGUE
+	{mso-style-name:54aT_Sublitera_mit_Betrag_TGUE;
+	margin-top:0pt;
+	margin-right:53.3pt;
+	margin-bottom:0pt;
+	margin-left:62.35pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-62.35pt;
+	line-height:11.0pt;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	layout-grid-mode:line;}
+p.55SchlussteilAbs, li.55SchlussteilAbs, div.55SchlussteilAbs
+	{mso-style-name:55_SchlussteilAbs;
+	margin-top:2.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	layout-grid-mode:line;}
+p.56SchlussteilZiff, li.56SchlussteilZiff, div.56SchlussteilZiff
+	{mso-style-name:56_SchlussteilZiff;
+	margin-top:2.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:34.0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	layout-grid-mode:line;}
+p.57SchlussteilLit, li.57SchlussteilLit, div.57SchlussteilLit
+	{mso-style-name:57_SchlussteilLit;
+	margin-top:2.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:45.35pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	layout-grid-mode:line;}
+p.61TabText, li.61TabText, div.61TabText
+	{mso-style-name:61_TabText;
+	margin:0pt;
+	margin-bottom:.0001pt;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	layout-grid-mode:line;}
+p.61aTabTextRechtsb, li.61aTabTextRechtsb, div.61aTabTextRechtsb
+	{mso-style-name:61a_TabTextRechtsb;
+	margin:0pt;
+	margin-bottom:.0001pt;
+	text-align:right;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	layout-grid-mode:line;}
+p.61bTabTextZentriert, li.61bTabTextZentriert, div.61bTabTextZentriert
+	{mso-style-name:61b_TabTextZentriert;
+	margin:0pt;
+	margin-bottom:.0001pt;
+	text-align:center;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	layout-grid-mode:line;}
+p.61cTabTextBlock, li.61cTabTextBlock, div.61cTabTextBlock
+	{mso-style-name:61c_TabTextBlock;
+	margin:0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	layout-grid-mode:line;}
+p.62Kopfzeile, li.62Kopfzeile, div.62Kopfzeile
+	{mso-style-name:62_Kopfzeile;
+	margin-top:4.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	layout-grid-mode:line;}
+p.65FNText, li.65FNText, div.65FNText
+	{mso-style-name:65_FN_Text;
+	margin:0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:11.0pt;
+	font-size:9.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	layout-grid-mode:line;}
+p.63Fuzeile, li.63Fuzeile, div.63Fuzeile
+	{mso-style-name:63_Fu\00DFzeile;
+	margin:0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:11.0pt;
+	font-size:9.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	layout-grid-mode:line;}
+span.66FNZeichen
+	{mso-style-name:66_FN_Zeichen;
+	vertical-align:super;}
+p.68UnterschrL, li.68UnterschrL, div.68UnterschrL
+	{mso-style-name:68_UnterschrL;
+	margin-top:8.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:0pt;
+	margin-bottom:.0001pt;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	layout-grid-mode:line;
+	font-weight:bold;}
+p.69UnterschrM, li.69UnterschrM, div.69UnterschrM
+	{mso-style-name:69_UnterschrM;
+	margin-top:8.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:0pt;
+	margin-bottom:.0001pt;
+	text-align:center;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	layout-grid-mode:line;
+	font-weight:bold;}
+p.71Anlagenbez, li.71Anlagenbez, div.71Anlagenbez
+	{mso-style-name:71_Anlagenbez;
+	margin-top:8.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:0pt;
+	margin-bottom:.0001pt;
+	text-align:right;
+	line-height:11.0pt;
+	font-size:11.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	layout-grid-mode:line;
+	font-weight:bold;}
+p.81ErlUeberschrZ, li.81ErlUeberschrZ, div.81ErlUeberschrZ
+	{mso-style-name:81_ErlUeberschrZ;
+	margin-top:16.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:0pt;
+	margin-bottom:.0001pt;
+	text-align:center;
+	line-height:11.0pt;
+	page-break-after:avoid;
+	font-size:11.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	layout-grid-mode:line;
+	font-weight:bold;}
+p.82ErlUeberschrL, li.82ErlUeberschrL, div.82ErlUeberschrL
+	{mso-style-name:82_ErlUeberschrL;
+	margin-top:4.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:11.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	layout-grid-mode:line;
+	font-weight:bold;}
+p.83ErlText, li.83ErlText, div.83ErlText
+	{mso-style-name:83_ErlText;
+	margin-top:4.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	layout-grid-mode:line;}
+p.85ErlAufzaehlg, li.85ErlAufzaehlg, div.85ErlAufzaehlg
+	{mso-style-name:85_ErlAufzaehlg;
+	margin-top:4.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:19.85pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-19.85pt;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	layout-grid-mode:line;}
+p.89TGUEUeberschrSpalte, li.89TGUEUeberschrSpalte, div.89TGUEUeberschrSpalte
+	{mso-style-name:89_TGUE_UeberschrSpalte;
+	margin-top:4.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:0pt;
+	margin-bottom:.0001pt;
+	text-align:center;
+	line-height:11.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	layout-grid-mode:line;
+	font-weight:bold;}
+span.990Fehler
+	{mso-style-name:990_Fehler;
+	color:red;}
+span.991GldSymbol
+	{mso-style-name:991_GldSymbol;
+	font-weight:bold;}
+span.992Normal
+	{mso-style-name:992_Normal;
+	text-decoration:none;
+	vertical-align:baseline;}
+span.992bNormalundFett
+	{mso-style-name:992b_Normal_und_Fett;
+	font-weight:bold;
+	text-decoration:none;
+	vertical-align:baseline;}
+span.993Fett
+	{mso-style-name:993_Fett;
+	font-weight:bold;}
+span.994Kursiv
+	{mso-style-name:994_Kursiv;
+	font-style:italic;}
+span.995Unterstrichen
+	{mso-style-name:995_Unterstrichen;
+	text-decoration:underline;}
+span.996Gesperrt
+	{mso-style-name:996_Gesperrt;
+	letter-spacing:1.3pt;}
+span.997Hoch
+	{mso-style-name:997_Hoch;
+	vertical-align:super;}
+span.998Tief
+	{mso-style-name:998_Tief;
+	vertical-align:sub;}
+span.999FettundKursiv
+	{mso-style-name:999_Fett_und_Kursiv;
+	font-weight:bold;
+	font-style:italic;}
+p.PDAntragsformel, li.PDAntragsformel, div.PDAntragsformel
+	{mso-style-name:PD_Antragsformel;
+	margin-top:14.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	layout-grid-mode:line;}
+p.PDAllonge, li.PDAllonge, div.PDAllonge
+	{mso-style-name:PD_Allonge;
+	margin-top:14.0pt;
+	margin-right:0pt;
+	margin-bottom:10.0pt;
+	margin-left:0pt;
+	text-align:center;
+	font-size:14.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	layout-grid-mode:line;}
+p.PDAllongeB, li.PDAllongeB, div.PDAllongeB
+	{mso-style-name:PD_Allonge_B;
+	margin-top:14.0pt;
+	margin-right:0pt;
+	margin-bottom:10.0pt;
+	margin-left:0pt;
+	text-align:justify;
+	font-size:14.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	layout-grid-mode:line;}
+p.PDAllongeL, li.PDAllongeL, div.PDAllongeL
+	{mso-style-name:PD_Allonge_L;
+	margin-top:14.0pt;
+	margin-right:0pt;
+	margin-bottom:10.0pt;
+	margin-left:0pt;
+	font-size:14.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	layout-grid-mode:line;}
+p.PDBrief, li.PDBrief, div.PDBrief
+	{mso-style-name:PD_Brief;
+	margin-top:4.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:11.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	layout-grid-mode:line;}
+p.PDDatum, li.PDDatum, div.PDDatum
+	{mso-style-name:PD_Datum;
+	margin-top:14.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	layout-grid-mode:line;}
+p.PDEntschliessung, li.PDEntschliessung, div.PDEntschliessung
+	{mso-style-name:PD_Entschliessung;
+	margin-top:8.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:11.0pt;
+	font-size:11.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	font-weight:bold;}
+p.PDK1, li.PDK1, div.PDK1
+	{mso-style-name:PD_K1;
+	margin:0pt;
+	margin-bottom:.0001pt;
+	text-align:center;
+	border:none;
+	padding:0pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	letter-spacing:-.4pt;
+	font-weight:bold;}
+p.PDK1Anlage, li.PDK1Anlage, div.PDK1Anlage
+	{mso-style-name:PD_K1Anlage;
+	margin:0pt;
+	margin-bottom:.0001pt;
+	text-align:right;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	letter-spacing:-.4pt;
+	font-weight:bold;}
+p.PDK1Ausg, li.PDK1Ausg, div.PDK1Ausg
+	{mso-style-name:PD_K1Ausg;
+	margin-top:62.9pt;
+	margin-right:0pt;
+	margin-bottom:27.0pt;
+	margin-left:0pt;
+	font-size:11.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	font-weight:bold;}
+p.PDK2, li.PDK2, div.PDK2
+	{mso-style-name:PD_K2;
+	margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:11.35pt;
+	margin-left:0pt;
+	font-size:22.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	font-weight:bold;}
+p.PDK3, li.PDK3, div.PDK3
+	{mso-style-name:PD_K3;
+	margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:20.0pt;
+	margin-left:0pt;
+	font-size:18.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	font-weight:bold;}
+p.PDK4, li.PDK4, div.PDK4
+	{mso-style-name:PD_K4;
+	margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:0pt;
+	font-size:13.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	font-weight:bold;}
+p.PDKopfzeile, li.PDKopfzeile, div.PDKopfzeile
+	{mso-style-name:PD_Kopfzeile;
+	margin-top:4.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:19.85pt;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;}
+p.PDU1, li.PDU1, div.PDU1
+	{mso-style-name:PD_U1;
+	margin-top:22.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	layout-grid-mode:line;
+	font-weight:bold;}
+p.PDU2, li.PDU2, div.PDU2
+	{mso-style-name:PD_U2;
+	margin-top:5.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:11.0pt;
+	font-size:9.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	layout-grid-mode:line;}
+p.PDU3, li.PDU3, div.PDU3
+	{mso-style-name:PD_U3;
+	margin-top:5.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:0pt;
+	margin-bottom:.0001pt;
+	text-align:center;
+	line-height:11.0pt;
+	font-size:9.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	layout-grid-mode:line;}
+p.PDVorlage, li.PDVorlage, div.PDVorlage
+	{mso-style-name:PD_Vorlage;
+	margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:10.0pt;
+	margin-left:0pt;
+	text-align:justify;
+	line-height:11.0pt;
+	font-size:11.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	layout-grid-mode:line;
+	font-weight:bold;}
+p.62KopfzeileQuer, li.62KopfzeileQuer, div.62KopfzeileQuer
+	{mso-style-name:62_KopfzeileQuer;
+	margin-top:4.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	layout-grid-mode:line;}
+p.63FuzeileQuer, li.63FuzeileQuer, div.63FuzeileQuer
+	{mso-style-name:63_Fu\00DFzeileQuer;
+	margin:0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:11.0pt;
+	font-size:9.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	layout-grid-mode:line;}
+p.57Schlussteile1, li.57Schlussteile1, div.57Schlussteile1
+	{mso-style-name:57_Schlussteil_e1;
+	margin-top:2.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:22.7pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	layout-grid-mode:line;}
+p.57Schlussteile4, li.57Schlussteile4, div.57Schlussteile4
+	{mso-style-name:57_Schlussteil_e4;
+	margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:62.35pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;}
+p.57Schlussteile5, li.57Schlussteile5, div.57Schlussteile5
+	{mso-style-name:57_Schlussteil_e5;
+	margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:82.2pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;}
+p.32InhaltEintragEinzug, li.32InhaltEintragEinzug, div.32InhaltEintragEinzug
+	{mso-style-name:32_InhaltEintragEinzug;
+	margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:59.55pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-59.55pt;
+	line-height:11.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;}
+span.KopfzeileZchn
+	{mso-style-name:"Kopfzeile Zchn";
+	mso-style-link:Kopfzeile;}
+span.FuzeileZchn
+	{mso-style-name:"Fu\00DFzeile Zchn";
+	mso-style-link:Fu\00DFzeile;}
+span.SprechblasentextZchn
+	{mso-style-name:"Sprechblasentext Zchn";
+	mso-style-link:Sprechblasentext;
+	font-family:"Tahoma","sans-serif";}
+span.FunotentextZchn
+	{mso-style-name:"Fu\00DFnotentext Zchn";
+	mso-style-link:Fu\00DFnotentext;
+	font-family:"Times New Roman","serif";
+	color:black;
+	layout-grid-mode:both;}
+span.KommentartextZchn
+	{mso-style-name:"Kommentartext Zchn";
+	mso-style-link:Kommentartext;
+	font-family:"Times New Roman","serif";
+	color:black;
+	layout-grid-mode:both;}
+span.KommentarthemaZchn
+	{mso-style-name:"Kommentarthema Zchn";
+	mso-style-link:Kommentarthema;
+	font-family:"Times New Roman","serif";
+	color:black;
+	layout-grid-mode:both;
+	font-weight:bold;}
+p.Lauftext, li.Lauftext, div.Lauftext
+	{mso-style-name:Lauftext;
+	margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:8.0pt;
+	margin-left:0pt;
+	text-align:justify;
+	line-height:150%;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	layout-grid-mode:line;}
+p.loose, li.loose, div.loose
+	{mso-style-name:loose;
+	margin-top:10.5pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:0pt;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	layout-grid-mode:line;}
+p.Default, li.Default, div.Default
+	{mso-style-name:Default;
+	margin:0pt;
+	margin-bottom:.0001pt;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;}
+span.51AbsChar
+	{mso-style-name:"51_Abs Char";
+	mso-style-link:51_Abs;
+	color:black;
+	layout-grid-mode:both;}
+span.berschrift1Zchn
+	{mso-style-name:"\00DCberschrift 1 Zchn";
+	mso-style-link:"\00DCberschrift 1";
+	font-family:"Arial","sans-serif";
+	font-weight:bold;}
+span.berschrift2Zchn
+	{mso-style-name:"\00DCberschrift 2 Zchn";
+	mso-style-link:"\00DCberschrift 2";
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	font-style:italic;}
+p.64FNLinie, li.64FNLinie, div.64FNLinie
+	{mso-style-name:64_FN_Linie;
+	margin-top:0pt;
+	margin-right:368.55pt;
+	margin-bottom:13.0pt;
+	margin-left:0pt;
+	text-align:justify;
+	line-height:11.0pt;
+	border:none;
+	padding:0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	layout-grid-mode:line;}
+p.06UrheberZitat, li.06UrheberZitat, div.06UrheberZitat
+	{mso-style-name:06_UrheberZitat;
+	margin-top:6.0pt;
+	margin-right:0pt;
+	margin-bottom:6.0pt;
+	margin-left:0pt;
+	text-align:center;
+	line-height:9.0pt;
+	font-size:8.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;
+	layout-grid-mode:line;}
+p.PDFuzeile, li.PDFuzeile, div.PDFuzeile
+	{mso-style-name:PD_Fu\00DFzeile;
+	margin-top:6.0pt;
+	margin-right:0pt;
+	margin-bottom:0pt;
+	margin-left:0pt;
+	margin-bottom:.0001pt;
+	text-align:center;
+	background:#CCCCCC;
+	font-size:9.0pt;
+	font-family:"Times","serif";
+	color:black;
+	font-weight:bold;}
+.MsoChpDefault
+	{font-size:10.0pt;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:85.05pt 85.05pt 85.05pt 85.05pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0pt;}
+ul
+	{margin-bottom:0pt;}
+-->
+</style>
+
+</head>
+
+<body lang=DE-AT link=blue vlink=purple>
+
+<div class=WordSection1>
+
+<div style='border:none;border-bottom:solid windowtext 1.5pt;padding:0pt 0pt 1.0pt 0pt'>
+
+<p class=PDK1>1058 der Beilagen zu den Stenographischen Protokollen des
+Nationalrates XXV. GP</p>
+
+</div>
+
+<p class=PDK1Ausg>&nbsp;</p>
+
+<p class=PDK2>Regierungsvorlage</p>
+
+<p class=11Titel>Bundesgesetz, mit dem die Strafprozessordnung&nbsp;1975, das
+Strafvollzugsgesetz und das Verbandsverantwortlichkeitsgesetz ge&auml;ndert
+werden (Strafprozessrechts&auml;nderungs&shy;gesetz&nbsp;I 2016)</p>
+
+<p class=12PromKlEinlSatz>Der Nationalrat hat beschlossen:</p>
+
+<p class=31InhaltSpalte><span lang=DE>Inhaltsverzeichnis</span></p>
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0
+ style='margin-left:26.7pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=94 valign=top style='width:70.85pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=61TabText>Artikel 1</p>
+  </td>
+  <td width=312 valign=top style='width:233.9pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=61TabText>&Auml;nderung der Strafprozessordnung&nbsp;1975</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=94 valign=top style='width:70.85pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=61TabText>Artikel 2</p>
+  </td>
+  <td width=312 valign=top style='width:233.9pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=61TabText>&Auml;nderung des Strafvollzugsgesetzes</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=94 valign=top style='width:70.85pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=61TabText>Artikel 3 </p>
+  </td>
+  <td width=312 valign=top style='width:233.9pt;padding:0pt 5.4pt 0pt 5.4pt'>
+  <p class=61TabText>&Auml;nderung des Verbandsverantwortlichkeitsgesetzes</p>
+  </td>
+ </tr>
+</table>
+
+<p class=41UeberschrG1>Artikel&nbsp;1</p>
+
+<p class=43UeberschrG2>&Auml;nderung der Strafprozessordnung&nbsp;1975</p>
+
+<p class=12PromKlEinlSatz>Die Strafprozessordnung&nbsp;1975, BGBl.
+Nr.&nbsp;631/1975, zuletzt ge&auml;ndert durch das Bundesgesetz BGBl.&nbsp;I
+Nr.&nbsp;112/2015, wird wie folgt ge&auml;ndert</p>
+
+<p class=21NovAo1>1. Im Inhaltsverzeichnis lautet die &Uuml;berschrift des
+1.&nbsp;Abschnitts des 8.&nbsp;Hauptst&uuml;cks:</p>
+
+<p class=44UeberschrArt>&#8222;Sicherstellung, Beschlagnahme, Auskunft aus dem
+Kontenregister und Auskunft &uuml;ber Bankkonten und Bankgesch&auml;fte&#8220;</p>
+
+<p class=22NovAo2>2. Im Inhaltsverzeichnis wird im 1.&nbsp;Abschnitt des
+8.&nbsp;Hauptst&uuml;cks die Wendung <span style='font-style:normal'>&#8222;&sect;&nbsp;116
+Auskunft &uuml;ber Bankkonten und Bankgesch&auml;fte&#8220;</span> durch die
+Wendung <span style='font-style:normal'>&#8222;&sect;&nbsp;116 Auskunft aus dem
+Kontenregister und Auskunft &uuml;ber Bankkonten und Bankgesch&auml;fte&#8220;</span>
+ersetzt.</p>
+
+<p class=21NovAo1>3. &sect;&nbsp;5 Abs.&nbsp;3 lautet wie folgt:</p>
+
+<p class=51Abs>&#8222;(3) Es ist unzul&auml;ssig, Personen zur Begehung von strafbaren
+Handlungen in einer dem Grundsatz des fairen Verfahrens (Art.&nbsp;6
+Abs.&nbsp;1 der Europ&auml;ischen Konvention zum Schutze der Menschenrechte und
+Grundfreiheiten, BGBl. Nr.&nbsp;210/1958) widerstreitenden Weise zu verleiten,
+oder durch heimlich bestellte Personen zu einem Gest&auml;ndnis zu
+verlocken.&#8220;</p>
+
+<p class=22NovAo2>4. In &sect;&nbsp;10 Abs.&nbsp;2 wird die Wendung <span
+style='font-style:normal'>&#8222;Rechte und Interessen&#8220;</span> durch die
+Wendung <span style='font-style:normal'>&#8222;Rechte, Interessen und
+besonderen Schutzbed&uuml;rfnisse&#8220;</span> ersetzt.</p>
+
+<p class=21NovAo1>5. &sect;&nbsp;20a Abs.&nbsp;1 Z&nbsp;5 lautet wie folgt:</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#8222;5. Geschenkannahme
+durch Machthaber (&sect;&nbsp;153a StGB), wettbewerbsbeschr&auml;nkende
+Absprachen bei Vergabeverfahren (&sect;&nbsp;168b StGB) und soweit auf Grund
+bestimmter Tatsachen anzunehmen ist, dass die Tat in Bezug auf einen 3&nbsp;000&nbsp;Euro
+&uuml;bersteigenden Wert des Vorteils begangen wurde oder sich der Vorsatz
+darauf erstreckt, strafbare Verletzungen der Amtspflicht, Korruption und
+verwandte strafbare Handlungen nach den &sect;&sect;&nbsp;304 bis 309 StGB;&#8220;</p>
+
+<p class=21NovAo1>6. In &sect;&nbsp;25 wird nach Abs.&nbsp;6 folgender
+Abs.&nbsp;7 angef&uuml;gt:</p>
+
+<p class=51Abs>&#8222;(7) Liegt der Ort, an dem die Straftat ausgef&uuml;hrt
+wurde oder ausgef&uuml;hrt werden sollte, in einem anderen Mitgliedstaat der
+Europ&auml;ischen Union, so hat die Staatsanwaltschaft unverz&uuml;glich bei
+ihr einlangende Anzeigen eines Opfers mit Wohnsitz im Inland an die
+zust&auml;ndige Beh&ouml;rde des anderen Mitgliedstaates weiterzuleiten, es sei
+denn, dass diese Straftat der inl&auml;ndischen Gerichtsbarkeit unterliegt. Von
+der &Uuml;bermittlung kann abgesehen werden, wenn</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. die
+Tat und die f&uuml;r ihre Verfolgung wesentlichen Umst&auml;nde der
+zust&auml;ndigen ausl&auml;ndischen Beh&ouml;rde bekannt sind, oder</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. dem
+Opfer die Anzeige im Ausland m&ouml;glich gewesen w&auml;re, es sei denn, dass
+es sich um eine Straftat mit schweren Folgen handelt.&#8220;</p>
+
+<p class=21NovAo1>7. Der bisherige Inhalt des &sect;&nbsp;28 erh&auml;lt die
+Absatzbezeichnung <span style='font-style:normal'>&#8222;(1)&#8220;</span>;
+folgender Abs.&nbsp;2 wird angef&uuml;gt:</p>
+
+<p class=51Abs>&#8222;(2) Nach Abs.&nbsp;1 ist unter den dort beschriebenen
+Umst&auml;nden auch vorzugehen, wenn die Einleitung eines Ermittlungsverfahrens
+zu pr&uuml;fen ist (&sect;&nbsp;1 Abs.&nbsp;3 und &sect;&nbsp;35c StAG).&#8220;</p>
+
+<p class=22NovAo2>8. In &sect;&nbsp;28a wird im zweiten Satz das Zitat <span
+style='font-style:normal'>&#8222;&sect;&nbsp;28&#8220;</span> durch die Wendung
+<span style='font-style:normal'>&#8222;&sect;&nbsp;28 Abs.&nbsp;1 oder
+Abs.&nbsp;2&#8220;</span> ersetzt.</p>
+
+<p class=22NovAo2>9. In &sect;&nbsp;31 Abs.&nbsp;3 Z&nbsp;6a entf&auml;llt das
+Wort <span style='font-style:normal'>&#8222;wegen&#8220;</span> und das
+Klammerzitat <span style='font-style:normal'>&#8222;&sect;&nbsp;130 zweiter
+Satz erster Fall StGB&#8220;</span> wird durch das Klammerzitat <span
+style='font-style:normal'>&#8222;&sect;&nbsp;130 Abs.&nbsp;2 erster Fall
+StGB&#8220;</span> ersetzt.</p>
+
+<p class=21NovAo1>10. &sect;&nbsp;31 Abs.&nbsp;4 Z&nbsp;2 lautet wie folgt:</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#8222;2. der
+im &sect;&nbsp;30 Abs.&nbsp;1 Z&nbsp;1 bis 9a angef&uuml;hrten Vergehen,&#8220;</p>
+
+<p class=22NovAo2>11. In &sect;&nbsp;50 Abs.&nbsp;3 wird nach der Wendung <span
+style='font-style:normal'>&#8222;des Beschuldigten&#8220;</span> die Wendung <span
+style='font-style:normal'>&#8222;sowie eines Verzichts auf ein Recht des
+Beschuldigten&#8220;</span> eingef&uuml;gt.</p>
+
+<p class=22NovAo2>12. In &sect;&nbsp;56 Abs.&nbsp;3 wird das Wort <span
+style='font-style:normal'>&#8222;Staatsanwalt&#8220;</span> durch das Wort <span
+style='font-style:normal'>&#8222;Staatsanwaltschaft&#8220;</span> ersetzt.</p>
+
+<p class=21NovAo1>13. In &sect;&nbsp;59 Abs.&nbsp;1 wird der zweite Satz durch
+folgende S&auml;tze ersetzt:</p>
+
+<p class=23SatznachNovao>&#8222;Der Kontakt mit dem Verteidiger darf bis zur Einlieferung
+des Beschuldigten in die Justizanstalt auf das f&uuml;r die Erteilung der
+Vollmacht und eine allgemeine Rechtsauskunft notwendige Ausma&szlig;
+beschr&auml;nkt werden, soweit aufgrund besonderer Umst&auml;nde eine sofortige
+Vernehmung oder andere unverz&uuml;gliche Ermittlungen unbedingt notwendig erscheinen,
+um eine erhebliche Beeintr&auml;chtigung der Ermittlungen oder von
+Beweismitteln abzuwenden. In diesem Fall ist dem Beschuldigten sogleich oder
+innerhalb von 24 Stunden eine schriftliche Begr&uuml;ndung der Kriminalpolizei
+f&uuml;r diese Beschr&auml;nkung zuzustellen.&#8220;</p>
+
+<p class=22NovAo2>14. In &sect;&nbsp;59 Abs.&nbsp;2 entfallen der zweite und
+dritte Satz.</p>
+
+<p class=21NovAo1>15. In &sect;&nbsp;61 Abs.&nbsp;1 wird nach der Z&nbsp;5
+folgende Z&nbsp;5a eingef&uuml;gt:</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#8222;5a. in der
+kontradiktorischen Vernehmung (&sect;&nbsp;165), soweit in der Hauptverhandlung
+nach den Z&nbsp;3 bis&nbsp;5 notwendige Verteidigung best&uuml;nde,&#8220;</p>
+
+<p class=21NovAo1>16. &sect;&nbsp;65 Z&nbsp;1 lit.&nbsp;a lautet wie folgt:</p>
+
+<p class=53Literae2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#8222;a. jede
+Person, die durch eine vors&auml;tzlich begangene Straftat Gewalt oder
+gef&auml;hrlicher Drohung ausgesetzt, in ihrer sexuellen Integrit&auml;t und
+Selbstbestimmung beeintr&auml;chtigt oder deren pers&ouml;nliche
+Abh&auml;ngigkeit durch eine solche Straftat ausgen&uuml;tzt worden sein
+k&ouml;nnte,&#8220;</p>
+
+<p class=22NovAo2>17. In &sect;&nbsp;65 Z&nbsp;1 lit.&nbsp;b wird nach dem Wort
+<span style='font-style:normal'>&#8222;Schwester&#8220;</span> die Wendung <span
+style='font-style:normal'>&#8222;und sonstige Unterhaltsberechtigte&#8220;</span>
+eingef&uuml;gt.</p>
+
+<p class=21NovAo1>18. In &sect;&nbsp;66 Abs.&nbsp;1 werden nach Z&nbsp;1
+folgende Z&nbsp;1a und 1b angef&uuml;gt:</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#8222;1a. eine
+schriftliche Best&auml;tigung ihrer Anzeige zu erhalten (&sect;&nbsp;80
+Abs.&nbsp;1),</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1b. auf
+ehestm&ouml;gliche Beurteilung ihrer besonderen Schutzbed&uuml;rftigkeit
+(&sect;&nbsp;66a),&#8220;</p>
+
+<p class=22NovAo2>19. In &sect;&nbsp;66 Abs.&nbsp;1 Z&nbsp;5 wird die Wendung <span
+style='font-style:normal'>&#8222;&sect;&nbsp;56 Abs.&nbsp;2 und 7&#8220;</span>
+durch die Wendung <span style='font-style:normal'>&#8222;Abs.&nbsp;3&#8220;</span>
+ersetzt.</p>
+
+<p class=21NovAo1>20. In &sect;&nbsp;66 werden nach Abs.&nbsp;2 folgende
+Abs.&nbsp;3 und 4 angef&uuml;gt:</p>
+
+<p class=51Abs>&#8222;(3) &Uuml;bersetzungshilfe ist in sinngem&auml;&szlig;er
+Anwendung der Bestimmungen des &sect;&nbsp;56 zu gew&auml;hren. Als wesentliche
+Aktenst&uuml;cke, die auf Verlangen des Opfers zu &uuml;bersetzen sind, gelten
+die schriftliche Best&auml;tigung der Anzeige (&sect;&nbsp;80 Abs.&nbsp;1), die
+Verst&auml;ndigung von der Einstellung des Ermittlungsverfahrens und deren
+Begr&uuml;ndung (&sect;&nbsp;194 Abs.&nbsp;2) sowie eine Ausfertigung des
+Urteils und der Strafverf&uuml;gung (&sect;&nbsp;491); bei der Pr&uuml;fung der
+Erforderlichkeit tritt an Stelle der Erforderlichkeit zur Wahrung der
+Verteidigungsrechte jene zur Wahrung der Rechte und Interessen des Opfers
+(&sect;&nbsp;10).</p>
+
+<p class=51Abs>(4) Der Bundesminister f&uuml;r Justiz ist erm&auml;chtigt,
+n&auml;here Bestimmungen &uuml;ber die Voraussetzungen der Beauftragung einer
+Einrichtung nach Abs.&nbsp;2 und im Einvernehmen mit der Bundesministerin
+f&uuml;r Bildung und Frauen sowie der Bundesministerin f&uuml;r Familien und
+Jugend &uuml;ber Qualit&auml;tsstandards der Prozessbegleitung, insbesondere
+&uuml;ber die Aus- und Weiterbildung von Prozessbegleitern, im Verordnungsweg
+zu erlassen.&#8220;</p>
+
+<p class=21NovAo1>21. Nach &sect;&nbsp;66 wird folgender &sect;&nbsp;66a samt
+&Uuml;berschrift eingef&uuml;gt:</p>
+
+<p class=45UeberschrPara>&#8222;Besondere Schutzbed&uuml;rftigkeit von Opfern</p>
+
+<p class=51Abs><span class=991GldSymbol>&sect;&nbsp;66a.</span> (1) Opfer haben
+das Recht auf ehestm&ouml;gliche Beurteilung und Feststellung ihrer besonderen
+Schutzbed&uuml;rftigkeit nach Ma&szlig;gabe ihres Alters, ihres seelischen und
+gesundheitlichen Zustands sowie der Art und konkreten Umst&auml;nde der
+Straftat. Als besonders schutzbed&uuml;rftig gelten jedenfalls Opfer, die</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. in
+ihrer sexuellen Integrit&auml;t und Selbstbestimmung verletzt worden sein
+k&ouml;nnten,</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. Gewalt
+in Wohnungen (&sect;&nbsp;38a SPG) ausgesetzt gewesen sein k&ouml;nnten,</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3. minderj&auml;hrig
+(&sect;&nbsp;74 Abs.&nbsp;1 Z&nbsp;3 StGB) sind.</p>
+
+<p class=51Abs>(2) Besonders schutzbed&uuml;rftige Opfer haben das Recht:</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. zu
+verlangen, im Ermittlungsverfahren nach M&ouml;glichkeit von einer Person des
+gleichen Geschlechts vernommen zu werden,</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. die
+Beantwortung von Fragen nach Einzelheiten der Straftat, deren Schilderung sie
+f&uuml;r unzumutbar halten, oder nach Umst&auml;nden aus ihrem
+h&ouml;chstpers&ouml;nlichen Lebensbereich zu verweigern (&sect;&nbsp;158
+Abs.&nbsp;1 Z&nbsp;2 und 3, Abs.&nbsp;2),</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3. zu
+verlangen, im Ermittlungsverfahren und in der Hauptverhandlung auf schonende
+Weise vernommen zu werden (&sect;&sect;&nbsp;165, 250 Abs.&nbsp;3), und zwar
+ein minderj&auml;hriges Opfer, das durch die dem Beschuldigten zur Last gelegte
+Straftat in seiner Geschlechtssph&auml;re verletzt worden sein k&ouml;nnte,
+jedenfalls auf die in &sect;&nbsp;165 Abs.&nbsp;3 beschriebene Art und Weise,
+gegebenenfalls durch einen Sachverst&auml;ndigen,</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4. zu
+verlangen, die &Ouml;ffentlichkeit der Hauptverhandlung auszuschlie&szlig;en
+(&sect;&nbsp;229 Abs.&nbsp;1),</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5. unverz&uuml;glich
+von Amts wegen im Sinne der &sect;&sect;&nbsp;172 Abs.&nbsp;4, 177 Abs.&nbsp;5
+und 181a informiert zu werden,</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6. einer
+Vernehmung eine Person ihres Vertrauens beizuziehen (&sect;&nbsp;160 Abs.&nbsp;2).</p>
+
+<p class=51Abs>(3) Ist ein gesetzlicher Vertreter des minderj&auml;hrigen
+Opfers der Straftat verd&auml;chtig oder &uuml;berwiesen, besteht sonst die
+Gefahr eines Widerstreitens der Interessen des minderj&auml;hrigen Opfers und
+seines gesetzlichen Vertreters oder kann dem minderj&auml;hrigen Opfer im
+Strafverfahren kein gesetzlicher Vertreter beistehen, so ist beim
+Pflegschaftsgericht die Bestellung eines Kurators anzuregen.</p>
+
+<p class=51Abs>(4) Einem Opfer, dem auf Antrag Rechte nach Abs.&nbsp;2 nicht
+gew&auml;hrt werden, sind die Gr&uuml;nde daf&uuml;r mitzuteilen.&#8220;</p>
+
+<p class=21NovAo1>22. &sect;&nbsp;70 Abs.&nbsp;1 lautet wie folgt:</p>
+
+<p class=51Abs>&#8222;(1) Sobald ein Ermittlungsverfahren gegen einen
+bestimmten Beschuldigten gef&uuml;hrt wird, hat die Kriminalpolizei oder die
+Staatsanwaltschaft Opfer &uuml;ber ihre wesentlichen Rechte (&sect;&sect;&nbsp;66
+bis 67) zu informieren. Dies darf nur solange unterbleiben, als dadurch der
+Zweck der Ermittlungen gef&auml;hrdet w&auml;re. Opfer im Sinn des
+&sect;&nbsp;65 Z&nbsp;1 lit.&nbsp;a oder b sind sp&auml;testens vor ihrer
+ersten Befragung &uuml;ber die Voraussetzungen der Prozessbegleitung und besonders
+schutzbed&uuml;rftige Opfer &uuml;ber ihre Rechte nach &sect;&nbsp;66a zu
+informieren. Opfer im Sinn des &sect;&nbsp;65 Z&nbsp;1 sind &uuml;berdies sp&auml;testens
+im Zeitpunkt ihrer Vernehmung im Sinne der &sect;&sect;&nbsp;172, Abs.&nbsp;4, 177
+Abs.&nbsp;5 und 181a sowie dar&uuml;ber zu informieren, dass sie berechtigt
+sind, auf Antrag unverz&uuml;glich von der Flucht und Wiederergreifung des
+Geflohenen (&sect;&nbsp;106 Abs.&nbsp;4 StVG) sowie vom ersten unbewachten
+Verlassen der Anstalt oder von der bevorstehenden oder erfolgten Entlassung des
+Strafgefangenen (&sect;&nbsp;149 Abs.&nbsp;5 StVG) verst&auml;ndigt zu werden.
+&sect;&nbsp;50 Abs.&nbsp;2 gilt sinngem&auml;&szlig;.&#8220;</p>
+
+<p class=22NovAo2>23. &sect;&nbsp;70 Abs.&nbsp;2 entf&auml;llt und der
+bisherige Inhalt des &sect;&nbsp;70 Abs.&nbsp;1a erh&auml;lt die
+Absatzbezeichnung <span style='font-style:normal'>&#8222;(2)&#8220;</span>.</p>
+
+<p class=21NovAo1>24. In &sect;&nbsp;80 Abs.&nbsp;1 wird folgender letzter Satz
+angef&uuml;gt:</p>
+
+<p class=23SatznachNovao>&#8222;Einem Opfer (&sect;&nbsp;65 Z&nbsp;1), das
+Anzeige erstattet hat, ist eine schriftliche Best&auml;tigung der Anzeige
+auszufolgen.&#8220;</p>
+
+<p class=21NovAo1>25. Die &Uuml;berschrift des 1.&nbsp;Abschnitts des
+8.&nbsp;Hauptst&uuml;cks lautet wie folgt:</p>
+
+<p class=44UeberschrArt>&#8222;Sicherstellung, Beschlagnahme, Auskunft aus dem
+Kontenregister und Auskunft &uuml;ber Bankkonten und Bankgesch&auml;fte&#8220;</p>
+
+<p class=21NovAo1>26. &sect;&nbsp;109 Z&nbsp;3 lautet wie folgt:</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#8222;3. &#8222;Auskunft
+aus dem Kontenregister&#8220; die Abfrage und &Uuml;bermittlung von Daten aus
+dem Kontenregister (&sect;&sect;&nbsp;2 und 4 Kontenregister- und Konteneinschaugesetz,
+BGBl.&nbsp;I Nr.&nbsp;116/2015),&#8220;</p>
+
+<p class=21NovAo1>27. In &sect;&nbsp;109 wird nach Z&nbsp;3 folgende Z&nbsp;4
+angef&uuml;gt:</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#8222;4. &#8222;Auskunft
+&uuml;ber Bankkonten und Bankgesch&auml;fte&#8220; die Herausgabe aller
+Unterlagen &uuml;ber die Identit&auml;t des Inhabers einer
+Gesch&auml;ftsverbindung und &uuml;ber seine Verf&uuml;gungsberechtigung, die
+Einsicht in Urkunden und andere Unterlagen eines Kredit- oder Finanzinstituts
+&uuml;ber Art und Umfang einer Gesch&auml;ftsverbindung und damit im
+Zusammenhang stehende Gesch&auml;ftsvorg&auml;nge und sonstige
+Gesch&auml;ftsvorf&auml;lle f&uuml;r einen bestimmten vergangenen oder
+zuk&uuml;nftigen Zeitraum.&#8220;</p>
+
+<p class=21NovAo1>28. &sect;&nbsp;116 samt &Uuml;berschrift lautet wie folgt:</p>
+
+<p class=45UeberschrPara>&#8222;Auskunft aus dem Kontenregister und Auskunft
+&uuml;ber Bankkonten und Bankgesch&auml;fte</p>
+
+<p class=51Abs><span class=991GldSymbol>&sect;&nbsp;116.</span> (1) Auskunft
+aus dem Kontenregister und Auskunft &uuml;ber Bankkonten und Bankgesch&auml;fte
+sind zul&auml;ssig, wenn sie zur Aufkl&auml;rung einer vors&auml;tzlich
+begangenen Straftat oder eines Vergehens, das in die Zust&auml;ndigkeit des
+Landesgerichts f&auml;llt (&sect;&nbsp;31 Abs.&nbsp;2 bis 4) oder zur
+Aufkl&auml;rung der Voraussetzungen einer Anordnung auf Auskunft nach
+Abs.&nbsp;2 Z&nbsp;2 in Verfahren wegen einer vors&auml;tzlich begangenen
+Straftat, f&uuml;r die im Hauptverfahren das Landesgericht zust&auml;ndig
+w&auml;re (&sect;&nbsp;31 Abs.&nbsp;2 bis 4), erforderlich erscheinen.</p>
+
+<p class=51Abs>(2) Auskunft &uuml;ber Bankkonten und Bankgesch&auml;fte ist
+dar&uuml;ber hinaus nur zul&auml;ssig, wenn auf Grund bestimmter Tatsachen
+anzunehmen ist,</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. dass
+dadurch Gegenst&auml;nde, Urkunden oder andere Unterlagen &uuml;ber eine
+Gesch&auml;ftsverbindung oder damit im Zusammenhang stehende Transaktionen
+sichergestellt werden k&ouml;nnen, soweit dies f&uuml;r die Aufkl&auml;rung der
+Straftat erforderlich ist,</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. dass
+Gegenst&auml;nde oder andere Verm&ouml;genswerte zur Sicherung der Konfiskation
+(&sect;&nbsp;19a StGB), des Verfalls (&sect;&nbsp;20 StGB), des erweiterten
+Verfalls (&sect;&nbsp;20b StGB), der Einziehung (&sect;&nbsp;26 StGB) oder
+einer anderen gesetzlich vorgesehenen verm&ouml;gensrechtlichen Anordnung
+gem&auml;&szlig; &sect;&nbsp;109 Z&nbsp;1 lit.&nbsp;b sichergestellt werden
+k&ouml;nnen, oder</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3. dass
+eine mit der Straftat im Zusammenhang stehende Transaktion &uuml;ber die
+Gesch&auml;ftsverbindung abgewickelt werde.</p>
+
+<p class=51Abs>(3) Auskunft aus dem Kontenregister ist von der
+Staatsanwaltschaft anzuordnen (&sect;&nbsp;102 Abs. 2).</p>
+
+<p class=51Abs>(4) Auskunft &uuml;ber Bankkonten und Bankgesch&auml;fte ist
+durch die Staatsanwaltschaft auf Grund einer gerichtlichen Bewilligung
+anzuordnen. Anordnung und Bewilligung der Auskunftserteilung haben zu
+enthalten:</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. die
+Bezeichnung des Verfahrens und der Tat, die ihm zu Grunde liegt, sowie deren
+gesetzliche Bezeichnung,</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. das
+Kredit- oder Finanzinstitut,</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3. die
+Umschreibung der sicherzustellenden Gegenst&auml;nde, Urkunden (Unterlagen)
+oder Verm&ouml;genswerte,</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4. die
+Tatsachen, aus denen sich die Erforderlichkeit und
+Verh&auml;ltnism&auml;&szlig;igkeit (&sect;&nbsp;5) der Anordnungen ergibt,</p>
+
+<p class=52Ziffere1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5. im
+Fall einer Anordnung nach Abs.&nbsp;2 Z&nbsp;3 den von ihr umfassten Zeitraum.</p>
+
+<p class=51Abs>(5) Die Anordnung der Auskunft aus dem Kontenregister und die
+Anordnung der Auskunft &uuml;ber Bankkonten und Bankgesch&auml;fte samt
+gerichtlicher Bewilligung sind dem Beschuldigten und den aus der
+Gesch&auml;ftsverbindung verf&uuml;gungsberechtigten Personen zuzustellen,
+sobald diese der Staatsanwaltschaft bekannt geworden sind. Die Anordnung der
+Auskunft &uuml;ber Bankkonten und Bankgesch&auml;fte samt gerichtlicher
+Bewilligung ist dar&uuml;ber hinaus dem Kredit- oder Finanzinstitut
+zuzustellen. Die Zustellung an den Beschuldigten und an die
+Verf&uuml;gungsberechtigten kann aufgeschoben werden, solange dadurch der Zweck
+der Ermittlungen gef&auml;hrdet w&auml;re. Im Fall einer Anordnung der Auskunft
+&uuml;ber Bankkonten und Bankgesch&auml;fte ist hier&uuml;ber das Kredit- oder
+Finanzinstitut zu informieren, das die Anordnung und alle mit ihr verbundenen
+Tatsachen und Vorg&auml;nge gegen&uuml;ber Kunden und Dritten geheim zu halten
+hat.</p>
+
+<p class=51Abs>(6) Kredit- oder Finanzinstitute und ihre Mitarbeiter sind
+verpflichtet, die Ausk&uuml;nfte zu erteilen sowie die Urkunden und Unterlagen
+einsehen zu lassen und herauszugeben. Dies hat auf einem elektronischen
+Datentr&auml;ger in einem allgemein gebr&auml;uchlichen Dateiformat zu
+erfolgen, wenn zur F&uuml;hrung der Gesch&auml;ftsverbindung
+automationsunterst&uuml;tzte Datenverarbeitung verwendet wird. Einer Beschwerde
+des Kredit- oder Finanzinstituts gegen die gerichtliche Bewilligung kommt
+aufschiebende Wirkung zu. Wird einem Einspruch wegen Rechtsverletzung oder
+einer Beschwerde Folge gegeben, so gilt &sect;&nbsp;89 Abs.&nbsp;4. Eine
+Durchsuchung des Kredit- oder Finanzinstituts bedarf stets einer Anordnung der
+Staatsanwaltschaft auf Grund einer gerichtlichen Bewilligung.
+&sect;&sect;&nbsp;110 Abs.&nbsp;4 und 111 Abs.&nbsp;3 sind anzuwenden.&#8220;</p>
+
+<p class=22NovAo2>29. In &sect;&nbsp;128 Abs.&nbsp;1 entf&auml;llt das
+Klammerzitat <span style='font-style:normal'>&#8222;(&sect;&nbsp;100
+Abs.&nbsp;2 Z&nbsp;2)&#8220;</span>.</p>
+
+<p class=21NovAo1>30. In &sect;&nbsp;133 wird nach Abs.&nbsp;4 folgender
+Abs.&nbsp;5 eingef&uuml;gt:</p>
+
+<p class=51Abs>&#8222;(5) Von der Verfolgung eines Beschuldigten wegen der
+strafbaren Handlung, zu deren Begehung er nach &sect;&nbsp;5 Abs.&nbsp;3
+verleitet wurde, hat die Staatsanwaltschaft abzusehen. &sect;&nbsp;191
+Abs.&nbsp;2 gilt sinngem&auml;&szlig;.&#8220;</p>
+
+<p class=22NovAo2>31. In &sect;&nbsp;137 Abs.&nbsp;3 entf&auml;llt die Wendung <span
+style='font-style:normal'>&#8222;und 2a&#8220;</span>.</p>
+
+<p class=22NovAo2>32. In &sect;&nbsp;138 Abs.&nbsp;2 wird das Klammerzitat <span
+style='font-style:normal'>&#8222;(&sect;&nbsp;92 Abs.&nbsp;1 Z&nbsp;3
+TKG)&#8220;</span> durch das Klammerzitat <span style='font-style:normal'>&#8222;(&sect;&nbsp;92
+Abs.&nbsp;3 Z&nbsp;1 TKG)&#8220;</span> ersetzt und es entf&auml;llt die
+Wendung <span style='font-style:normal'>&#8222;und &uuml;ber Vorratsdaten
+(&sect;&nbsp;135 Abs.&nbsp;2a)&#8220;</span>.</p>
+
+<p class=22NovAo2>33. In &sect;&nbsp;138 Abs.&nbsp;3 wird das Wort <span
+style='font-style:normal'>&#8222;Anbieter&#8220;</span> durch die Wendung <span
+style='font-style:normal'>&#8222;Anbieter oder sonstigen Diensteanbieter&#8220;</span>
+ersetzt.</p>
+
+<p class=22NovAo2>34. In &sect;&nbsp;140 Abs.&nbsp;1 Z&nbsp;4 entf&auml;llt die
+Wendung <span style='font-style:normal'>&#8222;, Abs.&nbsp;2a&#8220;</span>.</p>
+
+<p class=22NovAo2>35. In &sect;&nbsp;141 Abs.&nbsp;4 wird im zweiten Satz die
+Wendung <span style='font-style:normal'>&#8222;Abs.&nbsp;1&#8220;</span> durch
+die Wendung <span style='font-style:normal'>&#8222;Abs.&nbsp;2&#8220;</span>
+ersetzt.</p>
+
+<p class=21NovAo1>36. In &sect;&nbsp;142 wird nach Abs.&nbsp;4 folgender
+Abs.&nbsp;5 eingef&uuml;gt:</p>
+
+<p class=51Abs>&#8222;(5) Wird einer Beschwerde gegen die Bewilligung einer
+Anordnung Folge gegeben oder die Anordnung des automationsunterst&uuml;tzten
+Datenabgleichs aus anderen Gr&uuml;nden widerrufen, so ist zugleich anzuordnen,
+dass alle in den Datenabgleich einbezogenen und alle durch ihn gewonnenen Daten
+zu vernichten und personenbezogene Daten, die auf andere Datentr&auml;ger
+&uuml;bertragen wurden, unverz&uuml;glich zu l&ouml;schen sind. Gleiches gilt,
+wenn der automationsunterst&uuml;tzte Datenabgleich ergibt, dass die Merkmale
+auf keine Person zutreffen.&#8220;</p>
+
+<p class=22NovAo2>37. &sect;&nbsp;147 Abs.&nbsp;1 Z&nbsp;2a entf&auml;llt.</p>
+
+<p class=22NovAo2>38. In &sect;&nbsp;155 Abs.&nbsp;1 Z&nbsp;3 wird das Zitat <span
+style='font-style:normal'>&#8222;BGBl.&nbsp;I Nr.&nbsp;102/2014&#8220;</span>
+durch das Zitat <span style='font-style:normal'>&#8222;BGBl.&nbsp;I Nr.&nbsp;101/2014&#8220;</span>
+ersetzt.</p>
+
+<p class=22NovAo2>39. In &sect;&nbsp;156 Abs.&nbsp;1 Z&nbsp;2 wird die Wendung <span
+style='font-style:normal'>&#8222;Personen, die durch die dem Beschuldigten zur
+Last gelegte Straftat verletzt worden sein k&ouml;nnten und zur Zeit ihrer
+Vernehmung das vierzehnte Lebensjahr noch nicht vollendet haben oder in ihrer
+Geschlechtssph&auml;re verletzt worden sein k&ouml;nnten&#8220;</span> durch
+die Wendung <span style='font-style:normal'>&#8222;Besonders
+schutzbed&uuml;rftige Opfer (&sect;&nbsp;66a)&#8220;</span> ersetzt.</p>
+
+<p class=21NovAo1>40. In &sect;&nbsp;157 Abs.&nbsp;2 wird folgender Satz
+angef&uuml;gt:</p>
+
+<p class=23SatznachNovao>&#8222;Dies gilt ebenso f&uuml;r Unterlagen und
+Informationen, die sich in der Verf&uuml;gungsmacht des Beschuldigten oder
+eines Mitbeschuldigten befinden und zum Zwecke der Beratung oder Verteidigung des
+Beschuldigten durch eine in Abs.&nbsp;1 Z&nbsp;2 genannte Person von dieser
+oder vom Beschuldigten erstellt wurden.&#8220;</p>
+
+<p class=21NovAo1>41. In &sect;&nbsp;163 wird nach Abs.&nbsp;3 folgender Abs.&nbsp;4
+eingef&uuml;gt:</p>
+
+<p class=51Abs>&#8222;(4) Sofern der Beschuldigte zur Gegen&uuml;berstellung beigezogen
+wird, ist auch seinem Verteidiger Gelegenheit zur Teilnahme zu geben.&#8220;</p>
+
+<p class=21NovAo1>42. &sect;&nbsp;164 Abs.&nbsp;2 lautet:</p>
+
+<p class=51Abs>&#8222;(2) Der Beschuldigte hat das Recht, seiner Vernehmung
+einen Verteidiger beizuziehen. Nimmt er dieses Recht in Anspruch, so ist die
+Vernehmung bis zum Eintreffen des Verteidigers aufzuschieben, es sei denn, dass
+damit eine unangemessene Verl&auml;ngerung der Anhaltung verbunden w&auml;re.
+Der Verteidiger darf sich an der Vernehmung selbst auf keine Weise beteiligen,
+jedoch nach deren Abschluss oder nach thematisch zusammenh&auml;ngenden
+Abschnitten Fragen an den Beschuldigten richten und Erkl&auml;rungen abgeben. &Uuml;ber
+die Beantwortung einzelner Fragen darf sich jedoch der Beschuldigte nicht mit
+dem Verteidiger beraten. Von der Beiziehung eines Verteidigers darf nur abgesehen
+werden, soweit dies aufgrund besonderer Umst&auml;nde unbedingt erforderlich
+erscheint, um durch eine sofortige Vernehmung oder andere unverz&uuml;gliche
+Ermittlungen eine erhebliche Gefahr f&uuml;r die Ermittlungen oder eine
+Beeintr&auml;chtigung von Beweismitteln abzuwenden. In diesem Fall ist dem
+Beschuldigten sogleich oder innerhalb von 24 Stunden eine Anordnung der
+Staatsanwaltschaft oder eine schriftliche Begr&uuml;ndung der Kriminalpolizei
+f&uuml;r diese Beschr&auml;nkung zuzustellen und nach M&ouml;glichkeit eine
+Ton- oder Bildaufnahme (&sect;&nbsp;97) anzufertigen.&#8220;</p>
+
+<p class=21NovAo1>43. &sect;&nbsp;165 Abs.&nbsp;3 lautet:</p>
+
+<p class=51Abs>&#8222;(3) Bei der Vernehmung eines besonders schutzbed&uuml;rftigen
+Opfers (&sect;&nbsp;66a) oder sonst eines Zeugen, auf den die in
+&sect;&nbsp;66a erw&auml;hnten Kriterien zutreffen, oder sonst im Interesse der
+Wahrheitsfindung ist auf Antrag der Staatsanwaltschaft oder von Amts wegen die
+Gelegenheit zur Beteiligung derart zu beschr&auml;nken, dass die Beteiligten
+des Verfahrens (Abs.&nbsp;2) und ihre Vertreter die Vernehmung unter Verwendung
+technischer Einrichtungen zur Wort- und Bild&uuml;bertragung mitverfolgen und
+ihr Fragerecht aus&uuml;ben k&ouml;nnen, ohne bei der Befragung anwesend zu
+sein. Insbesondere beim Vorliegen besonderer Schutzbed&uuml;rftigkeit kann ein
+Sachverst&auml;ndiger mit der Befragung beauftragt werden. In jedem Fall ist
+daf&uuml;r Sorge zu tragen, dass eine Begegnung des Zeugen mit dem
+Beschuldigten und anderen Verfahrensbeteiligten m&ouml;glichst
+unterbleibt.&#8220;</p>
+
+<p class=21NovAo1>44. &sect;&nbsp;165 Abs.&nbsp;4 lautet:</p>
+
+<p class=51Abs>&#8222;(4) Einen minderj&auml;hrigen Zeugen, der durch die dem
+Beschuldigten zur Last gelegte Straftat in seiner Geschlechtssph&auml;re
+verletzt worden sein k&ouml;nnte, hat das Gericht in jedem Fall auf die in
+Abs.&nbsp;3 beschriebene Art und Weise zu vernehmen, die &uuml;brigen besonders
+schutzbed&uuml;rftigen Opfer (&sect;&nbsp;66a) und die in &sect;&nbsp;156
+Abs.&nbsp;1 Z&nbsp;1 und 2 erw&auml;hnten Zeugen &uuml;ber ihren Antrag oder
+jenen der Staatsanwaltschaft.&#8220;</p>
+
+<p class=22NovAo2>45. In &sect;&nbsp;165 Abs.&nbsp;5 entf&auml;llt im zweiten
+Satz das zweite Paragrafenzeichen.</p>
+
+<p class=22NovAo2>46. In &sect;&nbsp;171 Abs.&nbsp;4 Z&nbsp;2 lit.&nbsp;a wird
+nach dem Wort <span style='font-style:normal'>&#8222;Verteidiger&#8220;</span>
+das Wort <span style='font-style:normal'>&#8222;unverz&uuml;glich&#8220;</span>
+eingef&uuml;gt.</p>
+
+<p class=22NovAo2>47. In &sect;&nbsp;171 Abs.&nbsp;4 Z&nbsp;2 lit.&nbsp;c wird
+nach dem Wort <span style='font-style:normal'>&#8222;Vertretung&#8220;</span>
+das Wort <span style='font-style:normal'>&#8222;unverz&uuml;glich&#8220;</span>
+eingef&uuml;gt.</p>
+
+<p class=21NovAo1>48. In &sect;&nbsp;172 wird folgender Abs.&nbsp;4
+angef&uuml;gt:</p>
+
+<p class=51Abs>&#8222;(4) Soweit das Opfer dies beantragt hat, ist es von einer
+Freilassung des Beschuldigten nach dieser Bestimmung unter Angabe der
+hief&uuml;r ma&szlig;geblichen Gr&uuml;nde und der dem Beschuldigten auferlegten
+gelinderen Mittel sogleich zu verst&auml;ndigen. Opfer nach &sect;&nbsp;65 Abs.&nbsp;1
+Z&nbsp;1 lit.&nbsp;a und besonders schutzbed&uuml;rftige Opfer
+(&sect;&nbsp;66a) sind jedoch unverz&uuml;glich von Amts wegen zu
+verst&auml;ndigen. Diese Verst&auml;ndigung obliegt der Staatsanwaltschaft,
+wenn sie nach Einlieferung in die Justizanstalt erkl&auml;rt, keinen Antrag auf
+Verh&auml;ngung der Untersuchungshaft zu stellen, im &Uuml;brigen jedoch der
+Kriminalpolizei.&#8220;</p>
+
+<p class=21NovAo1>49. &sect;&nbsp;177 Abs.&nbsp;5 lautet:</p>
+
+<p class=51Abs>&#8222;(5) Wird der Beschuldigte freigelassen, so hat das
+Gericht nach &sect;&nbsp;172 Abs.&nbsp;4 erster und zweiter Satz vorzugehen und
+auch die Kriminalpolizei von diesen Verst&auml;ndigungen zu informieren.&#8220;</p>
+
+<p class=21NovAo1>50. Nach &sect;&nbsp;181 wird folgender &sect;&nbsp;181a samt
+&Uuml;berschrift eingef&uuml;gt:</p>
+
+<p class=45UeberschrPara>&#8222;Flucht</p>
+
+<p class=51Abs><span class=991GldSymbol>&sect;&nbsp;181a.</span> Soweit das
+Opfer dies beantragt hat, ist es von einer Flucht des in Untersuchungshaft
+angehaltenen Beschuldigten sowie von seiner Wiederergreifung sogleich zu
+verst&auml;ndigen. &sect;&nbsp;172 Abs.&nbsp;4 zweiter Satz gilt
+sinngem&auml;&szlig;. Die Justizanstalt hat die Staatsanwaltschaft
+unverz&uuml;glich von der Flucht und Wiedereinbringung zu verst&auml;ndigen; die
+Staatsanwaltschaft hat sodann das Opfer zu verst&auml;ndigen.&#8220;</p>
+
+<p class=22NovAo2>51. In &sect;&nbsp;188 Abs.&nbsp;2 dritter Satz entf&auml;llt
+die Wendung <span style='font-style:normal'>&#8222;88,&#8220;</span>.</p>
+
+<p class=22NovAo2>52. In &sect;&nbsp;195 Abs.&nbsp;2 wird nach dem ersten Satz
+der Satz <span style='font-style:normal'>&#8222;Der Antrag eines
+minderj&auml;hrigen Opfers bedarf keiner pflegschaftsgerichtlichen
+Genehmigung.&#8220;</span> eingef&uuml;gt.</p>
+
+<p class=22NovAo2>53. In &sect;&nbsp;196 Abs.&nbsp;2 wird im dritten Satz der
+Strichpunkt durch einen Punkt ersetzt und die Wendung <span style='font-style:
+normal'>&#8222;Minderj&auml;hrigen Opfern und&#8220;</span> vor der Wendung <span
+style='font-style:normal'>&#8222;dem Rechtschutzbeauftragten&#8220;</span>
+eingef&uuml;gt.</p>
+
+<p class=21NovAo1>54. In &sect;&nbsp;197 wird nach Abs.&nbsp;2a folgender Abs.&nbsp;2b
+eingef&uuml;gt:</p>
+
+<p class=51Abs>&#8222;(2b) Wenn eine Vernehmung des Beschuldigten
+(&sect;&sect;&nbsp;164, 165 StPO) wegen dessen schwerwiegender Erkrankung nicht
+in absehbarer Zeit durchgef&uuml;hrt werden kann, ist sinngem&auml;&szlig; nach
+Abs.&nbsp;2a erster Satz vorzugehen.&#8220;</p>
+
+<p class=22NovAo2>55. In &sect;&nbsp;236 Abs.&nbsp;1 wird die Wendung <span
+style='font-style:normal'>&#8222;&sect;&nbsp;48 Abs.&nbsp;1 Z&nbsp;4&#8220;</span>
+durch die Wendung <span style='font-style:normal'>&#8222;&sect;&nbsp;48
+Abs.&nbsp;1 Z&nbsp;5&#8220;</span> ersetzt.</p>
+
+<p class=21NovAo1>56. In &sect;&nbsp;249 Abs.&nbsp;1 wird folgender Satz
+angef&uuml;gt:</p>
+
+<p class=23SatznachNovao>&#8222;Bei gro&szlig;em Verfahrensumfang ist dies nach
+Tunlichkeit zu thematisch zusammenh&auml;ngenden Abschnitten zu gew&auml;hren.&#8220;</p>
+
+<p class=21NovAo1>57. In &sect;&nbsp;275 wird folgender letzter Satz
+angef&uuml;gt:</p>
+
+<p class=23SatznachNovao>&#8222;&sect;&nbsp;197 Abs.&nbsp;2b gilt
+sinngem&auml;&szlig;.&#8220;</p>
+
+<p class=22NovAo2>58. &sect;&nbsp;347 entf&auml;llt.</p>
+
+<p class=22NovAo2>59. In &sect;&nbsp;409 Abs.&nbsp;1 zweiter Satz wird nach dem
+Zitat <span style='font-style:normal'>&#8222;&sect;&nbsp;20 Abs.&nbsp;3
+StGB&#8220;</span> die Wendung <span style='font-style:normal'>&#8222;und die
+Konfiskation nach &sect;&nbsp;19a Abs.&nbsp;1a StGB&#8220;</span>
+eingef&uuml;gt.</p>
+
+<p class=21NovAo1>60. &sect;&nbsp;409 Abs.&nbsp;2 lautet:</p>
+
+<p class=51Abs>&#8222;(2) Wie die im Abs.&nbsp;1 genannten Geldbetr&auml;ge
+einzutreiben sind, wird im Gerichtlichen Einbringungsgesetz in der jeweils
+geltenden Fassung angeordnet. Die Auskunft aus dem Kontenregister oder die
+Auskunft &uuml;ber Bankkonten und Bankgesch&auml;fte (&sect;&sect;&nbsp;116,
+210 Abs.&nbsp;3 StPO) ist auch dann zul&auml;ssig, wenn auf Grund bestimmter Tatsachen
+anzunehmen ist, dass Verm&ouml;genswerte zur Vollstreckung einer Geldstrafe,
+einer Konfiskation (&sect;&nbsp;19a StGB), eines Verfalls (&sect;&nbsp;20
+StGB), eines erweiterten Verfalls (&sect;&nbsp;20b StGB) oder einer anderen
+gesetzlich vorgesehenen verm&ouml;gensrechtlichen Anordnung aufgefunden werden
+k&ouml;nnen.&#8220;</p>
+
+<p class=21NovAo1>61. In &sect;&nbsp;427 Abs.&nbsp;2 wird folgender letzter
+Satz angef&uuml;gt:</p>
+
+<p class=23SatznachNovao>&#8222;&sect;&nbsp;197 Abs.&nbsp;2b gilt
+sinngem&auml;&szlig;.&#8220;</p>
+
+<p class=22NovAo2>62. In &sect;&nbsp;445 Abs.&nbsp;2a wird das Klammerzitat <span
+style='font-style:normal'>&#8222;&sect;&nbsp;19 StGB&#8220;</span> durch das
+Klammerzitat <span style='font-style:normal'>&#8222;&sect;&nbsp;19a StGB&#8220;</span>
+ersetzt.</p>
+
+<p class=22NovAo2>63. In &sect;&nbsp;489 Abs.&nbsp;1 wird das Zitat <span
+style='font-style:normal'>&#8222;&sect;&nbsp;281 Abs.&nbsp;1a&#8220;</span>
+durch das Zitat <span style='font-style:normal'>&#8222;&sect;&nbsp;281
+Abs.&nbsp;1 Z&nbsp;1a&#8220;</span> ersetzt.</p>
+
+<p class=21NovAo1>64. In &sect;&nbsp;514 wird nach dem Abs.&nbsp;31 folgender
+Abs.&nbsp;32 bis 34 angef&uuml;gt:</p>
+
+<p class=51Abs>&#8222;(32) &sect;&sect;&nbsp;5 Abs.&nbsp;3, 10 Abs.&nbsp;2, 20a
+Abs.&nbsp;1 Z&nbsp;5, 25 Abs.&nbsp;7, 28, 28a, 31 Abs.&nbsp;3 Z&nbsp;6a,
+Abs.&nbsp;4 Z&nbsp;2, 56 Abs.&nbsp;3, 65 Z&nbsp;1 lit.&nbsp;a und b, 66
+Abs.&nbsp;1 Z&nbsp;1a, 1b und 5, Abs.&nbsp;3 und 4, 66a, 70, 80 Abs.&nbsp;1, 128
+Abs.&nbsp;1, 133 Abs.&nbsp;5, 137 Abs.&nbsp;3, 138 Abs.&nbsp;2 und 3, 140 Abs.&nbsp;1
+Z&nbsp;4, 141 Abs.&nbsp;4, 142 Abs.&nbsp;5, 147 Abs.&nbsp;1, 155 Abs.&nbsp;1
+Z&nbsp;3, 156 Abs.&nbsp;1 Z&nbsp;2, 165 Abs.&nbsp;3 bis 5, 172 Abs.&nbsp;4, 177
+Abs.&nbsp;5, 181a, 188 Abs.&nbsp;2, 195 Abs.&nbsp;2, 196 Abs.&nbsp;2, 197
+Abs.&nbsp;2b, 236 Abs.&nbsp;1, 275, 347, 409 Abs.&nbsp;1, 427 Abs.&nbsp;2, 445
+Abs.&nbsp;2a und 489 Abs.&nbsp;1 in der Fassung des Bundesgesetzes BGBl.&nbsp;I
+Nr.&nbsp;xx/xxxx treten mit 1.&nbsp;Juni 2016 in Kraft.</p>
+
+<p class=51Abs>(33) &sect;&sect;&nbsp;109 Z&nbsp;3 und 4, 116 und 409
+Abs.&nbsp;2 in der Fassung des Bundesgesetzes BGBl.&nbsp;I Nr.&nbsp;xx/xxxx
+treten mit 1.&nbsp;August 2016 in Kraft.</p>
+
+<p class=51Abs>(34) &sect;&sect;&nbsp;50 Abs.&nbsp;3, 59 Abs.&nbsp;1 und 2, 61
+Abs.&nbsp;1 Z&nbsp;5a, 157 Abs.&nbsp;2, 163 Abs.&nbsp;4, 164 Abs.&nbsp;2, 171
+Abs.&nbsp;4 Z&nbsp;2 lit.&nbsp;a und c und 249 Abs.&nbsp;1 in der Fassung des
+Bundesgesetzes BGBl.&nbsp;I Nr.&nbsp;xx/xxxx treten mit 1.&nbsp;November 2016
+in Kraft.&#8220;</p>
+
+<p class=21NovAo1>65. In &sect;&nbsp;516a wird folgender Abs.&nbsp;3 bis 5
+angef&uuml;gt:</p>
+
+<p class=51Abs>&#8222;(3) &sect;&sect;&nbsp;10 Abs.&nbsp;2, 25 Abs.&nbsp;7, 65
+Z&nbsp;1 lit.&nbsp;a und b, 66 Abs.&nbsp;1 Z&nbsp;1a, 1b und 5, Abs.&nbsp;3 und
+4, 66a, 70, 80 Abs.&nbsp;1, 156 Abs.&nbsp;1 Z&nbsp;2, 165 Abs.&nbsp;3 und 4, 172
+Abs.&nbsp;4, 177 Abs.&nbsp;5, 181a, 195 Abs.&nbsp;2 und 196 Abs.&nbsp;2 in der
+Fassung des Bundesgesetzblattes BGBl.&nbsp;I Nr.&nbsp;xxx/xxxx dienen der Umsetzung
+der Richtlinie&nbsp;2012/29/EU &uuml;ber Mindeststandards f&uuml;r die Rechte,
+die Unterst&uuml;tzung und den Schutz von Opfern von Straftaten sowie zur
+Ersetzung des Rahmenbeschlusses&nbsp;2001/220/JI ABl. Nr.&nbsp;L&nbsp;315 vom
+14.11.2012 S&nbsp;57.</p>
+
+<p class=51Abs>(4) &sect;&sect;&nbsp;50 Abs.&nbsp;3, 59 Abs.&nbsp;1 und 2, 157
+Abs.&nbsp;2, 163 Abs.&nbsp;4, 164 Abs.&nbsp;2, 171 Abs.&nbsp;4 Z&nbsp;2 lit.&nbsp;a
+und c und 249 Abs.&nbsp;1 in der Fassung des Bundesgesetzes BGBl.&nbsp;I
+Nr.&nbsp;xx/xxxx dienen der Umsetzung der Richtlinie 2013/48/EU &uuml;ber das
+Recht auf Zugang zu einem Rechtsbeistand in Strafverfahren und in Verfahren zur
+Vollstreckung des Europ&auml;ischen Haftbefehls sowie &uuml;ber das Recht auf
+Benachrichtigung eines Dritten bei Freiheitsentzug und das Recht auf
+Kommunikation mit Dritten und mit Konsularbeh&ouml;rden w&auml;hrend des
+Freiheitsentzugs, ABl. Nr.&nbsp;L&nbsp;294 vom 06.&nbsp;11.2013 S&nbsp;1.</p>
+
+<p class=51Abs>(5) &sect;&nbsp;409 Abs.&nbsp;2 in der Fassung des
+Bundesgesetzblattes BGBl.&nbsp;I Nr.&nbsp;xxx/xxxx dient der Umsetzung der
+Richtlinie&nbsp;2014/42/EU &uuml;ber die Sicherstellung und Einziehung von
+Tatwerkzeugen und Ertr&auml;gen aus Straftaten in der Europ&auml;ischen Union,
+ABl. Nr.&nbsp;L&nbsp;127 vom 29.04.2014 S&nbsp;39, in der Fassung der
+Berichtigung ABl. Nr.&nbsp;L&nbsp;138 vom 13.05.2014 S&nbsp;114.&#8220;</p>
+
+<p class=41UeberschrG1>Artikel&nbsp;2</p>
+
+<p class=43UeberschrG2>&Auml;nderung des Strafvollzugsgesetzes</p>
+
+<p class=12PromKlEinlSatz>Das Strafvollzugsgesetz, BGBl. Nr.&nbsp;144/1969,
+zuletzt ge&auml;ndert durch das Bundesgesetz BGBl.&nbsp;I Nr.&nbsp;13/2015,
+wird wie folgt ge&auml;ndert:</p>
+
+<p class=21NovAo1>1. In &sect;&nbsp;106 wird nach dem Abs.&nbsp;3 folgender
+Abs.&nbsp;4 angef&uuml;gt:</p>
+
+<p class=51Abs>&#8222;(4) &sect;&nbsp;149 Abs.&nbsp;5 gilt
+sinngem&auml;&szlig;, wobei nach Ma&szlig;gabe dieser Bestimmung auch eine
+Verst&auml;ndigung im Fall der Wiedereinbringung des Geflohenen zu erfolgen
+hat.&#8220;</p>
+
+<p class=22NovAo2>2. In &sect;&nbsp;149 Abs.&nbsp;5 wird die Wortfolge <span
+style='font-style:normal'>&#8222;von Gewalt in Wohnungen (&sect;&nbsp;38a SPG)
+oder ein Opfer gem&auml;&szlig; &sect;&nbsp;65 Z&nbsp;1 lit.&nbsp;a
+StPO)&#8220;</span> durch den Klammerausdruck <span style='font-style:normal'>&#8222;(&sect;&nbsp;65
+Z&nbsp;1 StPO)&#8220;</span> ersetzt und nach dem Wort <span style='font-style:
+normal'>&#8222;Strafgefangenen&#8220;</span> die Wortfolge <span
+style='font-style:normal'>&#8222;einschlie&szlig;lich allf&auml;lliger ihm zum
+Schutz des Opfers erteilter Weisungen&#8220;</span> eingef&uuml;gt.</p>
+
+<p class=21NovAo1>3. In &sect;&nbsp;181 wird nach dem Abs.&nbsp;26 folgender
+Abs.&nbsp;27 angef&uuml;gt:</p>
+
+<p class=51Abs>&#8222;(27) &sect;&sect;&nbsp;106 Abs.&nbsp;4 und 149
+Abs.&nbsp;5 in der Fassung des Bundesgesetzes BGBl.&nbsp;I Nr.&nbsp;xx/xxxx
+treten mit 1.&nbsp;Juni 2016 in Kraft.&#8220;</p>
+
+<p class=21NovAo1>4. Nach &sect;&nbsp;181a wird folgender &sect;&nbsp;181b samt
+&Uuml;berschrift eingef&uuml;gt:</p>
+
+<p class=45UeberschrPara>&#8222;Umsetzung von Richtlinien der Europ&auml;ischen
+Union</p>
+
+<p class=51Abs><span class=991GldSymbol>&sect;&nbsp;181b.</span>
+&sect;&sect;&nbsp;106 Abs.&nbsp;4 und 149 Abs.&nbsp;5 in der Fassung des
+Bundesgesetzblattes BGBl.&nbsp;I Nr.&nbsp;xxx/xxxx dienen der Umsetzung der
+Richtlinie&nbsp;2012/29/EU &uuml;ber Mindeststandards f&uuml;r die Rechte, die
+Unterst&uuml;tzung und den Schutz von Opfern von Straftaten sowie zur Ersetzung
+des Rahmenbeschlusses&nbsp;2001/220/JI ABl. Nr.&nbsp;L&nbsp;315 vom 14.11.2012
+S&nbsp;57.&#8220;</p>
+
+<p class=41UeberschrG1>Artikel&nbsp;3</p>
+
+<p class=43UeberschrG2>&Auml;nderung des Verbandsverantwortlichkeitsgesetzes</p>
+
+<p class=12PromKlEinlSatz>Das Bundesgesetz &uuml;ber die Verantwortlichkeit von
+Verb&auml;nden f&uuml;r Straftaten (Verbandsverantwortlichkeitsgesetz &#8211;
+VbVG), BGBl.&nbsp;I Nr.&nbsp;151/2005, zuletzt ge&auml;ndert durch das
+Bundesgesetz BGBl.&nbsp;I Nr.&nbsp;112/2007, wird wie folgt ge&auml;ndert:</p>
+
+<p class=21NovAo1>1. In &sect;&nbsp;27 Abs.&nbsp;1 entf&auml;llt die Jahreszahl
+<span style='font-style:normal'>&#8222;1962&#8220;</span> und nach dem zweiten
+Satz wird folgender Satz angef&uuml;gt:</p>
+
+<p class=23SatznachNovao>&#8222;&sect;&nbsp;409 Abs.&nbsp;2 zweiter Satz StPO
+ist sinngem&auml;&szlig; anzuwenden.&#8220;</p>
+
+<p class=21NovAo1>2. In &sect;&nbsp;28 wird nach dem Abs.&nbsp;2 folgender
+Abs.&nbsp;3 angef&uuml;gt:</p>
+
+<p class=51Abs>&#8222;(3) &sect;&nbsp;27 Abs.&nbsp;1 in der Fassung des
+Bundesgesetzes BGBl.&nbsp;I Nr.&nbsp;xx/xxxx tritt mit 1.&nbsp;August 2016 in
+Kraft.&#8220;</p>
+
+</div>
+
+</body>
+
+</html>

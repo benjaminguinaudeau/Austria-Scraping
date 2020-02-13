@@ -128,9 +128,9 @@ indexpagedata$desc_title <- as.character(indexpagedata$desc_title)
 #create list for proposalpages
 proposalpage <- vector(mode = "list", length = 4544)
 
-for (i in 1:length(proposalpage)) {
+for (i in 3659:length(proposalpage)) {
   proposalpage[[i]] <- read_html(indexpagedata$proposal_link[i])
-  t <- runif(1, 1, 1.2)
+  t <- runif(1, 1.2, 1.4)
   Sys.sleep(t)
   cat(paste0(i, " - waited for ", round(t, 2), "s. "))
 }
@@ -288,8 +288,15 @@ proposalpagedata <- tibble(X, bill_link, bill_id, proposal_download, iniator, re
 
 data1 <- left_join(indexpagedata, proposalpagedata, by = "X")
 
-# download loop proposals
+# change NAs to character(0)
 for (i in 1:length(data1$proposal_download)) {
+  if(is.na(data1$proposal_download[i])) {
+    data1$proposal_download[i] <- ""
+  }
+}
+
+# download loop proposals
+for (i in 2437:length(data1$proposal_download)) {
   if(str_detect(data1$proposal_download[i], "^\\/PAKT") == 1) {
     data1$proposal_download[i] %>%
       paste0("www.parlament.gv.at", .) %>%
@@ -306,10 +313,5 @@ for (i in 1:length(data1$proposal_download)) {
 
 ```{r}
 
-#scrape_bill
-
-# download 
-html_nodes(billpage, "ul.fliesstext a")[2] %>%
-  html_attr("href")
 
 ```
