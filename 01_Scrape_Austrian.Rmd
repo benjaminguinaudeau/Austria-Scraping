@@ -313,5 +313,46 @@ for (i in 2437:length(data1$proposal_download)) {
 
 ```{r}
 
+bill_download <- vector(mode = "character", length = length(data1$X))
+
+for (i in 1:length(data1$bill_link)) {
+  if(is.na(data1$bill_link[i])) {
+    data1$bill_link[i] <- ""
+  }
+  if(str_detect(data1$bill_link[i], "^\\/PAKT") == 1) {
+    data1$bill_link[i] <- paste0("https://www.parlament.gv.at", bill_link[i])
+  }
+  if(str_detect(data1$bill_link[i], "PAKT") == 1) {
+    billpage <- read_html(data1$bill_link[i])
+    bill_download[i] <- billpage %>%
+      html_nodes("ul.fliesstext li a") %>%
+      html_attr("href") %>%
+      str_subset("\\d.html") %>% .[1]
+  t <- runif(1, 1, 1.2)
+  Sys.sleep(t)
+  cat(paste0(i, " - waited for ", round(t, 2), "s. "))
+  }
+}
+
+data1 <- add_column(data1, bill_download)
+
+# change NAs to character(0)
+for (i in 1:length(data1$proposal_download)) {
+  if(is.na(data1$proposal_download[i])) {
+    data1$proposal_download[i] <- ""
+  }
+}
+
+# download bills (bill_id used as bill_filename)
+for (i in 1:length(data1$bill_download)) {
+  if(str_detect(data1$bill_download[i], "^\\/PAKT") == 1) {
+    data1$bill_download[i] %>%
+      paste0("www.parlament.gv.at", .) %>%
+      download_html(file = paste0("data/bill/", data1$bill_id[i], ".html"))
+    t <- runif(1, 1, 1.2)
+    Sys.sleep(t)
+    cat(paste0(i, " - waited for ", round(t, 2), "s. "))
+  }
+}
 
 ```
